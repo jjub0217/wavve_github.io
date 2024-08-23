@@ -1,0 +1,36 @@
+@mixin ellipse($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if ($line > 1) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  } @else {
+    white-space: nowrap;
+  }
+}
+
+@mixin blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+$desktop: 1280px;
+$mobile: 640px;
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}

@@ -1,0 +1,343 @@
+.wrap {
+  @include mobile {
+    min-width: 320px;
+    max-width: 640px;
+  }
+}
+.inner {
+  @include mobile {
+    width: auto;
+    padding: 0 20px;
+  }
+}
+.section_registration {
+  padding-top: 72px;
+
+  .title {
+    padding-bottom: 64px;
+    font-size: 36px;
+    text-align: center;
+
+    @include mobile {
+      @include blind;
+    }
+  }
+
+  .inner {
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  .input {
+    &_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 58px 0;
+      background: #000;
+
+      @include mobile {
+        flex-direction: column;
+        padding: 27px 20px;
+      }
+    }
+    &_box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @include mobile {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+    &_desc {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #626466;
+      line-height: 20px;
+
+      @include mobile {
+        display: none;
+      }
+
+      &:before {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin-right: 8px;
+        border-radius: 50%;
+        background-color: #626466;
+        vertical-align: middle;
+        content: "";
+      }
+    }
+  }
+
+  .input_coupon_code {
+    width: 520px;
+    padding: 14px 8px 14px 14px;
+    border-radius: 6px;
+    background: #242526;
+
+    &::placeholder {
+      font-size: 16px;
+      @include mobile {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .btn_register {
+    width: 119px;
+    padding: 14px;
+    border-radius: 100px;
+    background-color: #4b4c4f;
+    font-size: 16px;
+    color: #8a8d91;
+    cursor: pointer;
+
+    &.is_active {
+      background-color: #022db9;
+      color: #fff;
+    }
+  }
+}
+
+.section_coupon {
+  padding-bottom: 80px;
+  padding-top: 56px;
+  background-color: #121212;
+
+  .tab {
+    &_area {
+      position: relative;
+    }
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: 29px;
+      position: relative;
+      height: 45px;
+      font-size: 20px;
+      font-weight: bold;
+
+      &::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+        content: "";
+      }
+
+      @include mobile {
+        gap: 15px;
+      }
+    }
+    &_item {
+      height: 100%;
+      button {
+        padding-bottom: 33px;
+        font-size: 16px;
+        cursor: pointer;
+
+        @include mobile {
+          max-width: 100px;
+        }
+      }
+      &.is_active {
+        position: relative;
+
+        &:after {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 3px;
+          background-color: #486ff2;
+          content: "";
+        }
+        button {
+          color: #486ff2;
+        }
+      }
+    }
+    &_content {
+      position: relative;
+      margin-top: 34px;
+    }
+  }
+
+  .coupon {
+    &_list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
+      &.is_hidden {
+        display: none;
+        & + .control_area {
+          display: none;
+        }
+      }
+    }
+    &_item {
+      position: relative;
+      padding: 24px;
+      border: solid 1px rgba(255, 255, 255, 0.2);
+    }
+    &_link {
+      display: block;
+      position: relative;
+      padding: 24px;
+      border: solid 1px rgba(255, 255, 255, 0.2);
+    }
+    &_content {
+      flex: 1;
+      margin-right: 20px;
+      @include mobile {
+      }
+    }
+    &_title {
+      display: block;
+      height: 48px;
+      margin-top: 7px;
+      margin-bottom: 12px;
+      margin-right: 100px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 24px;
+      @include ellipse(2);
+    }
+    &_badge {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #8b8d91;
+    }
+    &_desc,
+    &_time {
+      font-size: 14px;
+      color: #8a8d91;
+      line-height: 20px;
+
+      &:nth-child(even) {
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+
+      @include mobile {
+        max-width: none;
+      }
+    }
+  }
+
+  .use_coupon {
+    position: absolute;
+    top: 33px;
+    right: 24px;
+    width: 84px;
+    height: 32px;
+    padding: 6px 0;
+    border-radius: 4px;
+    background-color: #022db9;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .control_area {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    @include mobile {
+      min-width: auto;
+    }
+  }
+  .arrow_btn {
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .btn {
+    &_first {
+      background: url("../images/ico_pagination_arrow_forward.png") no-repeat;
+      background-size: contain;
+    }
+
+    &_prev {
+      background: url("../images/ico_pagination_arrow.png") no-repeat;
+      background-size: contain;
+    }
+
+    &_next {
+      transform: rotate(-180deg);
+      background: url("../images/ico_pagination_arrow.png") no-repeat;
+      background-size: contain;
+    }
+
+    &_last {
+      transform: rotate(-180deg);
+      background: url("../images/ico_pagination_arrow_forward.png") no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+  }
+
+  .page_number {
+    width: 28px;
+    height: 28px;
+    margin: 0 4px;
+    font-size: 14px;
+    text-align: center;
+    color: #b0b3b8;
+    cursor: pointer;
+    &[aria-selected="true"] {
+      border: 1.5px solid #486ff2;
+      border-radius: 50%;
+      font-weight: bold;
+      color: #486ff2;
+    }
+    @include mobile {
+      &:nth-child(n + 6) {
+        display: none;
+      }
+    }
+  }
+
+  .no_coupon_area {
+    margin-top: 96px;
+    padding-bottom: 89px;
+    text-align: center;
+
+    &.is_hidden {
+      display: none;
+    }
+
+    .image_box {
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
+    }
+
+    .text_box {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 16px;
+      color: #626466;
+    }
+  }
+}

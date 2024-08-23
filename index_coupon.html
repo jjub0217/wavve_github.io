@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="이 페이지는 KNTV의 쿠폰 페이지입니다.">
+    <title>KNTV 쿠폰 페이지</title>
+    <link rel="stylesheet" href="./assets/css/coupon_style.css">
+    <!-- [D] 개발 제외 영역 -->
+    <style>
+      .case_view {
+        overflow: hidden;
+        position: fixed;
+        bottom: 150px;
+        right: 500px;
+        z-index: 5;
+        width: 70px;
+        height: 70px;
+        padding: 0 5px;
+        border-radius: 50%;
+        background-color: #f7438c;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    </style>
+    <!-- [D] 개발 제외 영역 -->
+  </head>
+
+  <body>
+    <div class="skip">
+      <a href="#main">본문 바로가기</a>
+    </div>
+    <div class="wrap">
+      <header id="header" class="header">
+        <div class="inner">
+          <h1 class="main_logo">
+            <a href="./index.html">
+              <img src="./assets/images/ico_header_logo.png" alt="KNTV">
+            </a> 
+          </h1>
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#" class="nav_link">드라마</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">예능</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">영화</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">애니</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">해외시리즈</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">시사교양</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">키즈</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">영화플러스</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">LIVE</a></li>
+            </ul>
+          </nav>
+          <div class="utility_area">
+            <a href="#" class="utility_link utility_promotion">
+              <span class="blind">프로모션</span>
+            </a>
+            <a href="#" class="utility_link utility_coupon">
+              <span class="blind">쿠폰</span>
+            </a>
+            <a href="#" class="utility_link utility_search">
+              <span class="blind">검색</span>
+            </a>
+            <a href="#" class="login_link">로그인</a>
+          </div>
+        </div>
+      </header>
+      <main id="main" class="container">
+        <section class="section_registration">
+          <h2 class="title">쿠폰 (이용권)</h2>
+          <div class="inner">
+            <div class="input_wrap">
+              <label for="coupon_code" class="blind">쿠폰 등록</label>
+              <div class="input_box">
+                <!-- [D] input 에 값을 타이핑하면 .btn_register에 .is_active 를 추가. 값이 없으면 제거  -->
+                <input type="text" id="coupon_code" placeholder="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요" class="input_coupon_code">
+                <button type="button" class="btn_register">쿠폰 등록</button>
+              </div>
+            </div>
+            <p class="input_desc">등록하신 쿠폰은 환불되지 않습니다.</p>
+            <p class="input_desc">쿠폰은 상업적 용도로 사용하거나 매매하실 수 없습니다.</p>
+            <p class="input_desc">유효기간이 지난 쿠폰은 등록하실 수 없습니다.</p>
+            <p class="input_desc">쿠폰으로 지급되는 상품은 기존 보유 상품과 중복되어 적용되므로 가급적 이용중인 상품이 만료 된 뒤에 쿠폰을 사용해 주세요.</p>
+            <p class="input_desc">쿠폰번호에 숫자 0,1은 없습니다. 영문자 O,I와 혼동하지 않도록 유의해 주세요.</p>
+          </div>
+        </section>
+        <section class="section_coupon">
+          <h2 class="blind">쿠폰 리스트</h2>
+          <div class="inner">
+            <div class="tab_area">
+              <ul class="tab_list" role="tablist">
+                <!-- [D] .tab_item 을 클릭하면 button에  붙어있던 .is_active 이라는 className 이 제거, 안 붙어있던 button 에는 추가  -->
+                <!-- [D] tab_item 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                <li class="tab_item is_active" role="none" aria-selected="true">
+                  <button type="button" role="tab">보유 쿠폰</button>
+                </li>
+                <li class="tab_item" role="none" aria-selected="false">
+                  <button type="button" role="tab">소진 쿠폰</button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab_content" role="tabpanel">
+              <ul class="coupon_list">
+                <li class="coupon_item">
+                  <span class="coupon_badge">SK Telecom</span>
+                  <strong class="coupon_title">T 우주패스 Netflix / 최대 13,500원 할인</strong>
+                  <p class="coupon_desc">사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC</p>
+                  <p class="coupon_desc">
+                    발행일 :
+                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                  </p>
+                  <p class="coupon_desc">
+                    사용기간 :
+                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    ~
+                    <time class="coupon_time" datetime="2021-05-31">2028-01-01</time>
+                  </p>
+                  <button class="use_coupon">사용</button>
+                </li>
+                <li class="coupon_item">
+                  <span class="coupon_badge">GS 칼텍스</span>
+                  <strong class="coupon_title">I am your Cinema / 웨이브 베이직 1개월 이용권</strong>
+                  <p class="coupon_desc">사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC</p>
+                  <p class="coupon_desc">
+                    발행일 :
+                    <time class="coupon_time" datetime="2021-05-01">2020-04-10</time>
+                  </p>
+                  <p class="coupon_desc">
+                    사용기간 :
+                    <time class="coupon_time" datetime="2021-05-01">2020-04-10</time>
+                    ~
+                    <time class="coupon_time" datetime="2021-05-31">2024-12-31</time>
+                  </p>
+                  <button class="use_coupon">사용</button>
+                </li>
+                <li class="coupon_item">
+                  <span class="coupon_badge">SK Telecom</span>
+                  <strong class="coupon_title">T 우주패스 Life wavve 앤 데이터 / 첫달 1,000원</strong>
+                  <p class="coupon_desc">사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC</p>
+                  <p class="coupon_desc">
+                    발행일 :
+                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                  </p>
+                  <p class="coupon_desc">
+                    사용기간 :
+                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    ~
+                    <time class="coupon_time" datetime="2021-05-31">2024-12-31</time>
+                  </p>
+                  <button class="use_coupon">사용</button>
+                </li>
+                <li class="coupon_item">
+                  <span class="coupon_badge">SK Telecom</span>
+                  <strong class="coupon_title">T 우주패스 Life wavve 앤 데이터 플러스/ 첫달 1,000원</strong>
+                  <p class="coupon_desc">사용가능: 동시 접속 최대 2회선(HD화질) 모바일 + PC</p>
+                  <p class="coupon_desc">
+                    발행일 :
+                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                  </p>
+                  <p class="coupon_desc">
+                    사용기간 :
+                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    ~
+                    <time class="coupon_time" datetime="2021-05-31">2024-12-31</time>
+                  </p>
+                  <button class="use_coupon">사용</button>
+                </li>
+              </ul>
+              <div class="control_area">
+                <button type="button" class="arrow_btn btn_first" aria-label="첫 페이지로 이동"></button>
+                <button type="button" class="arrow_btn btn_prev" aria-label="이전 페이지로 이동"></button>
+                <div class="pagination">
+                  <!-- [D] .page_number 을 클릭하면, aria-selected 값이 true 에서 false 로, false 에서 true로 변경  -->
+                  <button class="page_number" aria-selected="true">1</button>
+                  <button class="page_number" aria-selected="false">2</button>
+                  <button class="page_number" aria-selected="false">3</button>
+                  <button class="page_number" aria-selected="false">4</button>
+                  <button class="page_number" aria-selected="false">5</button>
+                  <button class="page_number" aria-selected="false">6</button>
+                  <button class="page_number" aria-selected="false">7</button>
+                  <button class="page_number" aria-selected="false">8</button>
+                  <button class="page_number" aria-selected="false">9</button>
+                  <button class="page_number" aria-selected="false">10</button>
+                </div>
+                <button type="button" class="arrow_btn btn_next" aria-label="다음 페이지로 이동"></button>
+                <button type="button" class="arrow_btn btn_last" aria-label="마지막 페이지로 이동"></button>
+              </div>
+              <div class="no_coupon_area is_hidden">
+                <div class="image_box">
+                  <img src="./assets/images/ico_no_coupon_alert.png" alt="쿠폰 없음 아이콘">
+                </div>
+                <p class="text_box">보유 쿠폰이 없어요.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <nav class="footer_nav">
+            <a href="#" class="footer_logo">
+              <img src="./assets/images/ico_footer_logo.png" alt="KNTV">
+            </a>
+            <a class="footer_nav_link">
+              이용약관</a>
+            <a class="footer_nav_link">
+              개인정보 보호정책</a>
+            <a class="footer_nav_link">
+              고객센터</a>
+            <a class="footer_nav_link">
+              공지사항</a>
+          </nav>
+          <small class="copyright">Copyright © jjub0217 All rights reserved.jjub0217</small>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/coupon.js"></script>
+    <!-- [D] 개발 제외 영역 -->
+    <button class="case_view" type="button">쿠폰없는 케이스 뷰</button>
+    <script>
+      const couponList = document.querySelector(".coupon_list");
+      const noCoupon = document.querySelector(".no_coupon_area");
+      const caseView = document.querySelector(".case_view");
+      
+      caseView.onclick = (e) => {
+        if (couponList.classList.contains("is_hidden")) {
+          couponList.classList.remove("is_hidden");
+          noCoupon.classList.add("is_hidden");
+        } else {
+          couponList.classList.add("is_hidden");
+          noCoupon.classList.remove("is_hidden");
+        }
+      };
+    </script>
+    <!-- [D] 개발 제외 영역 -->
+  </body>
+</html>
