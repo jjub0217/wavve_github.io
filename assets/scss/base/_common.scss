@@ -171,6 +171,31 @@
   padding: 0 42px;
 }
 
+.slide_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  background: url("../images/ico_arrow.png") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.btn_prev {
+  left: calc(56px / -2);
+}
+
+.btn_next {
+  right: -28px;
+  transform: rotate(180deg) translateY(50%);
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
 .footer {
   min-width: 1280px;
   padding: 38px 62px;

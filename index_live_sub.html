@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="이 페이지는 KNTV의 홈페이지입니다.">
+    <title>KNTV 홈페이지</title>
+    <link rel="stylesheet" href="./assets/css/live_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="skip">
+        <a href="#main">본문 바로가기</a>
+      </div>
+      <header id="header" class="header">
+        <div class="inner">
+          <h1 class="main_logo">
+            <a href="./index.html">
+              <img src="./assets/images/ico_header_logo.png" alt="TV">
+            </a>
+          </h1>
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#" class="nav_link">드라마</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">예능</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">영화</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">애니</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">해외시리즈</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">시사교양</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">키즈</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">영화플러스</a></li>
+              <li class="nav_item is_active"><a href="#" class="nav_link">LIVE</a></li>
+            </ul>
+          </nav>
+          <div class="utility_area">
+            <a href="#" class="utility_link utility_promotion">
+              <span class="blind">프로모션</span>
+            </a>
+            <a href="./index_coupon.html" class="utility_link utility_coupon">
+              <span class="blind">쿠폰</span>
+            </a>
+            <a href="#" class="utility_link utility_search">
+              <span class="blind">검색</span>
+            </a>
+            <a href="#" class="login_link">로그인</a>
+          </div>
+        </div>
+      </header>
+      <main id="main" class="container">
+        <section class="section_content">
+          <h2 class="blind">방송 컨텐츠</h2>
+          <div class="image_wrap">
+            <div class="inner">
+              <div class="image_box">
+                <img src="./assets/images/img_main.png" alt="방송 컨텐츠" width="1196" height="672" loading="lazy">
+              </div>
+              <button class="play_btn"></button>
+            </div>
+          </div>
+          <div class="content_box">
+            <div class="inner">
+              <a href="#" class="channel_link">
+                <img src="./assets/images/ico_channel.png" alt="KNTV">
+              </a>
+              <h3 class="title">쇼! 음악중심 #720</h3>
+              <div class="time_box">
+                <time datetime="2024-06-03T13:44">15:20</time>
+                <span>~</span>
+                <time datetime="2024-06-03T15:07">16:30</time>
+              </div>
+              <p class="content_mc">MC-영훈(THE BOYZ),설윤(NMIXX),이정하</p>
+              <p class="content_cast">
+                효린 . 엔플라잉(N.Flying) . 온앤오프(ONF) . KARD . 비비(BIBI) . fromis_9(프로미스나인) . 권은비 . JD1 . BOY STORY . Weeekly(위클리) . STAYC(스테이씨) . LIGHTSUM . NMIXX . BOYNEXTDOOR . ZEROBASEONE . LUN8(루네이트) . 아일릿(ILLIT) . UNIS(유니스) . 박지현. DIGNITY(디그니티)
+              </p>
+              <div class="util_btn_wrap">
+                <button type="button" class="util_btn util_like">
+                  <span class="util_desc">좋아요</span>
+                </button>
+                <button type="button" class="util_btn util_share">
+                  <span class="util_desc">공유</span>
+                </button>
+                <button type="button" class="util_btn util_calendar">
+                  <span class="util_desc">전체 편성표</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_schedule">
+          <div class="inner">
+            <div class="title_wrap">
+              <h2 class="title">채널 편성표</h2>
+              <a href="#" class="all_link">전체 편성표 보기</a>
+            </div>
+            <div class="schedule_area">
+              <div class="swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">백설공주에게 죽음을(3회)</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">14:00</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">15:10</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">쇼! 음악중심 #720</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">15:20</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">16:30</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">나 혼자 산다(스페셜) 김 캐스터, 파리에 가다</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">16:40</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">18:20</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="#" class="slide_link">
+                      <span class="blind">놀면 뭐하니?</span>
+                    </a>
+                    <div class="slide_content">
+                      <strong class="slide_title">놀면 뭐하니?</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">18:30</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">19:45</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="true"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">MBC 뉴스데스크</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">19:55</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">20:25</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">생방송 행복드림 로또 6/45</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">20:35</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">20:39</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">손석희의 질문들</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">20:40</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">21:40</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide_content">
+                      <strong class="slide_title">백설공주에게 죽음을(4회)</strong>
+                      <div class="slide_time_box">
+                        <time datetime="2024-06-03T12:18">21:50</time>
+                        <span>~</span>
+                        <time datetime="2024-06-03T13:44">23:00</time>
+                      </div>
+                    </div>
+                    <span class="slide_status">ON AIR</span>
+                    <!-- [D] 버튼을 토글하면 aria-pressed 값이 바뀐다. -->
+                    <button type="button" class="push_notification_btn" aria-label="푸쉬알람" aria-pressed="false"></button>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="slide_btn btn_prev" aria-label="이전 슬라이드로 이동"></button>
+              <button type="button" class="slide_btn btn_next" aria-label="다음 슬라이드로 이동"></button>
+            </div>
+          </div>
+        </section>
+        <section class="section_channel">
+          <h2 class="blind">전체 체널 리스트</h2>
+          <div class="inner">
+            <div class="tab_area">
+              <ul class="tab_list" role="tablist">
+                <!-- [D] .tab_item 을 클릭하면 button에  붙어있던 .is_active 이라는 className 이 제거, 안 붙어있던 button 에는 추가  -->
+                <!-- [D] tab_item 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                <li class="tab_item is_active" role="none" aria-selected="true">
+                  <button type="button" role="tab" class="tab_item_title">전체 채널</button>
+                </li>
+                <li class="tab_item" role="none" aria-selected="false">
+                  <button type="button" role="tab" class="tab_item_title">추천</button>
+                </li>
+              </ul>
+            </div>
+            <div class="select_box">
+              <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
+              <button type="button" class="option_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
+              <ul class="option_list" role="listbox" id="genre_2">
+                <li class="option" role="none">
+                  <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                  <button type="button" role="option" aria-selected="true">전체장르</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">로맨틱</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">코메디</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">추리</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">범죄</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">스릴러</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">가족</button>
+                </li>
+                <li class="option" role="none">
+                  <button type="button" role="option" aria-selected="false">무협</button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab_content" role="tabpanel">
+              <ul class="channel_list">
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">iHQ 맛있는녀석들</strong>
+                      <p class="title">맛있는 녀석들 329회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+            
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <nav class="footer_nav">
+            <a href="#" class="footer_logo">
+              <img src="./assets/images/ico_footer_logo.png" alt="KNTV">
+            </a>
+            <a href="#" class="footer_nav_link">
+              이용약관</a>
+            <a href="#" class="footer_nav_link">
+              개인정보 보호정책</a>
+            <a href="#" class="footer_nav_link">
+              고객센터</a>
+            <a href="#" class="footer_nav_link">
+              공지사항</a>
+          </nav>
+          <small class="copyright">Copyright © jjub0217 All rights reserved.jjub0217</small>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/live.js"></script>
+  </body>
+</html>
