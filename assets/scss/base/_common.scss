@@ -54,7 +54,6 @@
   min-width: 1280px;
   padding: 0px 60px;
   background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   .inner {
     display: flex;
@@ -169,6 +168,112 @@
   width: 1280px;
   margin: 0 auto;
   padding: 0 42px;
+}
+
+.select {
+  &_wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  &_box {
+    position: relative;
+    z-index: 1;
+    width: 168px;
+    margin-bottom: 24px;
+    font-size: 0;
+
+    .option {
+      width: 100%;
+      height: 0;
+      max-width: 120px;
+      padding-left: 10px;
+      font-size: 14px;
+      text-align: left;
+      line-height: 20px;
+      button {
+        height: 0;
+        cursor: pointer;
+        &[aria-selected="false"] {
+          color: #8a8d91;
+        }
+      }
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+
+      &_title {
+        position: relative;
+        width: 100%;
+        height: 52px;
+        padding-left: 20px;
+        border-radius: 3px;
+        background-color: #242526;
+        font-size: 14px;
+        text-align: left;
+        cursor: pointer;
+        &:after {
+          position: absolute;
+          top: 50%;
+          right: 14px;
+          transform: translateY(-50%);
+          width: 14px;
+          height: 8.4px;
+          background: url("../images/ico_dropdown.png") no-repeat;
+          background-size: cover;
+          background-position: center;
+          content: "";
+        }
+
+        &[aria-expanded="true"] {
+          &::after {
+            transform: rotate(180deg) translateY(50%);
+          }
+          & + .option_list {
+            height: 246px;
+            padding: 13px 38px 13px 10px;
+            visibility: visible;
+            opacity: 1;
+            .option {
+              height: auto;
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+      &_list {
+        overflow-y: auto;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        max-height: 246px;
+        margin-top: 4px;
+        background-color: #242526;
+        transition: height 0.3s, opacity 0.2s;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.all_link {
+  height: 20px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 24px;
+  opacity: 0.5;
+
+  &:after {
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    margin-left: 4px;
+    background: url("../images/ico_more.png") no-repeat;
+    background-size: contain;
+    content: "";
+  }
 }
 
 .slide_btn {
