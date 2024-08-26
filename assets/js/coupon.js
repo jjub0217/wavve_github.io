@@ -25,6 +25,7 @@ input.onkeyup = (e) => {
 };
 
 
+
 tabItems.forEach((item) => {
   item.onclick = (e) => {
     e.preventDefault();
@@ -45,9 +46,9 @@ pageNumbers.forEach(pageNumber => {
   pageNumber.onclick = (e) => {
     [...pageNumbers].filter((number) => {
       if (number === e.target) {
-        e.target.ariaSelected = "true"
+        number.setAttribute("aria-current", "page");
       } else {
-        number.ariaSelected = "false"
+        number.removeAttribute("aria-current");
       }
     })
   }

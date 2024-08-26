@@ -48,6 +48,33 @@
         </div>
       </header>
       <main id="main" class="container">
+        <div class="pop_up_box is_active" role="dialog" >
+          <div class="pop_up">
+            <strong class="headline">구현한 페이지 안내</strong>
+            <ul class="page_list">
+              <li class="page_item">
+                <strong class="title">메인페이지</strong>
+                <p class="title_desc">헤더의 로고를 클릭하면 이동됩니다.</p>
+              </li>
+              <li class="page_item">
+                <strong class="title">LIVE 페이지</strong>
+                <p class="title_desc">전체 채널들의 생방송 리스트가 보여지는 페이지</p>
+                <p class="desc">* 헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
+              </li>
+              <li class="page_item">
+                <strong class="title">LIVE 상세 페이지</strong> 
+                <p class="title_desc">클릭한 생방송의 상세 페이지</p>
+                <p class="desc">* LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.</p>
+              </li>
+              <li class="page_item">
+                <strong class="title">이용권 페이지</strong> 
+                <p class="title_desc">쿠폰 페이지</p>
+                <p class="desc">* 헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면 이동됩니다.</p> 
+              </li>
+            </ul>
+            <button type="button" class="btn_close_pop_up" aria-label="팝업닫기" aria-expanded="true"></button>
+          </div>
+        </div>
         <section class="section_channel">
           <h2 class="blind">전체 체널 리스트</h2>
           <div class="inner">
@@ -55,46 +82,46 @@
               <ul class="tab_list" role="tablist">
                 <!-- [D] .tab_item 을 클릭하면 button에  붙어있던 .is_active 이라는 className 이 제거, 안 붙어있던 button 에는 추가  -->
                 <!-- [D] tab_item 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                <li class="tab_item is_active" role="none" aria-selected="true">
-                  <button type="button" role="tab" class="tab_item_title">전체 채널</button>
+                <li class="tab_item is_active" role="none">
+                  <button type="button" role="tab" aria-selected="true" class="tab_item_title" aria-controls="all_channel">전체 채널</button>
                 </li>
-                <li class="tab_item" role="none" aria-selected="false">
-                  <button type="button" role="tab" class="tab_item_title">추천</button>
+                <li class="tab_item" role="none" >
+                  <button type="button" role="tab" class="tab_item_title" aria-selected="false" aria-controls="best_channel">추천</button>
                 </li>
               </ul>
             </div>
             <div class="select_box">
               <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-              <button type="button" class="option_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
+              <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
               <ul class="option_list" role="listbox" id="genre_2">
                 <li class="option" role="none">
                   <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                  <button type="button" role="option" aria-selected="true">전체장르</button>
+                  <button type="button" role="option" class="option_title" aria-selected="true">전체장르</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">로맨틱</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">코메디</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">추리</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">범죄</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">스릴러</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">가족</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">가족</button>
                 </li>
                 <li class="option" role="none">
-                  <button type="button" role="option" aria-selected="false">무협</button>
+                  <button type="button" role="option" class="option_title" aria-selected="false">무협</button>
                 </li>
               </ul>
             </div>
-            <div class="tab_content" role="tabpanel">
+            <div class="tab_content" role="tabpanel" id="all_channel">
               <ul class="channel_list">
                 <li class="channel_item">
                   <a href="./index_live_sub.html" class="link_item">
@@ -103,7 +130,7 @@
                       <p class="title">쇼! 음악중심 720회</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_main.png" alt="">
+                      <img src="./assets/images/img_main.png" alt="MBC 쇼! 음악중심 720회">
                     </div>
                   </a>
                 </li>
@@ -114,99 +141,373 @@
                       <p class="title">맛있는 녀석들 329회</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item2.jpg" alt="iHQ 맛있는녀석들 맛있는 녀석들 329회">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">YTN</strong>
+                      <p class="title">뉴스퀘어 2PM</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item3.png" alt="YTN 뉴스퀘어 2PM">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">TV CHOSUN</strong>
+                      <p class="title">사건파일 24</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item4.jpg" alt="TV CHOSUN 사건파일 24">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">현대홈쇼핑</strong>
+                      <p class="title">수카프 에메트 실버925 목걸이(210g)</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item5.jpg" alt="현대홈쇼핑 수카프 에메트 실버925 목걸이(210g)">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">SBS</strong>
+                      <p class="title">뉴스브리핑</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item6.png" alt="SBS 뉴스브리핑">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">공영 홈쇼핑</strong>
+                      <p class="title">[F_공익]__[공익] 제주메밀냉면+가파도청보리수제비 세트</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item7.jpg" alt="공영 홈쇼핑 제주메밀냉면+가파도청보리수제비 세트">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">MBC 무한도전</strong>
+                      <p class="title">[26 회] 김수로 특집 &#60;속아보길 바래&#62;</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item8.png" alt="MBC 무한도전 [26 회] 김수로 특집 &#60;속아보길 바래&#62;">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">연합뉴스 TV</strong>
+                      <p class="title">뉴스1번지</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item9.jpg" alt="연합뉴스 TV 뉴스1번지">
                     </div>
                   </a>
                 </li>
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel">SK스토아</strong>
+                      <p class="title">[클라시안](기획가) 클라시안 인견메쉬 한겹 낮잠 브라팬티(8종)</p>
                     </div>
                     <div class="image_box">
-                      <img src="./assets/images/img_channel_item1.jpg" alt="">
+                      <img src="./assets/images/img_channel_item10.png" alt="SK스토아 클라시안 인견메쉬 한겹 낮잠 브라팬티(8종)">
                     </div>
                   </a>
                 </li>
-            
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">W Music Story - HOT_ K_POP Music HOT_ K-Pop</strong>
+                      <p class="title">HOT! K_POP Music</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item11.jpg" alt="W Music Story HOT! K_POP Music">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">ANIMAX</strong>
+                      <p class="title">명탐정 코난10</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item12.jpg" alt="ANIMAX 명탐정 코난10">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KBS 1박 2일</strong>
+                      <p class="title">시즌1 MC몽 합류! - 가거도(1)</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item13.png" alt="KBS 1박 2일 시즌1 MC몽 합류! - 가거도(1)">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">레전드 시트콤</strong>
+                      <p class="title">웬만해선 그들을 막을 수 없다 19회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item14.png" alt="레전드 시트콤 웬만해선 그들을 막을 수 없다 19회">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KBS 사랑과전쟁</strong>
+                      <p class="title">사랑과 전쟁 시즌1 65회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item15.png" alt="KBS 사랑과전쟁 사랑과 전쟁 시즌1 65회">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">SBS 파워FM</strong>
+                      <p class="title">두시탈출 컬투쇼</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item16.png" alt="SBS 파워FM 두시탈출 컬투쇼">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">W Music Story - HOT_ Remix Music HOT_ K-Pop</strong>
+                      <p class="title">HOT! Remix Music</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item17.png" alt="W Music Story HOT! Remix Music">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">런닝맨</strong>
+                      <p class="title">런닝맨, 서울의 상징 ‘서울타워’를 점령하다!</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item18.png" alt="런닝맨 서울의 상징 ‘서울타워’를 점령하다!">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KBS 1TV</strong>
+                      <p class="title">이웃집 찰스</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item19.png" alt="KBS 1TV 이웃집 찰스">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">MBC 하이킥24 LIVE</strong>
+                      <p class="title">[지붕 뚫고 하이킥] [33회]</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item20.png" alt="MBC 하이킥24 LIVE [지붕 뚫고 하이킥] [33회]">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">MBC</strong>
+                      <p class="title">2시 뉴스 외전</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item21.png" alt="MBC 2시 뉴스 외전">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KISS - 최신인기가요</strong>
+                      <p class="title">함께 들어요 최신가요</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item22.jpg" alt="KISS - 최신인기가요 함께 들어요 최신가요">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">W Music Story - Ambient Music Ambient Music</strong>
+                      <p class="title">Ambient Music</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item23.png" alt="W Music Story Ambient Music">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KBS 사극</strong>
+                      <p class="title">태조 왕건 74회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item24.png" alt="KBS 사극 태조 왕건 74회">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">MBC 나 혼자 산다</strong>
+                      <p class="title">[467회] 나는 나의 길을 간다</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item25.png" alt="MBC 나 혼자 산다 [467회] 나는 나의 길을 간다">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KBS 주말명작</strong>
+                      <p class="title">왕가네 식구들 39회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item26.jpg" alt="KBS 주말명작 왕가네 식구들 39회">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">국회방송</strong>
+                      <p class="title">국회의사중계방송</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item27.png" alt="국회방송 국회의사중계방송">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">MBN 실제상황</strong>
+                      <p class="title">기막힌 이야기 실제상황 407회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item28.png" alt="MBN 실제상황 기막힌 이야기 실제상황 407회">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">MBN</strong>
+                      <p class="title">한 번쯤 이혼할 결심</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item29.png" alt="MBN 한 번쯤 이혼할 결심">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">현대홈쇼핑+샵</strong>
+                      <p class="title">[더블][크린바바] 한번에 싹 버블왕 (100개구성)</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item30.png" alt="현대홈쇼핑+샵 [더블][크린바바] 한번에 싹 버블왕 (100개구성)">
+                    </div>
+                  </a>
+                </li>
+                    <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">W Music Story - HOT! POP Music</strong>
+                      <p class="title">HOT! POP Music</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item31.jpg" alt="W Music Story HOT! POP Music">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">ANIMAX</strong>
+                      <p class="title">차징 탑스피너 BX</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item32.png" alt="ANIMAX 차징 탑스피너 BX">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">빽드</strong>
+                      <p class="title">야인시대 17회</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item33.jpg" alt="빽드 야인시대 17회">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">KISS - 탑골 K-POP</strong>
+                      <p class="title">정겨운 노래가 있는 오후</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item34.jpg" alt="KISS - 탑골 K-POP 정겨운 노래가 있는 오후">
+                    </div>
+                  </a>
+                </li>
+                <li class="channel_item">
+                  <a href="" class="link_item">
+                    <div class="text_box">
+                      <strong class="channel">한국경제TV</strong>
+                      <p class="title">성공투자 오후증시 2부</p>
+                    </div>
+                    <div class="image_box">
+                      <img src="./assets/images/img_channel_item35.jpg" alt="한국경제TV 성공투자 오후증시 2부">
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

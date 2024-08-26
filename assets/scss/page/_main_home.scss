@@ -1,14 +1,9 @@
-section {
-  &[class^="section_"]:not(.section_visual) {
-    padding-top: 56px;
+.image_box {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
   }
-}
-
-.title_wrap {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
 }
 
 .section_visual {
@@ -25,18 +20,13 @@ section {
 
   .text_box {
     display: none;
+    position: relative;
   }
 
   .image_box,
   .text_box {
-    position: relative;
     min-width: 1240px;
     padding-bottom: calc((508 / 1240) * 100%);
-
-    img {
-      position: absolute;
-      top: 0;
-    }
   }
 
   .swiper-slide-active .text_box {
@@ -50,17 +40,20 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
+    transform: translate(-50%, -50%);
+
     .slide_btn {
       width: 36px;
       height: 36px;
       background: url("../images/ico_pagination_arrow.png") no-repeat center /
         70px 70px;
     }
+
     .btn_prev {
       left: calc(76px / -2);
     }
+
     .btn_next {
       right: -38px;
     }
@@ -84,11 +77,13 @@ section {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.4;
+
     .swiper-pagination-current {
       color: #fff;
     }
     .swiper-pagination-total {
       color: hsla(0, 0%, 100%, 0.7);
+
       &::before {
         position: absolute;
         top: 50%;
@@ -110,16 +105,7 @@ section {
         max-height: 216px;
       }
       .image_box {
-        position: relative;
         padding-bottom: calc((106 / 189) * 100%);
-        img {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          object-position: top;
-          object-fit: cover;
-        }
       }
     }
     &_portrait {
@@ -127,16 +113,7 @@ section {
         max-height: 360px;
       }
       .image_box {
-        position: relative;
         padding-bottom: calc((280 / 189) * 100%);
-        img {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: top;
-        }
       }
     }
 
@@ -153,6 +130,7 @@ section {
       transition: max-height 0.3s ease-out;
       visibility: visible;
       opacity: 1;
+
       &.is_hidden {
         max-height: 0;
         padding: 0;
@@ -165,10 +143,14 @@ section {
       max-width: 200px;
       margin-top: 14px;
       text-align: left;
-      line-height: 24px;
       font-weight: normal;
+      line-height: 24px;
       @include ellipse(2);
     }
+  }
+  .link_item {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .more_btn {
@@ -177,20 +159,17 @@ section {
 }
 
 .section_event {
+  .event_area,
+  .event_link {
+    position: relative;
+  }
   .event {
-    &_area {
-      position: relative;
-    }
-    &_link {
-      position: relative;
-    }
-
     &_title {
       max-width: 220px;
       min-height: 58px;
       margin-top: 12px;
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 500;
       line-height: 29px;
       @include ellipse(2);
     }
@@ -203,20 +182,13 @@ section {
   }
 
   .image_box {
-    position: relative;
     padding-bottom: calc((169 / 391) * 100%);
-    img {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
   }
+
   .text_box {
     position: absolute;
     top: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -224,23 +196,18 @@ section {
       display: block;
       width: 80px;
       height: 32px;
-      background: url("../images/ico_label_ongoing.png") no-repeat;
-      background-size: contain;
+      background: url("../images/ico_label_ongoing.png") no-repeat center /
+        contain;
       content: "";
     }
   }
 
-  .is_ended {
-    .text_box {
-      &::before {
-        display: block;
-        width: 80px;
-        height: 32px;
-        background: url("../images/ico_label_end.png") no-repeat;
-        background-size: contain;
-        content: "";
-      }
-    }
+  .is_ended .text_box::before {
+    display: block;
+    width: 80px;
+    height: 32px;
+    background: url("../images/ico_label_end.png") no-repeat center / contain;
+    content: "";
   }
 }
 
@@ -250,15 +217,6 @@ section {
   }
   .image_box {
     padding-bottom: calc((280 / 189) * 100%);
-    position: relative;
-
-    img {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 }
 
@@ -270,7 +228,6 @@ section {
   }
 
   .image_box {
-    overflow: hidden;
     width: 88px;
     height: 88px;
     padding: 5px;
@@ -278,11 +235,12 @@ section {
     border-radius: 50%;
 
     img {
+      top: 5px;
       width: 74px;
       height: 74px;
-      object-fit: cover;
     }
   }
+
   .slide {
     &_link {
       display: flex;
@@ -293,13 +251,9 @@ section {
     }
 
     &_time_box {
-      height: 19px;
-      margin-top: 2px;
       line-height: 19px;
-      time,
-      span {
+      .time {
         font-size: 13px;
-        color: #8b8d91;
       }
     }
   }
@@ -332,12 +286,12 @@ section {
     transform: translateY(-50%);
     width: 16px;
     height: 16px;
-    background: url("../images/ico_view_more.png") no-repeat;
-    background-size: contain;
-    vertical-align: bottom;
+    background: url("../images/ico_view_more.png") no-repeat center / contain;
     content: "";
   }
-  &.is_hidden {
+  &[aria-expanded="true"] {
     display: none;
+  }
+  &.is_hidden {
   }
 }

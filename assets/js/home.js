@@ -64,16 +64,8 @@ createSwiper(".section_artist .artist_area .swiper", {
 });
 
 
-const pushButtons = document.querySelectorAll(".push_notification_btn");
-const selectBoxes = document.querySelectorAll(".select_box");
 const uploadMoreBtn = document.querySelectorAll(".more_btn");
 
-pushButtons.forEach((pushButton) => {
-  pushButton.onclick = (e) => {
-    const isPressed = pushButton.getAttribute("aria-pressed") === "true";
-    pushButton.setAttribute("aria-pressed", !isPressed);
-  };
-});
 
 uploadMoreBtn.forEach((btn) => {
   btn.onclick = (e) => {
@@ -83,24 +75,7 @@ uploadMoreBtn.forEach((btn) => {
         item.classList.remove("is_hidden");
       }
     });
-    e.target.previousElementSibling.ariaExpanded = "true";
-    e.target.classList.add("is_hidden");
+    e.target.ariaExpanded = "true";
   };
 });
 
-selectBoxes.forEach((selectBox) => {
-  const selectBtn = selectBox.querySelector(".option_title");
-  const optionButtons = selectBox.querySelectorAll('button[role="option"]');
-
-  selectBtn.onclick = (e) => {
-    e.target.ariaExpanded =
-      e.target.ariaExpanded === "false" ? "true" : "false";
-  };
-
-  optionButtons.forEach((button) => {
-    button.onclick = (e) => {
-      optionButtons.forEach((btn) => (btn.ariaSelected = "false"));
-      e.target.ariaSelected = "true";
-    };
-  });
-});

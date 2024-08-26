@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/home_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   </head>
-  <body>
+  <body class="scroll_hide">
     <div class="wrap">
       <div class="skip">
         <a href="#main">본문 바로가기</a>
@@ -48,7 +48,35 @@
         </div>
       </header>
       <main id="main" class="container">
+        <div class="pop_up_box is_active" role="dialog" >
+          <div class="pop_up">
+            <strong class="headline">구현한 페이지 안내</strong>
+            <ul class="page_list">
+              <li class="page_item">
+                <strong class="title">메인페이지</strong>
+                <p class="title_desc">헤더의 로고를 클릭하면 이동됩니다.</p>
+              </li>
+              <li class="page_item">
+                <strong class="title">LIVE 페이지</strong>
+                <p class="title_desc">전체 채널들의 생방송 리스트가 보여지는 페이지</p>
+                <p class="desc">* 헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
+              </li>
+              <li class="page_item">
+                <strong class="title">LIVE 상세 페이지</strong> 
+                <p class="title_desc">클릭한 생방송의 상세 페이지</p>
+                <p class="desc">* LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.</p>
+              </li>
+              <li class="page_item">
+                <strong class="title">이용권 페이지</strong> 
+                <p class="title_desc">쿠폰 페이지</p>
+                <p class="desc">* 헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면 이동됩니다.</p> 
+              </li>
+            </ul>
+            <button type="button" class="btn_close_pop_up" aria-label="팝업닫기" aria-expanded="true"></button>
+          </div>
+        </div>
       <section class="section_visual">
+        <h2 class="blind">추천 콘텐츠</h2>
         <div class="swiper">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
@@ -120,267 +148,265 @@
             <div class="select_wrap">
               <div class="select_box">
                 <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="option_title"  aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_1">전체장르</button>
+                <button type="button" class="select_title"  aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_1">전체장르</button>
                 <ul class="option_list" role="listbox" id="genre_1">
                   <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="true">전체장르</button>
+                    <button type="button" role="option" class="option_title" aria-selected="true">전체장르</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">로맨틱</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">코메디</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">추리</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">범죄</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">스릴러</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">가족</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">가족</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">무협</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">무협</button>
                   </li>
                 </ul>
               </div>
               <div class="select_box">
                   <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="option_title"  aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_1">추천</button>
+                <button type="button" class="select_title"  aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_1">추천</button>
                 <ul class="option_list" role="listbox" id="recommend_1">
                   <li class="option" role="none">
                     <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                    <button type="button" role="option" aria-selected="true">전체장르</button>
+                    <button type="button" role="option" class="option_title" aria-selected="true">전체장르</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">로맨틱</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">코메디</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">추리</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">범죄</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">스릴러</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">가족</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">가족</button>
                   </li>
                   <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">무협</button>
+                    <button type="button" role="option" class="option_title" aria-selected="false">무협</button>
                   </li>
                 </ul>
               </div>
             </div>
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 li들 중에 붙어있던 .is_hidden 이라는 className 이 제거  -->
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 aria-expanded 값이 true 로 변경 -->
-            <ul class="upload_list upload_landscape" aria-expanded="false">
+            <ul id="upload_landscape" class="upload_list upload_landscape" >
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item1.png" loading="lazy" width="189" height="106" alt="괴물">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">괴물</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item1.png" loading="lazy" width="189" height="106" alt="괴물 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
+                <a href="" class="link_item">
+                  <strong class="upload_title">과속 스캔들</strong>
                   <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item2.png" loading="lazy" width="189" height="106" alt="과속 스캔들">
+                    <img src="./assets/images/img_update_landscape_item2.png" loading="lazy" width="189" height="106" alt="과속 스캔들 포스터">
                   </div>
-                  <strong class="upload_title">
-                    과속 스캔들
-                  </strong>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item3.png" loading="lazy" width="189" height="106" alt="잠복근무">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">잠복근무</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item3.png" loading="lazy" width="189" height="106" alt="잠복근무 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item4.png" loading="lazy" width="189" height="106" alt="금지된 장난">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">금지된 장난</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item4.png" loading="lazy" width="189" height="106" alt="금지된 장난 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item5.png" loading="lazy" width="189" height="106" alt="라라랜드">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">라라랜드</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item5.png" loading="lazy" width="189" height="106" alt="라라랜드 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item6.png" loading="lazy" width="189" height="106" alt="스트롱거">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">스트롱거</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item6.png" loading="lazy" width="189" height="106" alt="스트롱거 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item7.png" loading="lazy" width="189" height="106" alt="씽2">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">씽2</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item7.png" loading="lazy" width="189" height="106" alt="씽2 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item8.png" loading="lazy" width="189" height="106" alt="레버넌트">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">레버넌트</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item8.png" loading="lazy" width="189" height="106" alt="레버넌트 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item9.png" loading="lazy" width="189" height="106" alt="블레어 윗치">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">블레어 윗치</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item9.png" loading="lazy" width="189" height="106" alt="블레어 윗치 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item10.png" loading="lazy" width="189" height="106" alt="난 엄청 창의적인 휴머니트스 뱀파이어가 될거야">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">난 엄청 창의적인 휴머니트스 뱀파이어가 될거야</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item10.png" loading="lazy" width="189" height="106" alt="난 엄청 창의적인 휴머니트스 뱀파이어가 될거야 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item11.png" loading="lazy" width="189" height="106" alt="교토에서 온 편지">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">교토에서 온 편지</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item11.png" loading="lazy" width="189" height="106" alt="교토에서 온 편지 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item12.png" loading="lazy" width="189" height="106" alt="라스트 썸머">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">라스트 썸머</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item12.png" loading="lazy" width="189" height="106" alt="라스트 썸머 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item13.png" loading="lazy" width="189" height="106" alt="퀸 엘리자베스">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">퀸 엘리자베스</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item13.png" loading="lazy" width="189" height="106" alt="퀸 엘리자베스 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item14.png" loading="lazy" width="189" height="106" alt="내 연애의 기억">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">내 연애의 기억</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item14.png" loading="lazy" width="189" height="106" alt="내 연애의 기억 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item15.png" loading="lazy" width="189" height="106" alt="목화솜 피는날">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">목화솜 피는날</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item15.png" loading="lazy" width="189" height="106" alt="목화솜 피는날 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item16.png" loading="lazy" width="189" height="106" alt="무서운 이야기2">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">무서운 이야기2</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item16.png" loading="lazy" width="189" height="106" alt="무서운 이야기2 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item17.png" loading="lazy" width="189" height="106" alt="시라노 연애조작단">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">시라노 연애조작단</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item17.png" loading="lazy" width="189" height="106" alt="시라노 연애조작단 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item18.png" loading="lazy" width="189" height="106" alt="패밀리맨">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">패밀리맨</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item18.png" loading="lazy" width="189" height="106" alt="패밀리맨 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item19.png" loading="lazy" width="189" height="106" alt="기괴도">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">기괴도</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item19.png" loading="lazy" width="189" height="106" alt="기괴도 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item20.png" loading="lazy" width="189" height="106" alt="모든 감각이 깨어나는 순간">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">모든 감각이 깨어나는 순간</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item20.png" loading="lazy" width="189" height="106" alt="모든 감각이 깨어나는 순간 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item21.png" loading="lazy" width="189" height="106" alt="원티드 맨">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">원티드 맨</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item21.png" loading="lazy" width="189" height="106" alt="원티드 맨 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item22.png" loading="lazy" width="189" height="106" alt="코펜하겐">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">코펜하겐</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item22.png" loading="lazy" width="189" height="106" alt="코펜하겐 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item23.png" loading="lazy" width="189" height="106" alt="은교">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">은교</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item23.png" loading="lazy" width="189" height="106" alt="은교 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_landscape_item24.png" loading="lazy" width="189" height="106" alt="소원">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">소원</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_landscape_item24.png" loading="lazy" width="189" height="106" alt="소원 포스터">
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- [D] .more_btn 을 클릭하면 해당 요소 사라짐   -->
-            <button type="button" class="more_btn">더보기</button>
+            <button type="button" class="more_btn" aria-expanded="false" aria-controls="upload_landscape">더보기</button>
           </div>
         </section>
         <section class="section_upload">
@@ -392,7 +418,7 @@
             <div class="select_wrap">
               <div class="select_box">
                 <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="option_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
+                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
                 <ul class="option_list" role="listbox" id="genre_2">
                   <li class="option" role="none">
                     <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
@@ -423,7 +449,7 @@
               </div>
               <div class="select_box">
                 <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="option_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_2">추천</button>
+                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_2">추천</button>
                 <ul class="option_list" role="listbox" id="recommend_2">
                   <li class="option" role="none">
                     <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
@@ -455,204 +481,203 @@
             </div>
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 li들 중에 붙어있던 .is_hidden 이라는 className 이 제거  -->
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 aria-expanded 값이 true 로 변경 -->
-            <ul class="upload_list upload_portrait" aria-expanded="false">
+            <ul id="upload_portrait" class="upload_list upload_portrait">
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item1.png" loading="lazy" width="189" height="280" alt="수지맞은 우리">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">수지맞은 우리</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item1.png" loading="lazy" width="189" height="280" alt="수지맞은 우리 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
+                <a href="" class="link_item">
+                  <strong class="upload_title">용감무쌍 용수정</strong>
                   <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item2.png" loading="lazy" width="189" height="280" alt="용감무쌍 용수정">
+                    <img src="./assets/images/img_update_portrait_item2.png" loading="lazy" width="189" height="280" alt="용감무쌍 용수정 포스터">
                   </div>
-                  <strong class="upload_title">
-                    용감무쌍 용수정
-                  </strong>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item3.png" loading="lazy" width="189" height="280" alt="굿파트너">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">굿파트너</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item3.png" loading="lazy" width="189" height="280" alt="굿파트너 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item4.png" loading="lazy" width="189" height="280" alt="백설공주에게 죽음을">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">백설공주에게 죽음을</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item4.png" loading="lazy" width="189" height="280" alt="백설공주에게 죽음을 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item5.png" loading="lazy" width="189" height="280" alt="나쁜기억 지우개">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">나쁜기억 지우개</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item5.png" loading="lazy" width="189" height="280" alt="나쁜기억 지우개 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item6.png" loading="lazy" width="189" height="280" alt="미녀와 순정남">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">미녀와 순정남</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item6.png" loading="lazy" width="189" height="280" alt="미녀와 순정남 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item7.png" loading="lazy" width="189" height="280" alt="커넥션">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">커넥션</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item7.png" loading="lazy" width="189" height="280" alt="커넥션 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item8.png" loading="lazy" width="189" height="280" alt="연인">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">연인</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item8.png" loading="lazy" width="189" height="280" alt="연인 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item9.png" loading="lazy" width="189" height="280" alt="DNA러버">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title"></strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item9.png" loading="lazy" width="189" height="280" alt="DNA러버 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item10.png" loading="lazy" width="189" height="280" alt="모범택시2">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">모범택시2</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item10.png" loading="lazy" width="189" height="280" alt="모범택시2 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
+                <a href="" class="link_item">
+                  <strong class="upload_title">모범택시1</strong>
                   <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item11.png" loading="lazy" width="189" height="280" alt="모범택시1">
+                    <img src="./assets/images/img_update_portrait_item11.png" loading="lazy" width="189" height="280" alt="모범택시1 포스터">
                   </div>
-                  <strong class="upload_title">모범택시2</strong>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item12.png" loading="lazy" width="189" height="280" alt="왔다 장보리">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">왔다 장보리</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item12.png" loading="lazy" width="189" height="280" alt="왔다 장보리 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item13.png" loading="lazy" width="189" height="280" alt="너를 기억해">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">너를 기억해</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item13.png" loading="lazy" width="189" height="280" alt="너를 기억해 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item14.png" loading="lazy" width="189" height="280" alt="내 이름은 김삼순">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">내 이름은 김삼순</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item14.png" loading="lazy" width="189" height="280" alt="내 이름은 김삼순 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item15.png" loading="lazy" width="189" height="280" alt="VIP">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">VIP</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item15.png" loading="lazy" width="189" height="280" alt="VIP 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item16.png" loading="lazy" width="189" height="280" alt="스토브리그">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">스토브리그</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item16.png" loading="lazy" width="189" height="280" alt="스토브리그 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item17.png" loading="lazy" width="189" height="280" alt="투깝스">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">투깝스</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item17.png" loading="lazy" width="189" height="280" alt="투깝스 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item18.png" loading="lazy" width="189" height="280" alt="오월의 청춘">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">오월의 청춘</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item18.png" loading="lazy" width="189" height="280" alt="오월의 청춘 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item19.png" loading="lazy" width="189" height="280" alt="완벽한 가족">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">완벽한 가족</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item19.png" loading="lazy" width="189" height="280" alt="완벽한 가족 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item20.png" loading="lazy" width="189" height="280" alt="악귀">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">악귀</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item20.png" loading="lazy" width="189" height="280" alt="악귀 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item21.png" loading="lazy" width="189" height="280" alt="악의 마음을 읽는자들">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">악의 마음을 읽는자들의 완벽한 가족의 너를 기억하기 위한 백설공주에게 죽음을</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item21.png" loading="lazy" width="189" height="280" alt="악의 마음을 읽는자들 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item22.png" loading="lazy" width="189" height="280" alt="오 마이 비너스">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">오 마이 비너스</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item22.png" loading="lazy" width="189" height="280" alt="오 마이 비너스 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item23.png" loading="lazy" width="189" height="280" alt="최고의 사랑">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">최고의 사랑</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item23.png" loading="lazy" width="189" height="280" alt="최고의 사랑 포스터">
+                  </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
-                <a href="#">
-                  <div class="image_box">
-                    <img src="./assets/images/img_update_portrait_item24.png" loading="lazy" width="189" height="280" alt="광개토대왕">
-                  </div>
+                <a href="" class="link_item">
                   <strong class="upload_title">광개토대왕</strong>
+                  <div class="image_box">
+                    <img src="./assets/images/img_update_portrait_item24.png" loading="lazy" width="189" height="280" alt="광개토대왕 포스터">
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- [D] .more_btn 을 클릭하면 해당 요소 사라짐   -->
-            <button type="button" class="more_btn">더보기</button>
+            <button type="button" class="more_btn" 
+            aria-expanded="false" aria-controls="upload_portrait">더보기</button>
           </div>
         </section>
         <section class="section_event">
@@ -666,67 +691,67 @@
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
                     <a href="#" class="event_link">
-                      <div class="image_box">
-                        <img src="./assets/images/img_event_item1.png" alt="자산어보 이벤트">
-                      </div>
                       <div class="text_box">
                         <strong class="event_title">인사이드 아웃2<br>론칭 프로모션	</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
+                      </div>
+                      <div class="image_box">
+                        <img src="./assets/images/img_event_item1.png" alt="인사이드 아웃 2 영화 포스터: 주요 캐릭터와 론칭 프로모션 안내">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="#" class="event_link">
-                      <div class="image_box">
-                        <img src="./assets/images/img_event.png" alt="자산어보 이벤트">
-                      </div>
                       <div class="text_box">
                         <strong class="event_title">웨이브 이용권 할인 이벤트</strong>
                         <p class="event_desc">상시 진행중</p>
+                      </div>
+                      <div class="image_box">
+                        <img src="./assets/images/img_event.png" alt="웨이브 이용권 할인 이벤트">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide is_ended">
                     <a href="#" class="event_link">
-                      <div class="image_box">
-                        <img src="./assets/images/img_event_item2.png" alt="자산어보 이벤트">
-                      </div>
                       <div class="text_box">
                         <strong class="event_title">콰이어트 플레이스:첫째날 론칭 프로모션</strong>
                         <p class="event_desc">기간 : 2024.07.01.</p>
                       </div>
+                      <div class="image_box">
+                        <img src="./assets/images/img_event_item2.png" alt="콰이어트 플레이스 첫째 날 영화 포스터: '모든 소리가 사라진 첫째 날'이라는 문구가 보임트">
+                      </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="#" class="event_link">
-                      <div class="image_box">
-                        <img src="./assets/images/img_event_item3.png" alt="자산어보 이벤트">
-                      </div>
                       <div class="text_box">
                         <strong class="event_title">혹성탈출: 새로운시대 <br>론칭 프로모션</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
+                      <div class="image_box">
+                        <img src="./assets/images/img_event_item3.png" alt="혹성탈출 새로운 시대 영화 포스터: 푸른 자연 속 캐릭터가 말을 타고 있는 모습">
+                      </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="#" class="event_link">
-                      <div class="image_box">
-                        <img src="./assets/images/img_event_item4.png" alt="자산어보 이벤트">
-                      </div>
                       <div class="text_box">
                         <strong class="event_title">데드풀과 울버린<br>개봉 기념 마블 프로모션</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
+                      <div class="image_box">
+                        <img src="./assets/images/img_event_item4.png" alt="데드풀과 울버린 영화 포스터: 두 개의 칼을 들고 있는 데드풀 캐릭터">
+                      </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="#" class="event_link">
-                      <div class="image_box">
-                        <img src="./assets/images/img_event_item5.png" alt="자산어보 이벤트">
-                      </div>
                       <div class="text_box">
                         <strong class="event_title">퓨리오사: 매드맥스 사가<br>론칭 프로모션</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
+                      </div>
+                      <div class="image_box">
+                        <img src="./assets/images/img_event_item5.png" alt="퓨리오사 매드맥스 사가 영화 포스터: 여전사 퓨리오사 배경의 황야 풍경">
                       </div>
                     </a>
                   </li>
@@ -797,9 +822,8 @@
                       <div class="text_box">
                         <strong class="artist_title">박명수의 라디오쇼</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T18:00">PM 11:00</time>
-                          <span>~</span>
-                          <time datetime="2024-06-03T18:25">11:57</time>
+                          <time datetime="2024-06-03T23:00" class="time">PM 11:00</time>
+                          <time datetime="2024-06-03T23:57" class="time">11:57</time>
                         </div>
                       </div>
                     </a>
@@ -812,9 +836,8 @@
                       <div class="text_box">
                         <strong class="artist_title">김신영의 정오의 희망곡</strong>
                         <div class="slide_time_box">
-                         <time datetime="2024-06-03T18:00">PM 12:00</time>
-                          <span>~</span>
-                          <time datetime="2024-06-03T18:25">02:00</time>
+                          <time datetime="2024-06-03T12:00" class="time">PM 12:00</time>
+                          <time datetime="2024-06-03T14:00" class="time">02:00</time>
                         </div>
                       </div>
                     </a>
@@ -827,9 +850,8 @@
                       <div class="text_box">
                         <strong class="artist_title">두시탈출 컬투쇼</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T18:00">PM 02:00</time>
-                          <span>~</span>
-                          <time datetime="2024-06-03T18:25">04:00</time>
+                          <time datetime="2024-06-03T14:00" class="time">PM 02:00</time>
+                          <time datetime="2024-06-03T16:00" class="time">04:00</time>
                         </div>
                       </div>
                     </a>
@@ -842,9 +864,8 @@
                       <div class="text_box">
                         <strong class="artist_title">황제성의 황제파워</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T18:00">PM 04:00</time>
-                          <span>~</span>
-                          <time datetime="2024-06-03T18:25">06:00</time>
+                          <time datetime="2024-06-03T16:00" class="time">PM 04:00</time>
+                          <time datetime="2024-06-03T18:00" class="time">06:00</time>
                         </div>
                       </div>
                     </a>
@@ -857,9 +878,8 @@
                       <div class="text_box">
                         <strong class="artist_title">배성재의 텐</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T18:00">PM 10:00</time>
-                          <span>~</span>
-                          <time datetime="2024-06-03T18:25">11:00</time>
+                          <time datetime="2024-06-03T22:00" class="time">PM 10:00</time>
+                          <time datetime="2024-06-03T23:00" class="time">11:00</time>
                         </div>
                       </div>
                     </a>

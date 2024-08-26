@@ -1,25 +1,12 @@
-section {
-  &[class^="section_"]:not(.section_content) {
-    padding-top: 56px;
-    background-color: #121212;
-  }
-}
-.title_wrap {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
 .section_content {
-  .image {
-    &_wrap {
-      background: #000;
-    }
+  .image_wrap {
+    background: #000;
   }
+
   .inner {
     position: relative;
   }
+
   .play_btn {
     position: absolute;
     top: 50%;
@@ -31,8 +18,7 @@ section {
       display: block;
       width: 100%;
       height: 100%;
-      background: url("../images/ico_play.png") no-repeat;
-      background-size: contain;
+      background: url("../images/ico_play.png") no-repeat center / contain;
       content: "";
     }
   }
@@ -41,9 +27,11 @@ section {
     &_box {
       padding-top: 32px;
       background-color: #121212;
-      p {
-        font-size: 18px;
-      }
+    }
+
+    &_mc,
+    &_cast {
+      font-size: 18px;
     }
 
     &_cast {
@@ -68,26 +56,20 @@ section {
 
   .time_box {
     margin-bottom: 24px;
-    time,
-    span {
-      color: #8b8d91;
-    }
-    time {
-      display: inline-block;
+    .time {
+      font-size: 16px;
     }
   }
 
   .util {
+    &_btn_wrap {
+      position: absolute;
+      right: 42px;
+      top: 0;
+    }
+
     &_btn {
       cursor: pointer;
-      &:not(&:first-of-type) {
-        margin-left: 32px;
-      }
-      &_wrap {
-        position: absolute;
-        right: 42px;
-        top: 0;
-      }
       &:before {
         display: block;
         width: 100%;
@@ -95,25 +77,36 @@ section {
         content: "";
       }
     }
+
     &_desc {
       display: block;
       margin-top: 2px;
+      color: rgba(255, 255, 255, 0.6);
       font-size: 13px;
       line-height: 1.462;
-      color: rgba(255, 255, 255, 0.6);
     }
+
     &_like {
       &:before {
         background: url("../images/ico_like.png") no-repeat center / 30px 30px;
       }
+      &[aria-pressed="true"] {
+        &::before {
+          background: url("../images/ico_like_active.png") no-repeat center /
+            30px 30px;
+        }
+      }
     }
+
     &_share {
+      margin: 0 32px;
       &:before {
         background: url("../images/ico_share.png") no-repeat center / 34px 34px;
       }
     }
     &_calendar {
-      &:before {
+      display: inline-block;
+      &::before {
         background: url("../images/ico_schedule.png") no-repeat center / 34px
           34px;
       }
@@ -136,9 +129,29 @@ section {
       position: relative;
       height: 96px;
       padding: 20px;
-      border-right: 1px solid #3a3b3c;
-      border-top: 1px solid #3a3b3c;
-      border-bottom: 1px solid #3a3b3c;
+      border: 1px solid #3a3b3c;
+      border-left: 0;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        .push_notification_btn {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        align-items: center;
+        gap: 20px;
+        background-color: rgba(2, 45, 185, 0.2);
+
+        .slide_status {
+          display: flex;
+        }
+      }
+
+      &:nth-child(n + 4) {
+        border-left: 0;
+      }
 
       .push_notification_btn {
         display: block;
@@ -149,35 +162,13 @@ section {
         cursor: pointer;
 
         &[aria-pressed="false"] {
-          background: url("../images/ico_alarm_off.png") no-repeat;
-          background-size: contain;
+          background: url("../images/ico_alarm_off.png") no-repeat center /
+            contain;
         }
         &[aria-pressed="true"] {
-          background: url("../images/ico_alarm_on.png") no-repeat;
-          background-size: contain;
+          background: url("../images/ico_alarm_on.png") no-repeat center /
+            contain;
         }
-      }
-
-      &:nth-child(1) {
-        .push_notification_btn {
-          display: none;
-        }
-      }
-      &:nth-child(2) {
-        align-items: center;
-        gap: 20px;
-        background-color: rgba(2, 45, 185, 0.2);
-
-        .push_notification_btn {
-          display: none;
-        }
-        .slide_status {
-          display: flex;
-        }
-      }
-      &:nth-child(n + 4) {
-        border-right: 1px solid #3a3b3c;
-        border-left: 0;
       }
     }
   }
@@ -217,10 +208,8 @@ section {
     }
     &_time_box {
       margin-top: 4px;
-      font-size: 14px;
-      time,
-      span {
-        color: #8a8d91;
+      .time {
+        font-size: 14px;
         line-height: 20px;
       }
     }
@@ -281,89 +270,9 @@ section {
     }
   }
 
-  .select {
-    &_box {
-      position: relative;
-      z-index: 1;
-      width: 168px;
-      margin: 20px 0;
-      margin-left: auto;
-      font-size: 0;
-
-      .option {
-        width: 100%;
-        height: 0;
-        max-width: 120px;
-        padding-left: 10px;
-        font-size: 14px;
-        text-align: left;
-        line-height: 20px;
-
-        button {
-          height: 0;
-          cursor: pointer;
-          &[aria-selected="false"] {
-            color: #8a8d91;
-          }
-        }
-
-        &:last-of-type {
-          padding-bottom: 0;
-        }
-
-        &_title {
-          position: relative;
-          width: 100%;
-          height: 52px;
-          padding-left: 20px;
-          border-radius: 3px;
-          background-color: #242526;
-          font-size: 14px;
-          text-align: left;
-          cursor: pointer;
-          &:after {
-            position: absolute;
-            top: 50%;
-            right: 14px;
-            transform: translateY(-50%);
-            width: 14px;
-            height: 8.4px;
-            background: url("../images/ico_dropdown.png") no-repeat;
-            background-size: cover;
-            background-position: center;
-            content: "";
-          }
-
-          &[aria-expanded="true"] {
-            &::after {
-              transform: rotate(180deg) translateY(50%);
-            }
-            & + .option_list {
-              height: 246px;
-              padding: 13px 38px 13px 10px;
-              visibility: visible;
-              opacity: 1;
-              .option {
-                height: auto;
-                padding-bottom: 20px;
-              }
-            }
-          }
-        }
-        &_list {
-          overflow-y: auto;
-          position: absolute;
-          width: 100%;
-          height: 0;
-          max-height: 246px;
-          margin-top: 4px;
-          background-color: #242526;
-          transition: height 0.3s, opacity 0.2s;
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
-    }
+  .select_box {
+    margin: 20px 0;
+    margin-left: auto;
   }
 
   .channel_list {
@@ -372,6 +281,7 @@ section {
     gap: 10px;
     width: 100%;
   }
+
   .link_item {
     display: flex;
     flex-direction: column-reverse;
@@ -387,19 +297,24 @@ section {
       }
     }
   }
+
   .text_box {
     padding: 8px 0 12px 0;
   }
+
   .channel {
+    display: block;
     margin-bottom: 4px;
+    color: #a5a5a5;
     font-size: 16px;
     font-weight: normal;
-    color: #a5a5a5;
     line-height: 24px;
+    @include ellipse(1);
   }
+
   .title {
-    font-size: 14px;
     color: #a5a5a5;
+    font-size: 14px;
     line-height: 20px;
   }
 }

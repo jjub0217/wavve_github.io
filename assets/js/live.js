@@ -19,6 +19,8 @@ const scheduleVisual = new Swiper(".section_schedule .swiper", {
 });
 
 const tabItems = document.querySelectorAll(".tab_item");
+const pushButtons = document.querySelectorAll(".push_notification_btn");
+const utilLike = document.querySelector(".util_like");
 
 tabItems.forEach((item) => {
   item.onclick = (e) => {
@@ -34,3 +36,16 @@ tabItems.forEach((item) => {
     });
   };
 });
+
+
+
+pushButtons.forEach((pushButton) => {
+  pushButton.onclick = (e) => {
+    const isPressed = pushButton.getAttribute("aria-pressed") === "true";
+    pushButton.setAttribute("aria-pressed", !isPressed);
+  };
+});
+
+utilLike.onclick = (e) => {
+   e.target.ariaPressed = e.target.ariaPressed === "false" ? "true" : "false";
+}

@@ -1,3 +1,7 @@
+.scroll_hide {
+  overflow: hidden;
+}
+
 .skip {
   position: absolute;
   top: -1px;
@@ -5,23 +9,23 @@
   width: 100%;
   z-index: 4;
   a {
-    background-color: #ccc;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translateY(-100%);
+    width: 100%;
+    background-color: #ccc;
 
     &:focus,
     &:active {
       transform: translateY(0);
+      padding: 10px 0;
       background-color: #000;
       color: #fff;
       text-align: center;
-      padding: 10px 0;
     }
   }
 }
@@ -39,13 +43,109 @@
   min-width: 1280px;
 }
 
+section {
+  &[class^="section_"]:not(.section_visual) {
+    padding-top: 56px;
+  }
+}
+
 .container {
-  padding-top: 72px;
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 170px);
+}
+
+.title_wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.pop_up_box {
+  display: none;
+}
+
+.pop_up_box.is_active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+
+  .pop_up {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 508px;
+    height: 600px;
+    padding: 80px 20px 30px;
+    border-radius: 12px;
+    background: url("../images/img_popup_background.png") no-repeat center /
+      cover;
+    text-align: center;
+  }
+
+  .headline {
+    padding-bottom: 5px;
+    font-size: 30px;
+  }
+
+  .page_list {
+    padding: 30px 0 0 20px;
+    list-style: disc;
+  }
+
+  .page_item {
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  .title {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+
+    &:after {
+      display: block;
+      height: 1px;
+      background: #fff;
+      content: "";
+    }
+
+    &_desc {
+      padding-top: 5px;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  .desc {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+  }
+
+  .btn_close_pop_up {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    border: 1px solid;
+
+    &::before {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url("../images/btn_close_popup.png") no-repeat center / cover;
+      content: "";
+    }
+  }
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -59,6 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
   }
 
   &.js_bg {
@@ -80,10 +181,11 @@
 
   &_item {
     min-width: 17.42px;
+    color: #a5a5a5;
     font-size: 18px;
     font-weight: 500;
     line-height: 72px;
-    color: #a5a5a5;
+
     &:hover,
     &.is_active {
       position: relative;
@@ -98,10 +200,12 @@
     align-items: center;
     gap: 8px;
   }
+
   &_link {
     width: 40px;
     height: 40px;
     padding: 8px;
+
     &::before {
       display: block;
       width: 24px;
@@ -109,22 +213,19 @@
       content: "";
     }
   }
-  &_promotion {
-    position: relative;
-    &:before {
-      background: url("../images/ico_promotion.png") no-repeat;
-      background-size: contain;
-    }
+
+  &_promotion:before {
+    background: url("../images/ico_promotion.png") no-repeat center / contain;
   }
+
   &_coupon {
-    position: relative;
     &::before {
-      background: url("../images/ico_coupon.png") no-repeat;
-      background-size: contain;
+      background: url("../images/ico_coupon.png") no-repeat center / contain;
     }
     &:hover {
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.1);
+
       &:after {
         display: inline-block;
         position: absolute;
@@ -135,20 +236,16 @@
         height: 27px;
         border-radius: 2px;
         background-color: rgba(75, 76, 79, 0.9);
-        font-size: 13px;
         color: #fff;
+        font-size: 13px;
         text-align: center;
         line-height: 27px;
         content: "이용권";
       }
     }
   }
-  &_search {
-    position: relative;
-    &::before {
-      background: url("../images/Ico_search.png") no-repeat;
-      background-size: contain;
-    }
+  &_search::before {
+    background: url("../images/Ico_search.png") no-repeat center / contain;
   }
 }
 
@@ -157,8 +254,8 @@
   height: 32px;
   border-radius: 2px;
   background-color: #012cb9;
-  font-size: 16px;
   color: #ffffff;
+  font-size: 16px;
   text-align: center;
   line-height: 32px;
 }
@@ -176,72 +273,29 @@
     align-items: center;
     column-gap: 12px;
   }
+
   &_box {
     position: relative;
     z-index: 1;
     width: 168px;
     margin-bottom: 24px;
-    font-size: 0;
 
     .option {
       width: 100%;
-      height: 0;
       max-width: 120px;
       padding-left: 10px;
       font-size: 14px;
       text-align: left;
       line-height: 20px;
-      button {
-        height: 0;
-        cursor: pointer;
-        &[aria-selected="false"] {
-          color: #8a8d91;
-        }
-      }
 
       &:last-of-type {
         padding-bottom: 0;
       }
 
-      &_title {
-        position: relative;
-        width: 100%;
-        height: 52px;
-        padding-left: 20px;
-        border-radius: 3px;
-        background-color: #242526;
-        font-size: 14px;
-        text-align: left;
-        cursor: pointer;
-        &:after {
-          position: absolute;
-          top: 50%;
-          right: 14px;
-          transform: translateY(-50%);
-          width: 14px;
-          height: 8.4px;
-          background: url("../images/ico_dropdown.png") no-repeat;
-          background-size: cover;
-          background-position: center;
-          content: "";
-        }
-
-        &[aria-expanded="true"] {
-          &::after {
-            transform: rotate(180deg) translateY(50%);
-          }
-          & + .option_list {
-            height: 246px;
-            padding: 13px 38px 13px 10px;
-            visibility: visible;
-            opacity: 1;
-            .option {
-              height: auto;
-              padding-bottom: 20px;
-            }
-          }
-        }
+      &_title[aria-selected="false"] {
+        color: #8a8d91;
       }
+
       &_list {
         overflow-y: auto;
         position: absolute;
@@ -250,10 +304,66 @@
         max-height: 246px;
         margin-top: 4px;
         background-color: #242526;
-        transition: height 0.3s, opacity 0.2s;
         opacity: 0;
         visibility: hidden;
+        transition: height 0.3s, opacity 0.2s;
       }
+    }
+  }
+
+  &_title {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: #242526;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 8.4px;
+      background: url("../images/ico_dropdown.png") no-repeat center / cover;
+      content: "";
+    }
+
+    &[aria-expanded="true"] {
+      &::after {
+        transform: rotate(180deg) translateY(50%);
+      }
+      & + .option_list {
+        visibility: visible;
+        height: 246px;
+        padding: 13px 38px 13px 10px;
+        opacity: 1;
+
+        .option {
+          height: auto;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.slide_time_box,
+.time_box {
+  display: inline-block;
+  height: 19px;
+  margin-top: 2px;
+  font-size: 0;
+
+  .time {
+    color: #8b8d91;
+    &:last-of-type::before {
+      margin: 0 2px;
+      content: "~";
     }
   }
 }
@@ -270,8 +380,7 @@
     width: 5px;
     height: 10px;
     margin-left: 4px;
-    background: url("../images/ico_more.png") no-repeat;
-    background-size: contain;
+    background: url("../images/ico_more.png") no-repeat center / contain;
     content: "";
   }
 }
@@ -279,12 +388,11 @@
 .slide_btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   z-index: 2;
+  transform: translateY(-50%);
   width: 56px;
   height: 56px;
-  background: url("../images/ico_arrow.png") no-repeat;
-  background-size: contain;
+  background: url("../images/ico_arrow.png") no-repeat center / contain;
   cursor: pointer;
 }
 
@@ -323,30 +431,28 @@
     }
   }
 
-  &_nav {
-    &_link {
-      display: inline-block;
-      font-size: 14px;
-      color: #8a8d91;
+  &_nav_link {
+    display: inline-block;
+    color: #8a8d91;
+    font-size: 14px;
 
-      &:not(:last-of-type)::after {
-        display: inline-block;
-        width: 1px;
-        height: 10px;
-        margin: 0 12px;
-        background-color: #3a3b3c;
-        vertical-align: middle;
-        content: "";
-      }
-      &:hover {
-        color: #e4e6eb;
-      }
+    &:hover {
+      color: #e4e6eb;
+    }
+
+    &:not(:last-of-type)::after {
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      margin: 0 12px;
+      background-color: #3a3b3c;
+      content: "";
     }
   }
 
   .copyright {
     margin-left: auto;
-    font-size: 13px;
     color: #8b8d91;
+    font-size: 13px;
   }
 }

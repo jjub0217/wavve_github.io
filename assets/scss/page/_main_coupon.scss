@@ -7,6 +7,7 @@
 .inner {
   @include mobile {
     width: auto;
+    flex-wrap: wrap;
     padding: 0 20px;
   }
 }
@@ -80,12 +81,13 @@
     padding: 14px 8px 14px 14px;
     border-radius: 6px;
     background: #242526;
+    @include mobile {
+      min-width: calc(500px - 159px);
+      width: auto;
+    }
 
     &::placeholder {
       font-size: 16px;
-      @include mobile {
-        font-size: 11px;
-      }
     }
   }
 
@@ -306,7 +308,7 @@
     color: #b0b3b8;
     cursor: pointer;
 
-    &[aria-selected="true"] {
+    &[aria-current="page"] {
       border: 1.5px solid #486ff2;
       border-radius: 50%;
       font-weight: bold;
