@@ -311,6 +311,7 @@
       font-weight: bold;
       color: #486ff2;
     }
+
     @include mobile {
       &:nth-child(n + 6) {
         display: none;
