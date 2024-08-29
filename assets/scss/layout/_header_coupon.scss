@@ -14,6 +14,6 @@
 
 .utility_area {
   @include mobile {
-    gap: 0px;
+    gap: 0;
   }
 }

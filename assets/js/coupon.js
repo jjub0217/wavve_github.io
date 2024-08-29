@@ -1,7 +1,5 @@
 const input = document.querySelector(".input_coupon_code");
 const btnRegister = document.querySelector(".btn_register");
-const tabItems = document.querySelectorAll(".tab_item");
-const tabContent = document.querySelector(".tab_content");
 const pageNumbers = document.querySelectorAll(".page_number");
 
 
@@ -15,31 +13,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 input.onkeyup = (e) => {
   if (e.target.value) {
-    btnRegister.classList.add("is_active");
+    btnRegister.removeAttribute("disabled"); 
   } else {
-    btnRegister.classList.remove("is_active");
+    btnRegister.setAttribute("disabled", "true");
   }
 };
-
-
-
-tabItems.forEach((item) => {
-  item.onclick = (e) => {
-    e.preventDefault();
-    [...tabItems].filter((item) => {
-      if (item === e.target.parentNode) {
-        e.target.parentNode.classList.add("is_active");
-        e.target.parentNode.ariaSelected = "true";
-      } else {
-        item.classList.remove("is_active");
-        item.ariaSelected = "false"
-      }
-    });
-  };
-});
 
 
 pageNumbers.forEach(pageNumber => {

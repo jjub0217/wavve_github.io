@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ko">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,122 +10,129 @@
   </head>
   <body class="scroll_hide">
     <div class="wrap">
+      <div class="popup_box" role="dialog" aria-expanded="true">
+        <div class="popup">
+          <strong class="headline">구현한 페이지 안내</strong>
+          <ul class="page_list">
+            <li class="page_item">
+              <strong class="title">메인페이지</strong>
+              <p class="title_desc">헤더의 로고를 클릭하면 이동됩니다.</p>
+            </li>
+            <li class="page_item">
+              <strong class="title">LIVE 페이지</strong>
+              <p class="title_desc">전체 채널들의 생방송 리스트가 보여지는 페이지</p>
+              <p class="desc">헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
+            </li>
+            <li class="page_item">
+              <strong class="title">LIVE 상세 페이지</strong> 
+              <p class="title_desc">클릭한 생방송의 상세 페이지</p>
+              <p class="desc">LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.</p>
+            </li>
+            <li class="page_item">
+              <strong class="title">이용권 페이지</strong> 
+              <p class="title_desc">쿠폰 페이지</p>
+              <p class="desc">헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면 이동됩니다.</p> 
+            </li>
+          </ul>
+          <button type="button" class="btn_close_popup" aria-label="팝업닫기" aria-expanded="true"></button>
+        </div>
+      </div>
       <div class="skip">
         <a href="#main">본문 바로가기</a>
       </div>
+      <!-- [D] 스크롤 시 .header 에 .js_bg 클래스이름을 추가 및 삭제 -->
       <header id="header" class="header">
         <div class="inner">
-          <h1 class="main_logo">
-            <a href="#">
-              <img src="./assets/images/ico_header_logo.png" alt="TV">
+          <h1 class="site_logo">
+            <a href="./index.html">
+              <span class="blind">메인페이지</span>
+              <img src="./assets/images/ico_header_logo.png" alt="wavve" loading="lazy" width="108" height="22">
             </a>
           </h1>
           <nav class="nav">
             <ul class="nav_list">
-              <li class="nav_item"><a href="#" class="nav_link">드라마</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">예능</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">영화</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">애니</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">해외시리즈</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">시사교양</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">키즈</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">영화플러스</a></li>
+              <li class="nav_item"><a href="" class="nav_link">드라마</a></li>
+              <li class="nav_item"><a href="" class="nav_link">예능</a></li>
+              <li class="nav_item"><a href="" class="nav_link">영화</a></li>
+              <li class="nav_item"><a href="" class="nav_link">애니</a></li>
+              <li class="nav_item"><a href="" class="nav_link">해외시리즈</a></li>
+              <li class="nav_item"><a href="" class="nav_link">시사교양</a></li>
+              <li class="nav_item"><a href="" class="nav_link">키즈</a></li>
+              <li class="nav_item"><a href="" class="nav_link">영화플러스</a></li>
               <li class="nav_item"><a href="./index_live.html" class="nav_link">LIVE</a></li>
             </ul>
           </nav>
           <div class="utility_area">
-            <a href="#" class="utility_link utility_promotion">
+            <a href="" class="utility_link utility_promotion">
               <span class="blind">프로모션</span>
             </a>
             <a href="./index_coupon.html" class="utility_link utility_coupon">
               <span class="blind">쿠폰</span>
             </a>
-            <a href="#" class="utility_link utility_search">
+            <a href="" class="utility_link utility_search">
               <span class="blind">검색</span>
             </a>
-            <a href="#" class="login_link">로그인</a>
+            <a href="" class="login_link">로그인</a>
           </div>
         </div>
       </header>
       <main id="main" class="container">
-        <div class="pop_up_box is_active" role="dialog" >
-          <div class="pop_up">
-            <strong class="headline">구현한 페이지 안내</strong>
-            <ul class="page_list">
-              <li class="page_item">
-                <strong class="title">메인페이지</strong>
-                <p class="title_desc">헤더의 로고를 클릭하면 이동됩니다.</p>
-              </li>
-              <li class="page_item">
-                <strong class="title">LIVE 페이지</strong>
-                <p class="title_desc">전체 채널들의 생방송 리스트가 보여지는 페이지</p>
-                <p class="desc">* 헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
-              </li>
-              <li class="page_item">
-                <strong class="title">LIVE 상세 페이지</strong> 
-                <p class="title_desc">클릭한 생방송의 상세 페이지</p>
-                <p class="desc">* LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.</p>
-              </li>
-              <li class="page_item">
-                <strong class="title">이용권 페이지</strong> 
-                <p class="title_desc">쿠폰 페이지</p>
-                <p class="desc">* 헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면 이동됩니다.</p> 
-              </li>
-            </ul>
-            <button type="button" class="btn_close_pop_up" aria-label="팝업닫기" aria-expanded="true"></button>
-          </div>
-        </div>
       <section class="section_visual">
         <h2 class="blind">추천 콘텐츠</h2>
         <div class="swiper">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <a href="" class="link_item">
-                <div class="text_box">
-                  <img src="./assets/images/img_main_item1_sub.png" alt="">
+                <span class="blind">굿파트너</span>
+                <div class="text_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item1_sub.png" alt="굿파트너 타이틀" width="1240" height="508" loading="lazy">
                 </div>
-                <div class="image_box">
-                  <img src="./assets/images/img_main_item1.jpg" alt="">
+                <div class="image_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item1.jpg" alt="굿파트너 장면" width="1240" height="508" loading="lazy">
                 </div>
               </a>
             </li>
             <li class="swiper-slide">
               <a href="" class="link_item">
-                <div class="text_box">
-                  <img src="./assets/images/img_main_item2_sub.png" alt="">
+                <span class="blind">나의 사랑 나의 신부</span>
+                <div class="text_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item2_sub.png" alt="나의 사랑 나의 신부 타이틀" width="1240" height="508" loading="lazy">
                 </div>
-                <div class="image_box">
-                  <img src="./assets/images/img_main_item2.jpg" alt="">
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="" class="link_item">                
-                <div class="text_box">
-                  <img src="./assets/images/img_main_item3_sub.png" alt="">
-                </div>
-                <div class="image_box">
-                  <img src="./assets/images/img_main_item3.jpg" alt="">
+                <div class="image_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item2.jpg" alt="나의 사랑 나의 신부 장면" width="1240" height="508" loading="lazy">
                 </div>
               </a>
             </li>
             <li class="swiper-slide">
-              <a href="" class="link_item">                
-                <div class="text_box">
-                  <img src="./assets/images/img_main_item4_sub.png" alt="">
+              <a href="" class="link_item">    
+                <span class="blind">엘리전스</span>            
+                <div class="text_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item3_sub.png" alt="엘리전스 타이틀" width="1240" height="508" loading="lazy">
                 </div>
-                <div class="image_box">
-                  <img src="./assets/images/img_main_item4.jpg" alt="">
+                <div class="image_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item3.jpg" alt="엘리전스 장면" width="1240" height="508" loading="lazy">
                 </div>
               </a>
             </li>
             <li class="swiper-slide">
-              <a href="" class="link_item">               
-                <div class="text_box">
-                  <img src="./assets/images/img_main_item5_sub.png" alt="">
+              <a href="" class="link_item">
+                <span class="blind">탈주</span>                
+                <div class="text_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item4_sub.png" alt="탈주 타이틀" width="1240" height="508" loading="lazy">
                 </div>
-                <div class="image_box">
-                  <img src="./assets/images/img_main_item5.jpg" alt="">
+                <div class="image_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item4.jpg" alt="탈주 장면" width="1240" height="508" loading="lazy">
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="" class="link_item">   
+                <span class="blind">백설공주에게 죽음을</span>              
+                <div class="text_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item5_sub.png" alt="백설공주에게 죽음을 타이틀" width="1240" height="508" loading="lazy">
+                </div>
+                <div class="image_box" aria-hidden="true">
+                  <img src="./assets/images/img_main_item5.jpg" alt="백설공주에게 죽음을 장면" width="1240" height="508" loading="lazy">
                 </div>
               </a>
             </li>
@@ -143,67 +150,67 @@
           <div class="inner">
             <div class="title_wrap">
               <h2 class="title">새로 올라온 영화</h2>
-              <a href="#" class="all_link">전체보기</a>
+              <a href="" class="all_link">전체보기</a>
             </div>
             <div class="select_wrap">
               <div class="select_box">
-                <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title"  aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_1">전체장르</button>
-                <ul class="option_list" role="listbox" id="genre_1">
-                  <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                  <li class="option" role="none">
+                <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
+                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_1">전체장르</button>
+                <ul id="genre_1" class="option_list" role="listbox">
+                  <!-- [D] option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="true">전체장르</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">가족</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">무협</button>
                   </li>
                 </ul>
               </div>
               <div class="select_box">
-                  <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title"  aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_1">추천</button>
-                <ul class="option_list" role="listbox" id="recommend_1">
-                  <li class="option" role="none">
-                    <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                  <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
+                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_1" >추천</button>
+                <ul id="recommend_1" class="option_list" role="listbox" >
+                  <li class="option" role="presentation">
+                    <!-- [D] .option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
                     <button type="button" role="option" class="option_title" aria-selected="true">전체장르</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">가족</button>
                   </li>
-                  <li class="option" role="none">
+                  <li class="option" role="presentation">
                     <button type="button" role="option" class="option_title" aria-selected="false">무협</button>
                   </li>
                 </ul>
@@ -413,68 +420,68 @@
           <div class="inner">
             <div class="title_wrap">
               <h2 class="title">드라마 TOP 30</h2>
-              <a href="#" class="all_link">전체보기</a>
+              <a href="" class="all_link">전체보기</a>
             </div>
             <div class="select_wrap">
               <div class="select_box">
-                <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
+                <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
                 <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
-                <ul class="option_list" role="listbox" id="genre_2">
-                  <li class="option" role="none">
-                    <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                    <button type="button" role="option" aria-selected="true">전체장르</button>
+                <ul id="genre_2" class="option_list" role="listbox" >
+                  <li class="option" role="presentation">
+                    <!-- [D] .option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                    <button type="button" role="option" aria-selected="true" class="option_title">전체장르</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">로맨틱</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">로맨틱</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">코메디</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">코메디</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">추리</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">추리</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">범죄</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">범죄</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">스릴러</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">스릴러</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">가족</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">가족</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">무협</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">무협</button>
                   </li>
                 </ul>
               </div>
               <div class="select_box">
-                <!-- [D] .option_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_2">추천</button>
-                <ul class="option_list" role="listbox" id="recommend_2">
-                  <li class="option" role="none">
-                    <!-- [D] button 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                    <button type="button" role="option" aria-selected="true">전체장르</button>
+                <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
+                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_2" >추천</button>
+                <ul id="recommend_2" class="option_list" role="listbox" >
+                  <li class="option" role="presentation">
+                    <!-- [D] .option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
+                    <button type="button" role="option" aria-selected="true" class="option_title">전체장르</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">로맨틱</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">로맨틱</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">코메디</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">코메디</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">추리</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">추리</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">범죄</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">범죄</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">스릴러</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">스릴러</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">가족</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">가족</button>
                   </li>
-                  <li class="option" role="none">
-                    <button type="button" role="option" aria-selected="false">무협</button>
+                  <li class="option" role="presentation">
+                    <button type="button" role="option" aria-selected="false" class="option_title">무협</button>
                   </li>
                 </ul>
               </div>
@@ -684,74 +691,74 @@
           <div class="inner">
             <div class="title_wrap">
               <h2 class="title">이벤트</h2>
-              <a href="#" class="all_link">전체보기</a>
+              <a href="" class="all_link">전체보기</a>
             </div>
             <div class="event_area">
               <div class="swiper">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <a href="#" class="event_link">
+                    <a href="" class="event_link">
                       <div class="text_box">
                         <strong class="event_title">인사이드 아웃2<br>론칭 프로모션	</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item1.png" alt="인사이드 아웃 2 영화 포스터: 주요 캐릭터와 론칭 프로모션 안내">
+                        <img src="./assets/images/img_event_item1.png" alt="인사이드 아웃 2 영화 포스터: 주요 캐릭터와 론칭 프로모션 안내" loading="lazy" width="390" height="168">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="event_link">
+                    <a href="" class="event_link">
                       <div class="text_box">
                         <strong class="event_title">웨이브 이용권 할인 이벤트</strong>
                         <p class="event_desc">상시 진행중</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event.png" alt="웨이브 이용권 할인 이벤트">
+                        <img src="./assets/images/img_event.png" alt="웨이브 이용권 할인 이벤트" loading="lazy" width="390" height="168">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide is_ended">
-                    <a href="#" class="event_link">
+                    <a href="" class="event_link">
                       <div class="text_box">
                         <strong class="event_title">콰이어트 플레이스:첫째날 론칭 프로모션</strong>
                         <p class="event_desc">기간 : 2024.07.01.</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item2.png" alt="콰이어트 플레이스 첫째 날 영화 포스터: '모든 소리가 사라진 첫째 날'이라는 문구가 보임트">
+                        <img src="./assets/images/img_event_item2.png" alt="콰이어트 플레이스 첫째 날 영화 포스터: '모든 소리가 사라진 첫째 날'이라는 문구가 보임트" loading="lazy" width="390" height="168">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="event_link">
+                    <a href="" class="event_link">
                       <div class="text_box">
                         <strong class="event_title">혹성탈출: 새로운시대 <br>론칭 프로모션</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item3.png" alt="혹성탈출 새로운 시대 영화 포스터: 푸른 자연 속 캐릭터가 말을 타고 있는 모습">
+                        <img src="./assets/images/img_event_item3.png" alt="혹성탈출 새로운 시대 영화 포스터: 푸른 자연 속 캐릭터가 말을 타고 있는 모습" loading="lazy" width="390" height="168">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="event_link">
+                    <a href="" class="event_link">
                       <div class="text_box">
                         <strong class="event_title">데드풀과 울버린<br>개봉 기념 마블 프로모션</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item4.png" alt="데드풀과 울버린 영화 포스터: 두 개의 칼을 들고 있는 데드풀 캐릭터">
+                        <img src="./assets/images/img_event_item4.png" alt="데드풀과 울버린 영화 포스터: 두 개의 칼을 들고 있는 데드풀 캐릭터" loading="lazy" width="390" height="168">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="event_link">
+                    <a href="" class="event_link">
                       <div class="text_box">
                         <strong class="event_title">퓨리오사: 매드맥스 사가<br>론칭 프로모션</strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item5.png" alt="퓨리오사 매드맥스 사가 영화 포스터: 여전사 퓨리오사 배경의 황야 풍경">
+                        <img src="./assets/images/img_event_item5.png" alt="퓨리오사 매드맥스 사가 영화 포스터: 여전사 퓨리오사 배경의 황야 풍경" loading="lazy" width="390" height="168">
                       </div>
                     </a>
                   </li>
@@ -771,30 +778,34 @@
               <div class="swiper">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <a href="#">
-                      <div class="image_box">
-                        <img src="./assets/images/img_best_artist_item1.png" alt="레드벨벳">
+                    <a href="">
+                      <span class="blind">인물기획전 이동욱 스페셜</span>
+                      <div class="image_box" aria-hidden="true">
+                        <img src="./assets/images/img_best_artist_item1.png" alt="배우 이동욱 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#">
-                      <div class="image_box">
-                        <img src="./assets/images/img_best_artist_item2.png" alt="레드벨벳">
+                    <a href="">
+                      <span class="blind">인물기획전 김남길 스페셜</span>
+                      <div class="image_box" aria-hidden="true">
+                        <img src="./assets/images/img_best_artist_item2.png" alt="배우 김남길 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#">
-                      <div class="image_box">
-                        <img src="./assets/images/img_best_artist_item3.png" alt="레드벨벳">
+                    <a href="">
+                      <span class="blind">인물기획전 신하균 스페셜</span>
+                      <div class="image_box" aria-hidden="true">
+                        <img src="./assets/images/img_best_artist_item3.png" alt="배우 신하균 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#">
-                      <div class="image_box">
-                        <img src="./assets/images/img_best_artist_item4.png" alt="레드벨벳">
+                    <a href="">
+                      <span class="blind">인물기획전 배두나 스페셜</span>
+                      <div class="image_box" aria-hidden="true">
+                        <img src="./assets/images/img_best_artist_item4.png" alt="배우 배두나 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
                       </div>
                     </a>
                   </li>
@@ -809,15 +820,15 @@
           <div class="inner">
             <div class="title_wrap">
               <h2 class="title">웨이브 라디오</h2>
-              <a href="#" class="all_link">전체보기</a>
+              <a href="" class="all_link">전체보기</a>
             </div>
             <div class="artist_area">
               <div class="swiper">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <a href="#" class="slide_link">
+                    <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item1.png" alt="아티스트 로고">
+                        <img src="./assets/images/img_artist_item1.png" alt="박명수의 라디오쇼 로고" loading="lazy" width="74" height="74">
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">박명수의 라디오쇼</strong>
@@ -829,9 +840,9 @@
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="slide_link">
+                    <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item2.png" alt="아티스트 로고">
+                        <img src="./assets/images/img_artist_item2.png" alt="김신영의 정오의 희망곡 로고" loading="lazy" width="74" height="74">
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">김신영의 정오의 희망곡</strong>
@@ -843,9 +854,9 @@
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="slide_link">
+                    <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item3.png" alt="아티스트 로고">
+                        <img src="./assets/images/img_artist_item3.png" alt="두시탈출 컬투쇼 로고" loading="lazy" width="74" height="74">
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">두시탈출 컬투쇼</strong>
@@ -857,9 +868,9 @@
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="slide_link">
+                    <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item4.png" alt="아티스트 로고">
+                        <img src="./assets/images/img_artist_item4.png" alt="황제성의 황제파워 로고" loading="lazy" width="74" height="74">
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">황제성의 황제파워</strong>
@@ -871,9 +882,9 @@
                     </a>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#" class="slide_link">
+                    <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item5.png" alt="아티스트 로고">
+                        <img src="./assets/images/img_artist_item5.png" alt="배성재의 텐 로고" loading="lazy" width="74" height="74">
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">배성재의 텐</strong>
@@ -895,16 +906,17 @@
       <footer class="footer">
         <div class="inner">
           <nav class="footer_nav">
-            <a href="#" class="footer_logo">
-              <img src="./assets/images/ico_footer_logo.png" alt="KNTV">
-            </a>
-            <a href="#" class="footer_nav_link">
+            <div class="footer_logo">
+              <span class="blind">웨이브</span>
+              <img src="./assets/images/ico_footer_logo.png" alt="wavve" loading="lazy" width="84" height="20">
+            </div>
+            <a href="" class="footer_nav_link">
               이용약관</a>
-            <a href="#" class="footer_nav_link">
+            <a href="" class="footer_nav_link">
               개인정보 보호정책</a>
-            <a href="#" class="footer_nav_link">
+            <a href="" class="footer_nav_link">
               고객센터</a>
-            <a href="#" class="footer_nav_link">
+            <a href="" class="footer_nav_link">
               공지사항</a>
           </nav>
           <small class="copyright">Copyright © jjub0217 All rights reserved.jjub0217</small>

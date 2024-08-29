@@ -1,16 +1,4 @@
 
-const commonA11ySettings = {
-  enabled: true,
-  containerMessage: "프로모션 슬라이드 영역입니다.",
-  slideLabelMessage:
-    "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
-  firstSlideMessage: "첫번째 슬라이드입니다.",
-  lastSlideMessage: "마지막 슬라이드입니다.",
-  paginationBulletMessage: "{{index}}번째 슬라이드로 이동합니다.",
-  containerRoleDescriptionMessage: "Carousel",
-  itemRoleDescriptionMessage: "Slide",
-  slideRole: "listitem",
-};
 
 const createSwiper = (selector, options) => new Swiper(selector, options);
 
@@ -69,13 +57,14 @@ const uploadMoreBtn = document.querySelectorAll(".more_btn");
 
 uploadMoreBtn.forEach((btn) => {
   btn.onclick = (e) => {
+    const isExpanded = e.target.getAttribute("aria-expanded") === "true";
     const hiddenItems = [...e.target.previousElementSibling.children];
     hiddenItems.forEach((item) => {
       if (item.classList.contains("is_hidden")) {
         item.classList.remove("is_hidden");
       }
     });
-    e.target.ariaExpanded = "true";
+    e.target.setAttribute("aria-expanded", isExpanded ? "false" : "true");
   };
 });
 

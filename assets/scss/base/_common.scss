@@ -4,28 +4,26 @@
 
 .skip {
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 3;
+
   a {
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-100%);
     width: 100%;
-    background-color: #ccc;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    background: #ccc;
 
     &:focus,
     &:active {
       transform: translateY(0);
-      padding: 10px 0;
-      background-color: #000;
-      color: #fff;
-      text-align: center;
     }
   }
 }
@@ -44,7 +42,7 @@
 }
 
 section {
-  &[class^="section_"]:not(.section_visual) {
+  &[class^="section_"]:not(.section_visual, .section_content) {
     padding-top: 56px;
   }
 }
@@ -60,27 +58,26 @@ section {
   margin-bottom: 20px;
 }
 
-.pop_up_box {
+.popup_box {
   display: none;
 }
 
-.pop_up_box.is_active {
+.popup_box[aria-expanded="true"] {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
 
-  .pop_up {
+  .popup {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 508px;
-    height: 600px;
     padding: 80px 20px 30px;
     border-radius: 12px;
     background: url("../images/img_popup_background.png") no-repeat center /
@@ -94,17 +91,24 @@ section {
   }
 
   .page_list {
-    padding: 30px 0 0 20px;
-    list-style: disc;
+    padding: 30px 0 0 0;
   }
 
   .page_item {
-    padding: 10px 0;
     text-align: left;
+    padding: 10px;
+    &:first-of-type {
+      border: 1px solid #fff;
+    }
+    &::before {
+      display: inline-block;
+      margin-right: 10px;
+      content: "•";
+    }
   }
 
   .title {
-    display: block;
+    display: inline-block;
     width: fit-content;
     font-size: 20px;
 
@@ -127,7 +131,7 @@ section {
     font-size: 15px;
   }
 
-  .btn_close_pop_up {
+  .btn_close_popup {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -149,10 +153,10 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 2;
   height: 72px;
   min-width: 1280px;
-  padding: 0px 60px;
+  padding: 0 60px;
   background-color: transparent;
 
   .inner {
@@ -168,7 +172,7 @@ section {
   }
 }
 
-.main_logo {
+.site_logo {
   width: 108px;
   height: 22px;
 }
@@ -185,9 +189,10 @@ section {
     font-size: 18px;
     font-weight: 500;
     line-height: 72px;
-
+  }
+  &_link {
     &:hover,
-    &.is_active {
+    &[aria-current="page"] {
       position: relative;
       color: #fff;
     }
@@ -267,6 +272,57 @@ section {
   padding: 0 42px;
 }
 
+.tab_list {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  position: relative;
+  height: 45px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+  }
+
+  @include mobile {
+    gap: 15px;
+  }
+}
+
+.tab_item {
+  height: 100%;
+}
+
+.tab_item_title {
+  padding-bottom: 33px;
+  font-size: 20px;
+  font-weight: 700;
+
+  @include mobile {
+    max-width: 100px;
+  }
+
+  &[aria-selected="true"] {
+    position: relative;
+    height: 100%;
+    color: #486ff2;
+    &:after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #486ff2;
+      content: "";
+    }
+  }
+}
+
 .select {
   &_wrap {
     display: flex;
@@ -288,10 +344,6 @@ section {
       text-align: left;
       line-height: 20px;
 
-      &:last-of-type {
-        padding-bottom: 0;
-      }
-
       &_title[aria-selected="false"] {
         color: #8a8d91;
       }
@@ -301,7 +353,7 @@ section {
         position: absolute;
         width: 100%;
         height: 0;
-        max-height: 246px;
+        min-height: 246px;
         margin-top: 4px;
         background-color: #242526;
         opacity: 0;
@@ -312,15 +364,18 @@ section {
   }
 
   &_title {
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 52px;
-    padding-left: 20px;
+    padding: 10px 30px 10px 20px;
     border-radius: 3px;
     background-color: #242526;
     font-size: 14px;
     text-align: left;
+    line-height: 32px;
     cursor: pointer;
+    @include ellipse(2);
 
     &:after {
       position: absolute;
@@ -339,13 +394,17 @@ section {
       }
       & + .option_list {
         visibility: visible;
-        height: 246px;
+        height: fit-content;
         padding: 13px 38px 13px 10px;
         opacity: 1;
 
         .option {
           height: auto;
           padding-bottom: 20px;
+
+          &:last-of-type {
+            padding-bottom: 0;
+          }
         }
       }
     }
@@ -388,7 +447,7 @@ section {
 .slide_btn {
   position: absolute;
   top: 50%;
-  z-index: 2;
+  z-index: 1;
   transform: translateY(-50%);
   width: 56px;
   height: 56px;

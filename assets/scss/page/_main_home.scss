@@ -228,6 +228,7 @@
   }
 
   .image_box {
+    overflow: hidden;
     width: 88px;
     height: 88px;
     padding: 5px;
@@ -238,6 +239,7 @@
       top: 5px;
       width: 74px;
       height: 74px;
+      border-radius: 50%;
     }
   }
 
@@ -291,7 +293,5 @@
   }
   &[aria-expanded="true"] {
     display: none;
-  }
-  &.is_hidden {
   }
 }
