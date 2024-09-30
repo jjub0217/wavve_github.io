@@ -44,15 +44,15 @@ const closePopup = () => {
 };
 
 
-window.addEventListener("scroll", function () {
-  const browserScroll = window.scrollX;
-  header.style.transform = `translateX(-${browserScroll}px)`;
-  if (main.getBoundingClientRect().top < 80 ) {
-    header.classList.add("js_bg");
-  } else {
-    header.classList.remove("js_bg");
-  }
-});
+// window.addEventListener("scroll", function () {
+//   const browserScroll = window.scrollX;
+//   header.style.transform = `translateX(-${browserScroll}px)`;
+//   if (main.getBoundingClientRect().top < 80 ) {
+//     header.classList.add("js_bg");
+//   } else {
+//     header.classList.remove("js_bg");
+//   }
+// });
 
 btnClosePopup.onclick = (e) => {
   e.target.setAttribute("aria-expanded", "false");
