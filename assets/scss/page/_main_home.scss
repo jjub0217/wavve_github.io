@@ -162,6 +162,7 @@
   .event_area,
   .event_link {
     position: relative;
+    display: block;
   }
   .event {
     &_title {
