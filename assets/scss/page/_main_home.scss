@@ -161,8 +161,8 @@
 .section_event {
   .event_area,
   .event_link {
-    position: relative;
     display: block;
+    position: relative;
   }
   .event {
     &_title {

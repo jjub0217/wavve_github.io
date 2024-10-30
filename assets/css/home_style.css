@@ -747,8 +747,8 @@ section[class^=section_]:not(.section_visual, .section_content) {
 
 .section_event .event_area,
 .section_event .event_link {
-  position: relative;
   display: block;
+  position: relative;
 }
 .section_event .event_title {
   max-width: 220px;
