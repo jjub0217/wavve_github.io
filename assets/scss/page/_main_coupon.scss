@@ -2,8 +2,12 @@
   @include mobile {
     min-width: 320px;
     max-width: 640px;
+    .popup {
+      width: calc(100% - 40px) !important;
+    }
   }
 }
+
 .inner {
   @include mobile {
     width: auto;
@@ -82,8 +86,7 @@
     border-radius: 6px;
     background: #242526;
     @include mobile {
-      min-width: calc(500px - 159px);
-      width: auto;
+      width: calc(100% - 119px);
     }
 
     &::placeholder {
@@ -102,6 +105,9 @@
     &:disabled {
       background-color: #4b4c4f;
       color: #8a8d91;
+    }
+    @include mobile {
+      width: 100px;
     }
   }
 }
