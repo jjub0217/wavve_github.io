@@ -260,6 +260,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   right: 30px;
   padding: 10px;
   border: 1px solid;
+  cursor: pointer;
 }
 .popup_box[aria-expanded=true] .btn_close_popup::before {
   display: block;
