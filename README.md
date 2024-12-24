@@ -16,12 +16,14 @@
 6. 탭메뉴 기능
 7. 첫번째로 보여지는 아이템을 클릭하면 LIVE 상세 페이지로 이동(라이브 페이지)
 8. 쿠폰아이콘을 클릭하면 쿠폰 페이지로 이동
-9. input에 값이 넣기 시작하면 "쿠폰등록" 버튼의 컬러가 변경됩니다.(쿠폰 페이지)
+9.  input에 값이 넣기 시작하면 "쿠폰등록" 버튼의 컬러가 변경됩니다.(쿠폰 페이지)
 
 
 ## 프로젝트 웹표준(W3C의 Markup Validation Service)
 결과 : 0개 <br>
-<img src="https://github.com/user-attachments/assets/49f2b268-5474-41d8-9a45-fac0e541c484" width=800> <br>
+[1] 메인 페이지
+<img src="https://github.com/user-attachments/assets/49f2b268-5474-41d8-9a45-fac0e541c484" width=800>
+[2] 
 
 ## 프로젝트 웹접근성
 - chrome Lighthouse 결과 :<br>
