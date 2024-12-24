@@ -22,8 +22,13 @@
 ## 프로젝트 웹표준(W3C의 Markup Validation Service)
 결과 : 0개 <br>
 [1] 메인 페이지
-<img src="https://github.com/user-attachments/assets/49f2b268-5474-41d8-9a45-fac0e541c484" width=800>
-[2] 
+<img src="https://github.com/user-attachments/assets/52a9aa5a-aa3e-4db6-ab45-6fbbe6eb0458" width=800>
+[2] live 페이지
+<img src="https://github.com/user-attachments/assets/9239f747-737d-45be-9bf3-05d4dd410d37" width=800>
+[3] live 상세 페이지
+<img src="https://github.com/user-attachments/assets/d670e3bc-5d3e-4b70-b0ec-a004fc513fba" width=800>
+[4] 쿠폰 페이지
+<img src="https://github.com/user-attachments/assets/a6a966cf-7f2a-4296-9e20-56df9e762266" width=800>
 
 ## 프로젝트 웹접근성
 - chrome Lighthouse 결과 :<br>
