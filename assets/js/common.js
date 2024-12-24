@@ -30,24 +30,24 @@ const commonA11ySettings = {
 //     closePopup();
 //   }
 // });
-popupBox.addEventListener("click", (e) => {
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" || event.key === "Esc") {
-      closePopup();
-    }
-  }, { once: true }); 
-});
+// popupBox.addEventListener("click", (e) => {
+//   document.addEventListener("keydown", (event) => {
+//     if (event.key === "Escape" || event.key === "Esc") {
+//       closePopup();
+//     }
+//   }, { once: true }); 
+// });
 
-const closePopup = () => {
-  document.body.classList.remove("scroll_hide");
-  popupBox.setAttribute("aria-expanded", "false");
-};
+// const closePopup = () => {
+//   document.body.classList.remove("scroll_hide");
+//   popupBox.setAttribute("aria-expanded", "false");
+// };
 
 
-btnClosePopup.onclick = (e) => {
-  e.target.setAttribute("aria-expanded", "false");
-  closePopup()
-};
+// btnClosePopup.onclick = (e) => {
+//   e.target.setAttribute("aria-expanded", "false");
+//   closePopup()
+// };
 
 selectBoxes.forEach((selectBox) => {
   const selectBtn = selectBox.querySelector(".select_title") ?? "";
