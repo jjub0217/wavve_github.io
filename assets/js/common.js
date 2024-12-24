@@ -66,6 +66,7 @@ selectBoxes.forEach((selectBox) => {
       e.target.setAttribute("aria-selected", "true");
       selectBtn.textContent =  e.target.textContent;
       selectBtn.setAttribute("aria-expanded", "false");
+      selectBtn.style.color = "#fff";
     };
   });
 });

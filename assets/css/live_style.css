@@ -331,6 +331,9 @@ section[class^=section_]:not(.section_visual, .section_content) {
 .utility_promotion:before {
   background: url("../images/ico_promotion.png") no-repeat center/contain;
 }
+.utility_coupon {
+  position: relative;
+}
 .utility_coupon::before {
   background: url("../images/ico_coupon.png") no-repeat center/contain;
 }
@@ -406,6 +409,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   padding-bottom: 33px;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 @media screen and (max-width: 640px) {
   .tab_item_title {
@@ -441,14 +445,32 @@ section[class^=section_]:not(.section_visual, .section_content) {
 }
 .select_box .option {
   width: 100%;
-  max-width: 120px;
-  padding-left: 10px;
+  min-width: 120px;
   font-size: 14px;
-  text-align: left;
   line-height: 20px;
+  color: #fff;
+  cursor: pointer;
 }
-.select_box .option_title[aria-selected=false] {
+.select_box .option:hover {
+  background-color: #3a3b3c;
+}
+.select_box .option:hover .option_title {
+  color: #fff;
+}
+.select_box .option:first-of-type .option_title {
+  padding-top: 13px;
+}
+.select_box .option:last-of-type .option_title {
+  padding-bottom: 13px;
+}
+.select_box .option_title {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #8a8d91;
+  text-align: left;
+  cursor: pointer;
 }
 .select_box .option_list {
   overflow-y: auto;
@@ -457,6 +479,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   height: 0;
   min-height: 246px;
   margin-top: 4px;
+  border-radius: 6px;
   background-color: #242526;
   opacity: 0;
   visibility: hidden;
@@ -468,8 +491,9 @@ section[class^=section_]:not(.section_visual, .section_content) {
   width: 100%;
   height: 52px;
   padding: 10px 30px 10px 20px;
-  border-radius: 3px;
+  border-radius: 6px;
   background-color: #242526;
+  color: #626466;
   font-size: 14px;
   text-align: left;
   line-height: 32px;
@@ -490,6 +514,9 @@ section[class^=section_]:not(.section_visual, .section_content) {
   background: url("../images/ico_dropdown.png") no-repeat center/cover;
   content: "";
 }
+.select_title[aria-expanded=true] {
+  color: #fff;
+}
 .select_title[aria-expanded=true]::after {
   transform: rotate(180deg) translateY(50%);
 }
@@ -497,15 +524,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   visibility: visible;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 13px 38px 13px 10px;
   opacity: 1;
-}
-.select_title[aria-expanded=true] + .option_list .option {
-  height: auto;
-  padding-bottom: 20px;
-}
-.select_title[aria-expanded=true] + .option_list .option:last-of-type {
-  padding-bottom: 0;
 }
 
 .slide_time_box,
