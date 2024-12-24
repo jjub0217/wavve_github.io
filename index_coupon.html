@@ -98,15 +98,15 @@
       <main id="main" class="container">
         <section class="section_registration">
           <h2 class="title">쿠폰등록 (이용권)</h2>
-          <form class="inner" action="" method="post">
+          <form class="inner" action="#" method="post">
             <fieldset>
+              <legend class="blind">쿠폰 등록</legend>
               <div class="input_wrap">
-                <legend class="blind">쿠폰 등록</legend>
                 <div class="input_box">
                   <!-- [D] input 에 값을 타이핑하면 .btn_register에 .is_active 를 추가. 값이 없으면 제거  -->
                   <label for="coupon_code" class="blind">쿠폰 번호 입력</label>
                   <input type="text" id="coupon_code" placeholder="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요"  class="input_coupon_code" title="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요" aria-required="true" >
-                  <button type="submit" class="btn_register" disabled="true">쿠폰 등록</button>
+                  <button type="submit" class="btn_register" disabled>쿠폰 등록</button>
                 </div>
               </div>
               <p class="input_desc">등록하신 쿠폰은 환불되지 않습니다.</p>
@@ -130,7 +130,7 @@
                 <li class="tab_item" role="presentation">
                   <button type="button" role="tab" aria-selected="false" 
                   class="tab_item_title"
-                  aria-controls="coupon_expired">소진 쿠폰</button>
+                  >소진 쿠폰</button>
                 </li>
               </ul>
             </div>
