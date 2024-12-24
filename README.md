@@ -35,11 +35,13 @@
 모바일 디바이스의 접근성 표준을 준수하였는지 로컬에서 검사할수 있는 goole 의 lighthouse 로 검사하면 개선할점이 Accessibility  항목과 Best Practices 항목에서 나타납니다.  <br>
 [1] 쿠폰페이지 : 데스크탑
 <img src="https://github.com/user-attachments/assets/cb6fb503-8b91-49e6-82ba-73593d3fea9d" width=800> <br>
-[1] live 상세 페이지 
+[2] live 페이지 
 <img src="https://github.com/user-attachments/assets/cb6fb503-8b91-49e6-82ba-73593d3fea9d" width=800> <br>
-[3] 쿠폰페이지 : 데스크탑
+[3] live 상세 페이지 
+<img src="https://github.com/user-attachments/assets/9167beaa-25df-4b8c-b925-7ffbb78b0e50" width=800> <br>
+[4] 쿠폰페이지 : 데스크탑
 <img src="https://github.com/user-attachments/assets/cb6fb503-8b91-49e6-82ba-73593d3fea9d" width=800> <br>
-[4] 쿠폰페이지 : 모바일
+[5] 쿠폰페이지 : 모바일
 <img src="https://github.com/user-attachments/assets/97e5e7e0-f0d1-4bf8-b648-db15a0ac6058" width=800> <br>
 
 
