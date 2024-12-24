@@ -81,7 +81,12 @@
           <div class="image_wrap">
             <div class="inner">
               <div class="image_box">
-                <img src="./assets/images/img_main.png" alt="방송 컨텐츠" width="1196" height="672" loading="lazy">
+                <picture>
+                  <source srcset="./assets/images/img_main.webp" type="image/webp"
+                  width="1196" height="672" 
+                  >
+                  <img src="./assets/images/img_main.png" alt="방송 컨텐츠" width="1196" height="672" loading="lazy">
+                </picture>
               </div>
               <button type="button" class="play_btn" aria-label="재생버튼" aria-pressed="false"></button>
             </div>
