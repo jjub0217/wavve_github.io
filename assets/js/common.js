@@ -19,17 +19,17 @@ const commonA11ySettings = {
   slideRole: "listitem",
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (popupBox.getAttribute("aria-expanded") === "true") {
-    btnClosePopup.focus();
-  }
-})
+// document.addEventListener("DOMContentLoaded", () => {
+//   if (popupBox.getAttribute("aria-expanded") === "true") {
+//     btnClosePopup.focus();
+//   }
+// })
 
-popupBox.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    closePopup();
-  }
-});
+// popupBox.addEventListener("keydown", (e) => {
+//   if (e.key === "Escape") {
+//     closePopup();
+//   }
+// });
 popupBox.addEventListener("click", (e) => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" || event.key === "Esc") {
