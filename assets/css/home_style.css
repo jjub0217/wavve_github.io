@@ -589,7 +589,6 @@ section[class^=section_]:not(.section_visual, .section_content) {
 
 .footer {
   min-width: 1280px;
-  padding: 38px 42px;
   padding: 38px 0;
   background-color: #000;
 }
