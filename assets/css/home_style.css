@@ -592,7 +592,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   padding: 38px 62px;
   background-color: #000;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .footer {
     padding: 38px 0;
   }
