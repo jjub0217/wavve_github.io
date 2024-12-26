@@ -74,11 +74,11 @@
 
 ## 모바일 디바이스 검수
 - 안드로이드 Note20 울트라
-<video src="https://github.com/user-attachments/assets/8a274963-b3c2-49dc-a3a1-8656ff3f1f2c" autoplay muted playsinline loop></video>
+<video src="https://github.com/user-attachments/assets/7783b912-4b7a-4e10-96b7-ee8fa475f6e4" autoplay muted playsinline loop></video>
 - 아이폰 SE2 
 <video src="https://github.com/user-attachments/assets/4887375f-8f1e-4606-80f4-24acfe427e8c" autoplay muted playsinline loop></video>
 - 아이패드 6
-<video src="https://github.com/user-attachments/assets/d41a19b2-8afb-4037-955c-675fb2f17a19" autoplay muted playsinline loop></video>
+<video src="https://github.com/user-attachments/assets/80b724cf-01f8-4b25-b346-c26241348447" autoplay muted playsinline loop></video>
 
 
 ## 기술 스택
@@ -86,7 +86,6 @@
 ![CSS3](https://img.shields.io/badge/CSS3-2E9AFE?style=flat-square&logo=CSS3&logoColor=white)
 ![SASS](https://img.shields.io/badge/Sass-cc6699?style=flat-square&logo=sass&logoColor=white)
 ![Javascript](https://img.shields.io/badge/Javascript-gray?style=flat-square&logo=Javascript&logoColor=f7df1e)
-![React](https://img.shields.io/badge/React-gray?style=flat-square&logo=React&logoColor=00dcff)
 ![Swiper](https://img.shields.io/badge/Swiper-gray?style=flat-square&logo=Swiper&logoColor=0080FF)
 
 
@@ -94,13 +93,13 @@
 | Name      | License                          | Copyright                                 |
 | --------- | -------------------------------- | ----------------------------------------- |
 | Swiper.js | MIT License                      | 2019 Vladimir Kharlampidi                 |
-| React.js  | MIT License                      | Facebook, Inc. and its affiliates         |
+| jQuery    | MIT License                      | OpenJS Foundation and jQuery contributors |
 
 
 ## 개선점
 - 웹접근성을 더욱 지키기 위해 텍스트와 배경간의 명도 대비, 고대비 점수를 높이기
-- 리뷰 를 누르면 뜨는 리뷰모달까지 만들기(시간이 없어서 만들지 못함)
 - 웹접근성을 더욱 지키기 위해 aria 를 더 사용해보기
+- React 를 사용하여 페이지를 만들어보기(시간이 없어서 만들지 못함)
 
 
 ## 연락처
