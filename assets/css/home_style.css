@@ -593,6 +593,11 @@ section[class^=section_]:not(.section_visual, .section_content) {
   padding: 38px 62px;
   background-color: #000;
 }
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 38px 0;
+  }
+}
 .footer .inner {
   display: flex;
 }

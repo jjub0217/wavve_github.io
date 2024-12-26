@@ -491,6 +491,9 @@ section {
   padding: 38px 62px;
   background-color: #000;
 
+  @include mobile {
+    padding: 38px 0;
+  }
   .inner {
     display: flex;
   }

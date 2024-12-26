@@ -593,6 +593,11 @@ section[class^=section_]:not(.section_visual, .section_content) {
   padding: 38px 62px;
   background-color: #000;
 }
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 38px 0;
+  }
+}
 .footer .inner {
   display: flex;
 }
@@ -634,7 +639,6 @@ section[class^=section_]:not(.section_visual, .section_content) {
   .header {
     min-width: 320px;
     max-width: 640px;
-    padding: 0 20px;
   }
 }
 
@@ -657,6 +661,9 @@ section[class^=section_]:not(.section_visual, .section_content) {
     min-width: 320px;
     padding: 20px;
   }
+}
+.footer .inner {
+  padding: 0;
 }
 .footer_logo {
   margin-right: 24px;
