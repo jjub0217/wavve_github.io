@@ -487,12 +487,10 @@ section {
 
 .footer {
   min-width: 1280px;
-  padding: 38px 62px;
+  padding: 38px 42px;
+  padding: 38px 0;
   background-color: #000;
 
-  @include tablet {
-    padding: 38px 0;
-  }
   .inner {
     display: flex;
   }

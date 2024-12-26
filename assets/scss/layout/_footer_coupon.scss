@@ -1,11 +1,6 @@
 .footer {
-  // @include tablet {
-  //   position: fixed;
-  //   bottom: 0;
-  // }
   @include mobile {
     display: block;
-    // position: static;
     max-width: 640px;
     min-width: 320px;
     padding: 20px;

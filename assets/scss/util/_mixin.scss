@@ -32,7 +32,6 @@
 }
 
 $desktop: 1280px;
-$tablet: 1024px;
 $mobile: 640px;
 $minMobile: 425px;
 
@@ -42,12 +41,6 @@ $minMobile: 425px;
   }
 }
 
-@mixin tablet {
-  // 960 이하를 꾸미는거다.
-  @media screen and (max-width: $tablet) {
-    @content;
-  }
-}
 @mixin mobile {
   @media screen and (max-width: $mobile) {
     @content;
