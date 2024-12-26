@@ -33,8 +33,8 @@
 ## 프로젝트 웹접근성
 - chrome Lighthouse 결과 :<br>
 모바일 디바이스의 접근성 표준을 준수하였는지 로컬에서 검사할수 있는 goole 의 lighthouse 로 검사하면 개선할점이 Accessibility  항목과 Best Practices 항목에서 나타납니다.  <br>
-[1] 메인페이지 : 데스크탑
-<img src="https://github.com/user-attachments/assets/cb6fb503-8b91-49e6-82ba-73593d3fea9d" width=800> <br>
+[1] 메인페이지
+<img src="https://github.com/user-attachments/assets/a07c639a-6d25-4834-bfda-0e3c3e28969f" width=800> <br>
 [2] live 페이지 
 <img src="https://github.com/user-attachments/assets/36d07c87-314a-4118-b86d-89bb5f908fb7" width=800> <br>
 [3] live 상세 페이지 
@@ -46,9 +46,31 @@
 
 
 - Open-WAX 결과 : error 0<br>
-<img src="https://github.com/user-attachments/assets/c7815243-339d-4472-b5a9-81d56c4ceb9d" width=270> <br>
+[1] 메인페이지
+<img src="https://github.com/user-attachments/assets/9bde78f3-28f8-4f19-ae06-36ead8794fa8" width=800> 
+[2] live 페이지 
+<img src="https://github.com/user-attachments/assets/e7649f3b-2529-45b4-acde-486fdb71a3b1" width=800> 
+[3] live 상세 페이지 
+<img src="https://github.com/user-attachments/assets/f8f50482-37b9-47d1-8869-8725b5eb7de6" width=800>
+[4] 쿠폰페이지 : 데스크탑
+<img src="https://github.com/user-attachments/assets/8a0468e9-d58a-4c17-8953-34429b2ba783" width=800>
+[5] 쿠폰페이지 : 모바일
+<img src="https://github.com/user-attachments/assets/523659f4-c3e0-47dd-b905-db808578d70b" width=800> 
+
+
+
+
 - WAVE 결과: error 0<br>
-<img src="https://github.com/user-attachments/assets/e7d8efca-c2c1-47b2-9e31-dd18917844e7" width=800>
+[1] 메인페이지
+<img src="https://github.com/user-attachments/assets/9ffd8aa3-2217-407c-a706-b0f79e70715a" width=800> 
+[2] live 페이지 
+<img src="https://github.com/user-attachments/assets/02153ac8-ae76-4d61-95cd-fc795f9d8f78" width=800> 
+[3] live 상세 페이지 
+<img src="https://github.com/user-attachments/assets/f5fc4756-3d9b-49f9-9202-8a323f2f2258" width=800>
+[4] 쿠폰페이지 : 데스크탑
+<img src="https://github.com/user-attachments/assets/4d0400e1-8efe-4a8b-8c20-891441cac2a9" width=800>
+[5] 쿠폰페이지 : 모바일
+<img src="https://github.com/user-attachments/assets/895489c9-dec7-420f-ada1-4d523a3d2f4fb" width=800> 
 
 ## 모바일 디바이스 검수
 - 안드로이드 Note20 울트라

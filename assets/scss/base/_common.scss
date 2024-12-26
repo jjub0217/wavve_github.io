@@ -163,6 +163,9 @@ section {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    @include minMobile {
+      flex-wrap: nowrap;
+    }
   }
 
   &.js_bg {

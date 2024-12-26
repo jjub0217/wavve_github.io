@@ -33,6 +33,7 @@
 
 $desktop: 1280px;
 $mobile: 640px;
+$minMobile: 425px;
 
 @mixin desktop {
   @media screen and (min-width: $desktop) {
@@ -42,6 +43,12 @@ $mobile: 640px;
 
 @mixin mobile {
   @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin minMobile {
+  @media screen and (max-width: $minMobile) {
     @content;
   }
 }

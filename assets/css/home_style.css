@@ -285,6 +285,11 @@ section[class^=section_]:not(.section_visual, .section_content) {
   justify-content: space-between;
   height: 100%;
 }
+@media screen and (max-width: 425px) {
+  .header .inner {
+    flex-wrap: nowrap;
+  }
+}
 .header.js_bg {
   background-color: #121212;
   opacity: 1;
