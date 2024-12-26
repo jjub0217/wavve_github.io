@@ -490,7 +490,7 @@ section {
   padding: 38px 62px;
   background-color: #000;
 
-  @include mobile {
+  @include tablet {
     padding: 38px 0;
   }
   .inner {
@@ -499,6 +499,7 @@ section {
 
   &_nav {
     display: flex;
+    align-items: center;
   }
 
   &_logo {
@@ -533,5 +534,6 @@ section {
     margin-left: auto;
     color: #8b8d91;
     font-size: 13px;
+    line-height: 20px;
   }
 }

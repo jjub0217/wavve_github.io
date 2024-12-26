@@ -76,7 +76,7 @@
 - 안드로이드 Note20 울트라
 <video src="https://github.com/user-attachments/assets/8a274963-b3c2-49dc-a3a1-8656ff3f1f2c" autoplay muted playsinline loop></video>
 - 아이폰 SE2 
-<video src="https://github.com/user-attachments/assets/85fec815-d8ac-4e7d-9a60-f5c201fd392b" autoplay muted playsinline loop></video>
+<video src="https://github.com/user-attachments/assets/4887375f-8f1e-4606-80f4-24acfe427e8c" autoplay muted playsinline loop></video>
 - 아이패드 6
 <video src="https://github.com/user-attachments/assets/d41a19b2-8afb-4037-955c-675fb2f17a19" autoplay muted playsinline loop></video>
 

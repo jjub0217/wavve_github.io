@@ -592,7 +592,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   padding: 38px 62px;
   background-color: #000;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 960px) {
   .footer {
     padding: 38px 0;
   }
@@ -602,6 +602,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
 }
 .footer_nav {
   display: flex;
+  align-items: center;
 }
 .footer_logo {
   width: 84px;
@@ -632,6 +633,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   margin-left: auto;
   color: #8b8d91;
   font-size: 13px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 640px) {
@@ -653,20 +655,33 @@ section[class^=section_]:not(.section_visual, .section_content) {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
 @media screen and (max-width: 640px) {
   .footer {
     display: block;
+    position: static;
     max-width: 640px;
     min-width: 320px;
     padding: 20px;
   }
 }
-.footer .inner {
-  padding: 0;
+@media screen and (max-width: 425px) {
+  .footer .inner {
+    padding: 0;
+  }
 }
 .footer_logo {
   margin-right: 24px;
-  margin-bottom: 10px;
+}
+@media screen and (max-width: 640px) {
+  .footer_logo {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 640px) {
   .footer_nav {

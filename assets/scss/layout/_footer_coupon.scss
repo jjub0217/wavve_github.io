@@ -1,16 +1,26 @@
 .footer {
+  @include tablet {
+    position: fixed;
+    bottom: 0;
+  }
   @include mobile {
     display: block;
+    position: static;
     max-width: 640px;
     min-width: 320px;
     padding: 20px;
   }
+
   .inner {
-    padding: 0;
+    @include minMobile {
+      padding: 0;
+    }
   }
   &_logo {
     margin-right: 24px;
-    margin-bottom: 10px;
+    @include mobile {
+      margin-bottom: 10px;
+    }
   }
   &_nav {
     @include mobile {
