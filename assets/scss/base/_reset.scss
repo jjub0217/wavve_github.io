@@ -57,6 +57,16 @@ button {
   color: #fff;
 }
 
+html[lang="ja"] {
+  body,
+  input,
+  select,
+  textarea,
+  button {
+    font-family: "Noto Sans JP", "Noto Sans KR", sans-serif;
+  }
+}
+
 ul,
 ol {
   list-style: none;

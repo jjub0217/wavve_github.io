@@ -66,6 +66,14 @@ button {
   color: #fff;
 }
 
+html[lang=ja] body,
+html[lang=ja] input,
+html[lang=ja] select,
+html[lang=ja] textarea,
+html[lang=ja] button {
+  font-family: "Noto Sans JP", "Noto Sans KR", sans-serif;
+}
+
 ul,
 ol {
   list-style: none;
@@ -370,6 +378,26 @@ section[class^=section_]:not(.section_visual, .section_content) {
   background: url("../images/Ico_search.png") no-repeat center/contain;
 }
 
+.lang_toggle {
+  display: flex;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.lang_option {
+  padding: 0 12px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  cursor: pointer;
+}
+.lang_option[aria-pressed=true] {
+  background-color: #fff;
+  color: #121212;
+}
+
 .login_link {
   width: 76px;
   height: 32px;
@@ -422,7 +450,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
 }
 @media screen and (max-width: 640px) {
   .tab_item_title {
-    max-width: 100px;
+    white-space: nowrap;
   }
 }
 .tab_item_title[aria-selected=true] {
@@ -645,8 +673,16 @@ section[class^=section_]:not(.section_visual, .section_content) {
   height: 10px;
   border-radius: 50%;
   background-color: #3b82f6;
-  pointer-events: none;
   animation: coachPulse 1.5s ease-out infinite;
+  cursor: help;
+}
+.coach_mark .coach_tip {
+  pointer-events: none;
+}
+.coach_mark::before {
+  position: absolute;
+  inset: -7px;
+  content: "";
 }
 
 .coach_tip {
@@ -665,7 +701,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   transition: opacity 0.2s;
 }
 
-[data-coach]:hover > .coach_mark .coach_tip,
+[data-coach] > .coach_mark:hover .coach_tip,
 [data-coach]:focus-visible > .coach_mark .coach_tip,
 [data-coach]:has(:focus-visible) > .coach_mark .coach_tip {
   opacity: 1;
@@ -699,6 +735,16 @@ section[class^=section_]:not(.section_visual, .section_content) {
     max-width: 640px;
   }
 }
+@media screen and (max-width: 640px) {
+  .header .inner {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header .lang_toggle {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .nav {
@@ -725,6 +771,12 @@ section[class^=section_]:not(.section_visual, .section_content) {
     padding: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .footer .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .footer_logo {
   margin-right: 24px;
 }
@@ -736,6 +788,16 @@ section[class^=section_]:not(.section_visual, .section_content) {
 @media screen and (max-width: 640px) {
   .footer_nav {
     display: block;
+    width: 100%;
+  }
+}
+.footer .lang_toggle {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .footer .lang_toggle {
+    display: flex;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -832,6 +894,11 @@ section[class^=section_]:not(.section_visual, .section_content) {
   vertical-align: middle;
   content: "";
 }
+@media screen and (max-width: 640px) {
+  .section_registration fieldset {
+    min-width: 0;
+  }
+}
 .section_registration .input_coupon_code {
   width: 520px;
   padding: 14px 8px 14px 14px;
@@ -840,7 +907,8 @@ section[class^=section_]:not(.section_visual, .section_content) {
 }
 @media screen and (max-width: 640px) {
   .section_registration .input_coupon_code {
-    width: calc(100% - 119px);
+    flex: 1;
+    min-width: 0;
   }
 }
 .section_registration .input_coupon_code::-moz-placeholder {
@@ -850,7 +918,9 @@ section[class^=section_]:not(.section_visual, .section_content) {
   font-size: 16px;
 }
 .section_registration .btn_register {
-  width: 119px;
+  min-width: 119px;
+  flex-shrink: 0;
+  white-space: nowrap;
   padding: 14px;
   border-radius: 100px;
   font-size: 16px;
@@ -864,7 +934,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
 }
 @media screen and (max-width: 640px) {
   .section_registration .btn_register {
-    width: 100px;
+    min-width: 100px;
   }
 }
 

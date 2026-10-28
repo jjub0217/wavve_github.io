@@ -6,6 +6,7 @@
     <meta
       name="description"
       content="이 페이지는 Wavve(웨이브)의 홈페이지입니다."
+      data-i18n-content="meta.description"
     />
     <link
       rel="icon"
@@ -13,12 +14,12 @@
       type="image/x-icon"
       sizes="16x16"
     />
-    <title>Wavve(웨이브)</title>
+    <title data-i18n="page.title">Wavve(웨이브)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
     />
     <link rel="stylesheet" href="./assets/css/live_style.min.css" />
   </head>
@@ -69,14 +70,14 @@
         </div>
       </div>
       <div class="skip">
-        <a href="#main">본문 바로가기</a>
+        <a href="#main" data-i18n="common.skip">본문 바로가기</a>
       </div>
       <!-- [D] 스크롤 시 .header 에 .js_bg 클래스이름을 추가 및 삭제 -->
       <header id="header" class="header">
         <div class="inner">
           <h1 class="site_logo">
             <a href="./index.html">
-              <span class="blind">메인페이지</span>
+              <span class="blind" data-i18n="util.home">메인페이지</span>
               <img
                 src="./assets/images/ico_header_logo.png"
                 alt="wavve"
@@ -88,50 +89,87 @@
           </h1>
           <nav class="nav">
             <ul class="nav_list">
-              <li class="nav_item"><a href="" class="nav_link">드라마</a></li>
-              <li class="nav_item"><a href="" class="nav_link">예능</a></li>
-              <li class="nav_item"><a href="" class="nav_link">영화</a></li>
-              <li class="nav_item"><a href="" class="nav_link">애니</a></li>
               <li class="nav_item">
-                <a href="" class="nav_link">해외시리즈</a>
+                <a href="" class="nav_link" data-i18n="nav.drama">드라마</a>
               </li>
-              <li class="nav_item"><a href="" class="nav_link">시사교양</a></li>
-              <li class="nav_item"><a href="" class="nav_link">키즈</a></li>
               <li class="nav_item">
-                <a href="" class="nav_link">영화플러스</a>
+                <a href="" class="nav_link" data-i18n="nav.variety">예능</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link" data-i18n="nav.movie">영화</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link" data-i18n="nav.animation">애니</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link" data-i18n="nav.overseas"
+                  >해외시리즈</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link" data-i18n="nav.documentary"
+                  >시사교양</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link" data-i18n="nav.kids">키즈</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link" data-i18n="nav.moviePlus"
+                  >영화플러스</a
+                >
               </li>
               <li class="nav_item">
                 <a
-                  href=""
+                  href="./index_live.html"
                   class="nav_link"
-                  aria-current="page"
                   data-coach="LIVE 페이지로 이동합니다"
-                  >LIVE</a
+                >
+                  <span data-i18n="nav.live">LIVE</span></a
                 >
               </li>
             </ul>
           </nav>
           <div class="utility_area">
+            <div class="lang_toggle" role="group" aria-label="언어 선택" data-i18n-aria-label="aria.langSelect">
+              <button
+                type="button"
+                class="lang_option"
+                data-lang="ko"
+                aria-pressed="true"
+              >
+                한국어
+              </button>
+              <button
+                type="button"
+                class="lang_option"
+                data-lang="ja"
+                lang="ja"
+                aria-pressed="false"
+              >
+                日本語
+              </button>
+            </div>
             <a href="" class="utility_link utility_promotion">
-              <span class="blind">프로모션</span>
+              <span class="blind" data-i18n="util.promotion">프로모션</span>
             </a>
             <a
               href="./index_coupon.html"
               class="utility_link utility_coupon"
               data-coach="이용권(쿠폰) 페이지로 이동합니다"
             >
-              <span class="blind">쿠폰</span>
+              <span class="blind" data-i18n="util.coupon">쿠폰</span>
             </a>
             <a href="" class="utility_link utility_search">
-              <span class="blind">검색</span>
+              <span class="blind" data-i18n="util.search">검색</span>
             </a>
-            <a href="" class="login_link">로그인</a>
+            <a href="" class="login_link" data-i18n="util.login">로그인</a>
           </div>
         </div>
       </header>
       <main id="main" class="container">
         <section class="section_channel">
-          <h2 class="blind">체널 리스트</h2>
+          <h2 class="blind" data-i18n="live.channelList">체널 리스트</h2>
           <div class="inner">
             <div class="tab_area">
               <ul class="tab_list" role="tablist">
@@ -143,6 +181,7 @@
                     role="tab"
                     aria-selected="true"
                     class="tab_item_title"
+                    data-i18n="live.allChannels"
                     aria-controls="all_channel"
                   >
                     전체 채널
@@ -153,6 +192,7 @@
                     type="button"
                     role="tab"
                     class="tab_item_title"
+                    data-i18n="live.recommend"
                     aria-selected="false"
                   >
                     추천
@@ -179,6 +219,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.all"
                       aria-selected="true"
                     >
                       전체장르
@@ -189,6 +230,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.romance"
                       aria-selected="false"
                     >
                       로맨틱
@@ -199,6 +241,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.comedy"
                       aria-selected="false"
                     >
                       코메디
@@ -209,6 +252,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.mystery"
                       aria-selected="false"
                     >
                       추리
@@ -219,6 +263,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.crime"
                       aria-selected="false"
                     >
                       범죄
@@ -229,6 +274,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.thriller"
                       aria-selected="false"
                     >
                       스릴러
@@ -239,6 +285,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.family"
                       aria-selected="false"
                     >
                       가족
@@ -249,6 +296,7 @@
                       type="button"
                       role="option"
                       class="option_title"
+                      data-i18n="genre.martial"
                       aria-selected="false"
                     >
                       무협
@@ -267,7 +315,7 @@
                   >
                     <div class="text_box">
                       <strong class="channel">MBC</strong>
-                      <p class="title">쇼! 음악중심 720회</p>
+                      <p class="title" data-i18n="prog.musicCore">쇼! 음악중심 720회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -280,6 +328,7 @@
                         <img
                           src="./assets/images/img_main.png"
                           alt="MBC 쇼! 음악중심 720회"
+                          data-i18n-alt="alt.live.musicCore"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -291,8 +340,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">iHQ 맛있는녀석들</strong>
-                      <p class="title">맛있는 녀석들 329회</p>
+                      <strong class="channel" data-i18n="ch.ihqTasty">iHQ 맛있는녀석들</strong>
+                      <p class="title" data-i18n="prog.tasty">맛있는 녀석들 329회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -305,6 +354,7 @@
                         <img
                           src="./assets/images/img_channel_item2.jpg"
                           alt="iHQ 맛있는녀석들 맛있는 녀석들 329회"
+                          data-i18n-alt="alt.live.tasty"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -317,7 +367,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">YTN</strong>
-                      <p class="title">뉴스퀘어 2PM</p>
+                      <p class="title" data-i18n="prog.newsquare">뉴스퀘어 2PM</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -330,6 +380,7 @@
                         <img
                           src="./assets/images/img_channel_item3.png"
                           alt="YTN 뉴스퀘어 2PM"
+                          data-i18n-alt="alt.live.newsquare"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -342,7 +393,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">TV CHOSUN</strong>
-                      <p class="title">사건파일 24</p>
+                      <p class="title" data-i18n="prog.caseFile">사건파일 24</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -355,6 +406,7 @@
                         <img
                           src="./assets/images/img_channel_item4.jpg"
                           alt="TV CHOSUN 사건파일 24"
+                          data-i18n-alt="alt.live.caseFile"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -366,8 +418,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">현대홈쇼핑</strong>
-                      <p class="title">수카프 에메트 실버925 목걸이(210g)</p>
+                      <strong class="channel" data-i18n="ch.hyundaiHome">현대홈쇼핑</strong>
+                      <p class="title" data-i18n="prog.necklace">수카프 에메트 실버925 목걸이(210g)</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -380,6 +432,7 @@
                         <img
                           src="./assets/images/img_channel_item5.jpg"
                           alt="현대홈쇼핑 수카프 에메트 실버925 목걸이(210g)"
+                          data-i18n-alt="alt.live.necklace"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -392,7 +445,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">SBS</strong>
-                      <p class="title">뉴스브리핑</p>
+                      <p class="title" data-i18n="prog.newsBriefing">뉴스브리핑</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -405,6 +458,7 @@
                         <img
                           src="./assets/images/img_channel_item6.png"
                           alt="SBS 뉴스브리핑"
+                          data-i18n-alt="alt.live.newsBriefing"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -416,8 +470,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">공영 홈쇼핑</strong>
-                      <p class="title">
+                      <strong class="channel" data-i18n="ch.publicHome">공영 홈쇼핑</strong>
+                      <p class="title" data-i18n="prog.jejuNoodle">
                         [F_공익]__[공익] 제주메밀냉면+가파도청보리수제비 세트
                       </p>
                     </div>
@@ -432,6 +486,7 @@
                         <img
                           src="./assets/images/img_channel_item7.jpg"
                           alt="공영 홈쇼핑 제주메밀냉면+가파도청보리수제비 세트"
+                          data-i18n-alt="alt.live.jejuNoodle"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -443,8 +498,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">MBC 무한도전</strong>
-                      <p class="title">
+                      <strong class="channel" data-i18n="ch.mbcInfinite">MBC 무한도전</strong>
+                      <p class="title" data-i18n="prog.infinite26">
                         [26 회] 김수로 특집 &#60;속아보길 바래&#62;
                       </p>
                     </div>
@@ -459,6 +514,7 @@
                         <img
                           src="./assets/images/img_channel_item8.png"
                           alt="MBC 무한도전 [26 회] 김수로 특집 &#60;속아보길 바래&#62;"
+                          data-i18n-alt="alt.live.infinite26"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -470,8 +526,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">연합뉴스 TV</strong>
-                      <p class="title">뉴스1번지</p>
+                      <strong class="channel" data-i18n="ch.yonhap">연합뉴스 TV</strong>
+                      <p class="title" data-i18n="prog.news1">뉴스1번지</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -484,6 +540,7 @@
                         <img
                           src="./assets/images/img_channel_item9.jpg"
                           alt="연합뉴스 TV 뉴스1번지"
+                          data-i18n-alt="alt.live.news1"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -495,8 +552,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">SK스토아</strong>
-                      <p class="title">
+                      <strong class="channel" data-i18n="ch.skStoa">SK스토아</strong>
+                      <p class="title" data-i18n="prog.innerwear">
                         [클라시안](기획가) 클라시안 인견메쉬 한겹 낮잠
                         브라팬티(8종)
                       </p>
@@ -512,6 +569,7 @@
                         <img
                           src="./assets/images/img_channel_item10.png"
                           alt="SK스토아 클라시안 인견메쉬 한겹 낮잠 브라팬티(8종)"
+                          data-i18n-alt="alt.live.innerwear"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -551,7 +609,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">ANIMAX</strong>
-                      <p class="title">명탐정 코난10</p>
+                      <p class="title" data-i18n="prog.conan">명탐정 코난10</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -564,6 +622,7 @@
                         <img
                           src="./assets/images/img_channel_item12.jpg"
                           alt="ANIMAX 명탐정 코난10"
+                          data-i18n-alt="alt.live.conan"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -575,8 +634,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">KBS 1박 2일</strong>
-                      <p class="title">시즌1 MC몽 합류! - 가거도(1)</p>
+                      <strong class="channel" data-i18n="ch.kbs2days">KBS 1박 2일</strong>
+                      <p class="title" data-i18n="prog.2days">시즌1 MC몽 합류! - 가거도(1)</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -589,6 +648,7 @@
                         <img
                           src="./assets/images/img_channel_item13.png"
                           alt="KBS 1박 2일 시즌1 MC몽 합류! - 가거도(1)"
+                          data-i18n-alt="alt.live.2days"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -600,8 +660,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">레전드 시트콤</strong>
-                      <p class="title">웬만해선 그들을 막을 수 없다 19회</p>
+                      <strong class="channel" data-i18n="ch.legendSitcom">레전드 시트콤</strong>
+                      <p class="title" data-i18n="prog.sitcom">웬만해선 그들을 막을 수 없다 19회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -614,6 +674,7 @@
                         <img
                           src="./assets/images/img_channel_item14.png"
                           alt="레전드 시트콤 웬만해선 그들을 막을 수 없다 19회"
+                          data-i18n-alt="alt.live.sitcom"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -625,8 +686,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">KBS 사랑과전쟁</strong>
-                      <p class="title">사랑과 전쟁 시즌1 65회</p>
+                      <strong class="channel" data-i18n="ch.kbsLoveWar">KBS 사랑과전쟁</strong>
+                      <p class="title" data-i18n="prog.loveWar">사랑과 전쟁 시즌1 65회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -639,6 +700,7 @@
                         <img
                           src="./assets/images/img_channel_item15.png"
                           alt="KBS 사랑과전쟁 사랑과 전쟁 시즌1 65회"
+                          data-i18n-alt="alt.live.loveWar"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -650,8 +712,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">SBS 파워FM</strong>
-                      <p class="title">두시탈출 컬투쇼</p>
+                      <strong class="channel" data-i18n="ch.sbsPowerFm">SBS 파워FM</strong>
+                      <p class="title" data-i18n="radio.cultwo">두시탈출 컬투쇼</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -664,6 +726,7 @@
                         <img
                           src="./assets/images/img_channel_item16.png"
                           alt="SBS 파워FM 두시탈출 컬투쇼"
+                          data-i18n-alt="alt.live.cultwo"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -702,8 +765,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">런닝맨</strong>
-                      <p class="title">
+                      <strong class="channel" data-i18n="ch.runningMan">런닝맨</strong>
+                      <p class="title" data-i18n="prog.runningMan">
                         런닝맨, 서울의 상징 ‘서울타워’를 점령하다!
                       </p>
                     </div>
@@ -718,6 +781,7 @@
                         <img
                           src="./assets/images/img_channel_item18.png"
                           alt="런닝맨 서울의 상징 ‘서울타워’를 점령하다!"
+                          data-i18n-alt="alt.live.runningMan"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -730,7 +794,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">KBS 1TV</strong>
-                      <p class="title">이웃집 찰스</p>
+                      <p class="title" data-i18n="prog.charles">이웃집 찰스</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -743,6 +807,7 @@
                         <img
                           src="./assets/images/img_channel_item19.png"
                           alt="KBS 1TV 이웃집 찰스"
+                          data-i18n-alt="alt.live.charles"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -754,8 +819,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">MBC 하이킥24 LIVE</strong>
-                      <p class="title">[지붕 뚫고 하이킥] [33회]</p>
+                      <strong class="channel" data-i18n="ch.mbcHighKick">MBC 하이킥24 LIVE</strong>
+                      <p class="title" data-i18n="prog.highKick">[지붕 뚫고 하이킥] [33회]</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -768,6 +833,7 @@
                         <img
                           src="./assets/images/img_channel_item20.png"
                           alt="MBC 하이킥24 LIVE [지붕 뚫고 하이킥] [33회]"
+                          data-i18n-alt="alt.live.highKick"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -780,7 +846,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">MBC</strong>
-                      <p class="title">2시 뉴스 외전</p>
+                      <p class="title" data-i18n="prog.news2pm">2시 뉴스 외전</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -793,6 +859,7 @@
                         <img
                           src="./assets/images/img_channel_item21.png"
                           alt="MBC 2시 뉴스 외전"
+                          data-i18n-alt="alt.live.news2pm"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -804,8 +871,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">KISS - 최신인기가요</strong>
-                      <p class="title">함께 들어요 최신가요</p>
+                      <strong class="channel" data-i18n="ch.kissLatest">KISS - 최신인기가요</strong>
+                      <p class="title" data-i18n="prog.latestSongs">함께 들어요 최신가요</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -818,6 +885,7 @@
                         <img
                           src="./assets/images/img_channel_item22.jpg"
                           alt="KISS - 최신인기가요 함께 들어요 최신가요"
+                          data-i18n-alt="alt.live.latestSongs"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -856,8 +924,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">KBS 사극</strong>
-                      <p class="title">태조 왕건 74회</p>
+                      <strong class="channel" data-i18n="ch.kbsHistorical">KBS 사극</strong>
+                      <p class="title" data-i18n="prog.wangGeon">태조 왕건 74회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -870,6 +938,7 @@
                         <img
                           src="./assets/images/img_channel_item24.png"
                           alt="KBS 사극 태조 왕건 74회"
+                          data-i18n-alt="alt.live.wangGeon"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -881,8 +950,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">MBC 나 혼자 산다</strong>
-                      <p class="title">[467회] 나는 나의 길을 간다</p>
+                      <strong class="channel" data-i18n="ch.mbcAlone">MBC 나 혼자 산다</strong>
+                      <p class="title" data-i18n="prog.alone467">[467회] 나는 나의 길을 간다</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -895,6 +964,7 @@
                         <img
                           src="./assets/images/img_channel_item25.png"
                           alt="MBC 나 혼자 산다 [467회] 나는 나의 길을 간다"
+                          data-i18n-alt="alt.live.alone467"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -906,8 +976,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">KBS 주말명작</strong>
-                      <p class="title">왕가네 식구들 39회</p>
+                      <strong class="channel" data-i18n="ch.kbsWeekend">KBS 주말명작</strong>
+                      <p class="title" data-i18n="prog.wangFamily">왕가네 식구들 39회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -920,6 +990,7 @@
                         <img
                           src="./assets/images/img_channel_item26.jpg"
                           alt="KBS 주말명작 왕가네 식구들 39회"
+                          data-i18n-alt="alt.live.wangFamily"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -931,8 +1002,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">국회방송</strong>
-                      <p class="title">국회의사중계방송</p>
+                      <strong class="channel" data-i18n="ch.assembly">국회방송</strong>
+                      <p class="title" data-i18n="prog.assembly">국회의사중계방송</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -945,6 +1016,7 @@
                         <img
                           src="./assets/images/img_channel_item27.png"
                           alt="국회방송 국회의사중계방송"
+                          data-i18n-alt="alt.live.assembly"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -956,8 +1028,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">MBN 실제상황</strong>
-                      <p class="title">기막힌 이야기 실제상황 407회</p>
+                      <strong class="channel" data-i18n="ch.mbnReal">MBN 실제상황</strong>
+                      <p class="title" data-i18n="prog.mbnReal">기막힌 이야기 실제상황 407회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -970,6 +1042,7 @@
                         <img
                           src="./assets/images/img_channel_item28.png"
                           alt="MBN 실제상황 기막힌 이야기 실제상황 407회"
+                          data-i18n-alt="alt.live.mbnReal"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -982,7 +1055,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">MBN</strong>
-                      <p class="title">한 번쯤 이혼할 결심</p>
+                      <p class="title" data-i18n="prog.divorce">한 번쯤 이혼할 결심</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -995,6 +1068,7 @@
                         <img
                           src="./assets/images/img_channel_item29.png"
                           alt="MBN 한 번쯤 이혼할 결심"
+                          data-i18n-alt="alt.live.divorce"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -1006,8 +1080,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">현대홈쇼핑+샵</strong>
-                      <p class="title">
+                      <strong class="channel" data-i18n="ch.hyundaiPlus">현대홈쇼핑+샵</strong>
+                      <p class="title" data-i18n="prog.bubble">
                         [더블][크린바바] 한번에 싹 버블왕 (100개구성)
                       </p>
                     </div>
@@ -1022,6 +1096,7 @@
                         <img
                           src="./assets/images/img_channel_item30.png"
                           alt="현대홈쇼핑+샵 [더블][크린바바] 한번에 싹 버블왕 (100개구성)"
+                          data-i18n-alt="alt.live.bubble"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -1061,7 +1136,7 @@
                   <a href="" class="link_item">
                     <div class="text_box">
                       <strong class="channel">ANIMAX</strong>
-                      <p class="title">차징 탑스피너 BX</p>
+                      <p class="title" data-i18n="prog.spinner">차징 탑스피너 BX</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -1074,6 +1149,7 @@
                         <img
                           src="./assets/images/img_channel_item32.png"
                           alt="ANIMAX 차징 탑스피너 BX"
+                          data-i18n-alt="alt.live.spinner"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -1085,8 +1161,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">빽드</strong>
-                      <p class="title">야인시대 17회</p>
+                      <strong class="channel" data-i18n="ch.baekd">빽드</strong>
+                      <p class="title" data-i18n="prog.yain">야인시대 17회</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -1099,6 +1175,7 @@
                         <img
                           src="./assets/images/img_channel_item33.jpg"
                           alt="빽드 야인시대 17회"
+                          data-i18n-alt="alt.live.yain"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -1110,8 +1187,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">KISS - 탑골 K-POP</strong>
-                      <p class="title">정겨운 노래가 있는 오후</p>
+                      <strong class="channel" data-i18n="ch.kissTapgol">KISS - 탑골 K-POP</strong>
+                      <p class="title" data-i18n="prog.oldSongs">정겨운 노래가 있는 오후</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -1124,6 +1201,7 @@
                         <img
                           src="./assets/images/img_channel_item34.jpg"
                           alt="KISS - 탑골 K-POP 정겨운 노래가 있는 오후"
+                          data-i18n-alt="alt.live.oldSongs"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -1135,8 +1213,8 @@
                 <li class="channel_item">
                   <a href="" class="link_item">
                     <div class="text_box">
-                      <strong class="channel">한국경제TV</strong>
-                      <p class="title">성공투자 오후증시 2부</p>
+                      <strong class="channel" data-i18n="ch.hankyungTv">한국경제TV</strong>
+                      <p class="title" data-i18n="prog.stock">성공투자 오후증시 2부</p>
                     </div>
                     <div class="image_box">
                       <picture>
@@ -1149,6 +1227,7 @@
                         <img
                           src="./assets/images/img_channel_item35.jpg"
                           alt="한국경제TV 성공투자 오후증시 2부"
+                          data-i18n-alt="alt.live.stock"
                           loading="lazy"
                           width="231"
                           height="130"
@@ -1166,7 +1245,7 @@
         <div class="inner">
           <nav class="footer_nav">
             <div class="footer_logo">
-              <span class="blind">웨이브</span>
+              <span class="blind" data-i18n="footer.logo">웨이브</span>
               <img
                 src="./assets/images/ico_footer_logo.png"
                 alt="wavve"
@@ -1175,10 +1254,10 @@
                 height="20"
               />
             </div>
-            <a href="" class="footer_nav_link"> 이용약관</a>
-            <a href="" class="footer_nav_link"> 개인정보 보호정책</a>
-            <a href="" class="footer_nav_link"> 고객센터</a>
-            <a href="" class="footer_nav_link"> 공지사항</a>
+            <a href="" class="footer_nav_link" data-i18n="footer.terms"> 이용약관</a>
+            <a href="" class="footer_nav_link" data-i18n="footer.privacy"> 개인정보 보호정책</a>
+            <a href="" class="footer_nav_link" data-i18n="footer.support"> 고객센터</a>
+            <a href="" class="footer_nav_link" data-i18n="footer.notice"> 공지사항</a>
           </nav>
           <small class="copyright"
             >Copyright © jjub0217 All rights reserved.jjub0217</small
@@ -1187,5 +1266,6 @@
       </footer>
     </div>
     <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/i18n.js"></script>
   </body>
 </html>

@@ -10,6 +10,10 @@
     @include minMobile {
       padding: 0;
     }
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &_logo {
     margin-right: 24px;
@@ -20,6 +24,14 @@
   &_nav {
     @include mobile {
       display: block;
+      width: 100%;
+    }
+  }
+  .lang_toggle {
+    display: none;
+    @include mobile {
+      display: flex;
+      margin-top: 20px;
     }
   }
 

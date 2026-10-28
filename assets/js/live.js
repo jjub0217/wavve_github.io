@@ -1,7 +1,7 @@
-const createSwiper = (selector, options) => new Swiper(selector, options);
+// const createSwiper = (selector, options) => new Swiper(selector, options);
 
-createSwiper(".section_schedule .swiper", {
-  a11y: commonA11ySettings,
+createSwiper(".section_schedule .swiper", ".schedule", {
+  // a11y: getA11ySettings(".schedule"),
   slidesPerView: 4,
   navigation: {
     nextEl: ".section_schedule .btn_next",

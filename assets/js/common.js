@@ -6,47 +6,68 @@ const btnClosePopup = document.querySelector(".btn_close_popup");
 const popupBox = document.querySelector(".popup_box");
 const tabItemTitles = document.querySelectorAll(".tab_item_title") ?? "";
 const selectBoxes = document.querySelectorAll(".select_box") ?? "";
-const commonA11ySettings = {
-  enabled: true,
-  containerMessage: "프로모션 슬라이드 영역입니다.",
-  slideLabelMessage:
-    "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
-  firstSlideMessage: "첫번째 슬라이드입니다.",
-  lastSlideMessage: "마지막 슬라이드입니다.",
-  paginationBulletMessage: "{{index}}번째 슬라이드로 이동합니다.",
-  containerRoleDescriptionMessage: "Carousel",
-  itemRoleDescriptionMessage: "Slide",
-  slideRole: "listitem",
+
+const getA11ySettings = (section) => {
+  const commonA11ySettings = {
+    enabled: true,
+    // containerMessage: getText(`swiper.container${section}`),
+    slideLabelMessage: getText("swiper.slideLabel"),
+    firstSlideMessage: getText("swiper.first"),
+    lastSlideMessage: getText("swiper.last"),
+    paginationBulletMessage: getText("swiper.bullet"),
+    containerRoleDescriptionMessage: getText("swiper.containerRole"),
+    itemRoleDescriptionMessage: getText("swiper.itemRole"),
+    containerRole: "region",
+    slideRole: "listitem",
+  };
+
+  return {
+    ...commonA11ySettings,
+    containerMessage: getText(`swiper.container${section}`),
+  };
 };
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   if (popupBox.getAttribute("aria-expanded") === "true") {
-//     btnClosePopup.focus();
-//   }
-// })
+const swipers = [];
 
-// popupBox.addEventListener("keydown", (e) => {
-//   if (e.key === "Escape") {
-//     closePopup();
-//   }
-// });
-// popupBox.addEventListener("click", (e) => {
-//   document.addEventListener("keydown", (event) => {
-//     if (event.key === "Escape" || event.key === "Esc") {
-//       closePopup();
-//     }
-//   }, { once: true });
-// });
+const createSwiper = (selector, section, options) => {
+  const swiper = new Swiper(selector, {
+    ...options,
+    a11y: getA11ySettings(section),
+  });
+  swipers.push({ swiper, section });
+  return swiper;
+};
 
-// const closePopup = () => {
-//   document.body.classList.remove("scroll_hide");
-//   popupBox.setAttribute("aria-expanded", "false");
-// };
+document.addEventListener("langchange", () => {
+  swipers.forEach(({ swiper, section }) => {
+    const a11y = getA11ySettings(section);
 
-// btnClosePopup.onclick = (e) => {
-//   e.target.setAttribute("aria-expanded", "false");
-//   closePopup()
-// };
+    // 첫 번째, 마지막 슬라이드 알림은 Swiper가 알릴 때마다 이 설정을 읽음
+    swiper.params.a11y = { ...swiper.params.a11y, ...a11y };
+
+    // 슬라이드 묶음 전체
+    swiper.el.setAttribute("aria-label", a11y.containerMessage);
+    swiper.el.setAttribute(
+      "aria-roledescription",
+      a11y.containerRoleDescriptionMessage,
+    );
+
+    swiper.slides.forEach((slide, index) => {
+      const number = swiper.params.loop
+        ? Number(slide.dataset.swiperSlideIndex) + 1
+        : index + 1;
+
+      const label = a11y.slideLabelMessage
+        .replace("{{index}}", number)
+        .replace("{{slidesLength}}", swiper.slides.length);
+      slide.setAttribute(
+        "aria-roledescription",
+        a11y.itemRoleDescriptionMessage,
+      );
+      slide.setAttribute("aria-label", label);
+    });
+  });
+});
 
 if (popupBox) {
   const openPopup = () => {

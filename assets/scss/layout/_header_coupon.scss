@@ -3,6 +3,18 @@
     min-width: 320px;
     max-width: 640px;
   }
+
+  .inner {
+    @include mobile {
+      padding: 0 20px;
+    }
+  }
+
+  .lang_toggle {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .nav {

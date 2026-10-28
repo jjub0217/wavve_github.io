@@ -262,6 +262,27 @@ section {
   }
 }
 
+.lang_toggle {
+  display: flex;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.lang_option {
+  padding: 0 12px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  cursor: pointer;
+
+  &[aria-pressed="true"] {
+    background-color: #fff;
+    color: #121212;
+  }
+}
+
 .login_link {
   width: 76px;
   height: 32px;
@@ -313,7 +334,8 @@ section {
   cursor: pointer;
 
   @include mobile {
-    max-width: 100px;
+    // max-width: 100px;
+    white-space: nowrap;
   }
 
   &[aria-selected="true"] {
@@ -551,8 +573,19 @@ section {
   height: 10px;
   border-radius: 50%;
   background-color: #3b82f6;
-  pointer-events: none;
+  // pointer-events: none;
   animation: coachPulse 1.5s ease-out infinite;
+  cursor: help;
+
+  .coach_tip {
+    pointer-events: none;
+  }
+
+  &::before {
+    position: absolute;
+    inset: -7px;
+    content: "";
+  }
 }
 
 .coach_tip {
@@ -571,7 +604,7 @@ section {
   transition: opacity 0.2s;
 }
 
-[data-coach]:hover > .coach_mark .coach_tip,
+[data-coach] > .coach_mark:hover .coach_tip,
 [data-coach]:focus-visible > .coach_mark .coach_tip,
 [data-coach]:has(:focus-visible) > .coach_mark .coach_tip {
   opacity: 1;
