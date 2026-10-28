@@ -61,7 +61,7 @@ select,
 textarea,
 button {
   background-color: #121212;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", "Noto Sans JP", sans-serif;
   font-weight: 400;
   color: #fff;
 }
@@ -192,7 +192,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   display: none;
 }
 
-.popup_box[aria-expanded=true] {
+.popup_box[data-open=true] {
   display: block;
   position: fixed;
   top: 0;
@@ -202,7 +202,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
-.popup_box[aria-expanded=true] .popup {
+.popup_box[data-open=true] .popup {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -213,47 +213,47 @@ section[class^=section_]:not(.section_visual, .section_content) {
   background: url("../images/img_popup_background.png") no-repeat center/cover;
   text-align: center;
 }
-.popup_box[aria-expanded=true] .headline {
+.popup_box[data-open=true] .headline {
   padding-bottom: 5px;
   font-size: 30px;
 }
-.popup_box[aria-expanded=true] .page_list {
+.popup_box[data-open=true] .page_list {
   padding: 30px 0 0 0;
 }
-.popup_box[aria-expanded=true] .page_item {
+.popup_box[data-open=true] .page_item {
   text-align: left;
   padding: 10px;
 }
-.popup_box[aria-expanded=true] .page_item:first-of-type {
+.popup_box[data-open=true] .page_item:first-of-type {
   border: 1px solid #fff;
 }
-.popup_box[aria-expanded=true] .page_item::before {
+.popup_box[data-open=true] .page_item::before {
   display: inline-block;
   margin-right: 10px;
   content: "•";
 }
-.popup_box[aria-expanded=true] .title {
+.popup_box[data-open=true] .title {
   display: inline-block;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
 }
-.popup_box[aria-expanded=true] .title:after {
+.popup_box[data-open=true] .title:after {
   display: block;
   height: 1px;
   background: #fff;
   content: "";
 }
-.popup_box[aria-expanded=true] .title_desc {
+.popup_box[data-open=true] .title_desc {
   padding-top: 5px;
   color: #fff;
   font-size: 16px;
 }
-.popup_box[aria-expanded=true] .desc {
+.popup_box[data-open=true] .desc {
   color: rgba(255, 255, 255, 0.4);
   font-size: 15px;
 }
-.popup_box[aria-expanded=true] .btn_close_popup {
+.popup_box[data-open=true] .btn_close_popup {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -261,7 +261,7 @@ section[class^=section_]:not(.section_visual, .section_content) {
   border: 1px solid;
   cursor: pointer;
 }
-.popup_box[aria-expanded=true] .btn_close_popup::before {
+.popup_box[data-open=true] .btn_close_popup::before {
   display: block;
   width: 20px;
   height: 20px;
@@ -284,6 +284,8 @@ section[class^=section_]:not(.section_visual, .section_content) {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
+  padding: 0 100px;
 }
 @media screen and (max-width: 425px) {
   .header .inner {
@@ -360,6 +362,9 @@ section[class^=section_]:not(.section_visual, .section_content) {
   text-align: center;
   line-height: 27px;
   content: "이용권";
+}
+.utility_coupon .coach_tip {
+  top: 87px;
 }
 .utility_search::before {
   background: url("../images/Ico_search.png") no-repeat center/contain;
@@ -631,6 +636,63 @@ section[class^=section_]:not(.section_visual, .section_content) {
   line-height: 20px;
 }
 
+.coach_mark {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  pointer-events: none;
+  animation: coachPulse 1.5s ease-out infinite;
+}
+
+.coach_tip {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #121212;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+[data-coach]:hover > .coach_mark .coach_tip,
+[data-coach]:focus-visible > .coach_mark .coach_tip,
+[data-coach]:has(:focus-visible) > .coach_mark .coach_tip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_next > .coach_mark {
+  top: auto;
+  right: auto;
+  bottom: -4px;
+  left: -4px;
+  transform: rotate(180deg);
+}
+
+@keyframes coachPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .coach_mark {
+    animation: none;
+  }
+}
 @media screen and (max-width: 640px) {
   .header {
     min-width: 320px;

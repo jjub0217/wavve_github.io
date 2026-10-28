@@ -1,19 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="이 페이지는 Wavve(웨이브)의 홈페이지입니다.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="이 페이지는 Wavve(웨이브)의 홈페이지입니다."
+    />
     <title>Wavve(웨이브)</title>
-    <link rel="icon" href="./assets/images/ico_favicon.png"  type="image/x-icon" sizes="16x16">
-    <link rel="stylesheet" href="./assets/css/home_style.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+      rel="icon"
+      href="./assets/images/ico_favicon.png"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/home_style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body class="">
     <div class="wrap">
-      <!-- <div class="popup_box" role="dialog" aria-expanded="true">
+      <div
+        class="popup_box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="popup_title"
+        data-open="false"
+      >
         <div class="popup">
-          <strong class="headline">구현한 페이지 안내</strong>
+          <strong id="popup_title" class="headline">구현한 페이지 안내</strong>
           <ul class="page_list">
             <li class="page_item">
               <strong class="title">메인페이지</strong>
@@ -21,23 +44,34 @@
             </li>
             <li class="page_item">
               <strong class="title">LIVE 페이지</strong>
-              <p class="title_desc">전체 채널들의 생방송 리스트가 보여지는 페이지</p>
+              <p class="title_desc">
+                전체 채널들의 생방송 리스트가 보여지는 페이지
+              </p>
               <p class="desc">헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
             </li>
             <li class="page_item">
-              <strong class="title">LIVE 상세 페이지</strong> 
+              <strong class="title">LIVE 상세 페이지</strong>
               <p class="title_desc">클릭한 생방송의 상세 페이지</p>
-              <p class="desc">LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.</p>
+              <p class="desc">
+                LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.
+              </p>
             </li>
             <li class="page_item">
-              <strong class="title">이용권 페이지</strong> 
+              <strong class="title">이용권 페이지</strong>
               <p class="title_desc">쿠폰 페이지</p>
-              <p class="desc">헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면 이동됩니다.</p> 
+              <p class="desc">
+                헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면
+                이동됩니다.
+              </p>
             </li>
           </ul>
-          <button type="button" class="btn_close_popup" aria-label="팝업닫기" aria-expanded="true"></button>
+          <button
+            type="button"
+            class="btn_close_popup"
+            aria-label="팝업닫기"
+          ></button>
         </div>
-      </div> -->
+      </div>
       <div class="skip">
         <a href="#main">본문 바로가기</a>
       </div>
@@ -47,7 +81,13 @@
           <h1 class="site_logo">
             <a href="./index.html">
               <span class="blind">메인페이지</span>
-              <img src="./assets/images/ico_header_logo.png" alt="wavve" loading="lazy" width="108" height="22">
+              <img
+                src="./assets/images/ico_header_logo.png"
+                alt="wavve"
+                loading="lazy"
+                width="108"
+                height="22"
+              />
             </a>
           </h1>
           <nav class="nav">
@@ -56,18 +96,33 @@
               <li class="nav_item"><a href="" class="nav_link">예능</a></li>
               <li class="nav_item"><a href="" class="nav_link">영화</a></li>
               <li class="nav_item"><a href="" class="nav_link">애니</a></li>
-              <li class="nav_item"><a href="" class="nav_link">해외시리즈</a></li>
+              <li class="nav_item">
+                <a href="" class="nav_link">해외시리즈</a>
+              </li>
               <li class="nav_item"><a href="" class="nav_link">시사교양</a></li>
               <li class="nav_item"><a href="" class="nav_link">키즈</a></li>
-              <li class="nav_item"><a href="" class="nav_link">영화플러스</a></li>
-              <li class="nav_item"><a href="./index_live.html" class="nav_link">LIVE</a></li>
+              <li class="nav_item">
+                <a href="" class="nav_link">영화플러스</a>
+              </li>
+              <li class="nav_item">
+                <a
+                  href="./index_live.html"
+                  class="nav_link"
+                  data-coach="LIVE 페이지로 이동합니다"
+                  >LIVE</a
+                >
+              </li>
             </ul>
           </nav>
           <div class="utility_area">
             <a href="" class="utility_link utility_promotion">
               <span class="blind">프로모션</span>
             </a>
-            <a href="./index_coupon.html" class="utility_link utility_coupon">
+            <a
+              href="./index_coupon.html"
+              class="utility_link utility_coupon"
+              data-coach="이용권(쿠폰) 페이지로 이동합니다"
+            >
               <span class="blind">쿠폰</span>
             </a>
             <a href="" class="utility_link utility_search">
@@ -78,151 +133,344 @@
         </div>
       </header>
       <main id="main" class="container">
-      <section class="section_visual">
-        <h2 class="blind">추천 콘텐츠</h2>
-        <div class="swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <a href="" class="link_item">
-                <span class="blind">굿파트너</span>
-                <div class="text_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item1_sub.png" alt="굿파트너 타이틀" width="1240" height="508" loading="lazy">
-                </div>
-                <div class="image_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item1.jpg" alt="굿파트너 장면" width="1240" height="508" loading="lazy">
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="" class="link_item">
-                <span class="blind">나의 사랑 나의 신부</span>
-                <div class="text_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item2_sub.png" alt="나의 사랑 나의 신부 타이틀" width="1240" height="508" loading="lazy">
-                </div>
-                <div class="image_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item2.jpg" alt="나의 사랑 나의 신부 장면" width="1240" height="508" loading="lazy">
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="" class="link_item">    
-                <span class="blind">엘리전스</span>            
-                <div class="text_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item3_sub.png" alt="엘리전스 타이틀" width="1240" height="508" loading="lazy">
-                </div>
-                <div class="image_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item3.jpg" alt="엘리전스 장면" width="1240" height="508" loading="lazy">
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="" class="link_item">
-                <span class="blind">탈주</span>                
-                <div class="text_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item4_sub.png" alt="탈주 타이틀" width="1240" height="508" loading="lazy">
-                </div>
-                <div class="image_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item4.jpg" alt="탈주 장면" width="1240" height="508" loading="lazy">
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="" class="link_item">   
-                <span class="blind">백설공주에게 죽음을</span>              
-                <div class="text_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item5_sub.png" alt="백설공주에게 죽음을 타이틀" width="1240" height="508" loading="lazy">
-                </div>
-                <div class="image_box" aria-hidden="true">
-                  <img src="./assets/images/img_main_item5.jpg" alt="백설공주에게 죽음을 장면" width="1240" height="508" loading="lazy">
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="control_area">
-            <div class="inner">
-              <button type="button" class="slide_btn btn_prev" aria-label="이전 슬라이드로 이동"></button>
-              <button type="button" class="slide_btn btn_next" aria-label="다음 슬라이드로 이동"></button>
+        <section class="section_visual">
+          <h2 class="blind">추천 콘텐츠</h2>
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="" class="link_item">
+                  <span class="blind">굿파트너</span>
+                  <div class="text_box">
+                    <img
+                      src="./assets/images/img_main_item1_sub.png"
+                      alt="굿파트너 타이틀"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                    <p class="sub_title">차갑고 뜨거운 휴먼 법정극</p>
+                  </div>
+                  <div class="image_box">
+                    <img
+                      src="./assets/images/img_main_item1.jpg"
+                      alt="굿파트너 장면"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="" class="link_item">
+                  <span class="blind">나의 사랑 나의 신부</span>
+                  <div class="text_box">
+                    <img
+                      src="./assets/images/img_main_item2_sub.png"
+                      alt="나의 사랑 나의 신부 타이틀"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                    <p class="sub_title">
+                      4년 연애 끝에 시작된 리얼 신혼 이야기
+                    </p>
+                  </div>
+                  <div class="image_box">
+                    <img
+                      src="./assets/images/img_main_item2.jpg"
+                      alt="나의 사랑 나의 신부 장면"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="" class="link_item">
+                  <span class="blind">엘리전스</span>
+                  <div class="text_box">
+                    <img
+                      src="./assets/images/img_main_item3_sub.png"
+                      alt="엘리전스 타이틀"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                    <p class="sub_title">2024년 캐나다 최고 화제작</p>
+                  </div>
+                  <div class="image_box">
+                    <img
+                      src="./assets/images/img_main_item3.jpg"
+                      alt="엘리전스 장면"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="" class="link_item">
+                  <span class="blind">탈주</span>
+                  <div class="text_box">
+                    <img
+                      src="./assets/images/img_main_item4_sub.png"
+                      alt="탈주 타이틀"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                    <p class="sub_title">내일을 향한 질주</p>
+                  </div>
+                  <div class="image_box">
+                    <img
+                      src="./assets/images/img_main_item4.jpg"
+                      alt="탈주 장면"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="" class="link_item">
+                  <span class="blind">백설공주에게 죽음을</span>
+                  <div class="text_box">
+                    <img
+                      src="./assets/images/img_main_item5_sub.png"
+                      alt="백설공주에게 죽음을 타이틀"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                    <p class="sub_title">나는 살인자가 아니다</p>
+                  </div>
+                  <div class="image_box">
+                    <img
+                      src="./assets/images/img_main_item5.jpg"
+                      alt="백설공주에게 죽음을 장면"
+                      aria-hidden="true"
+                      width="1240"
+                      height="508"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="control_area">
+              <div class="inner">
+                <button
+                  type="button"
+                  class="slide_btn btn_prev"
+                  aria-label="이전 슬라이드로 이동"
+                  data-coach="화살표로 슬라이드를 넘길 수 있습니다"
+                ></button>
+                <button
+                  type="button"
+                  class="slide_btn btn_next"
+                  aria-label="다음 슬라이드로 이동"
+                ></button>
+              </div>
             </div>
+            <div class="visual_pagination"></div>
           </div>
-          <div class="visual_pagination"></div>
-        </div>
-      </section>
+        </section>
         <section class="section_upload">
           <div class="inner">
             <div class="title_wrap">
               <h2 class="title">새로 올라온 영화</h2>
               <a href="" class="all_link">전체보기</a>
             </div>
-            <div class="select_wrap">
+            <div
+              class="select_wrap"
+              data-coach="장르와 정렬을 바꾸면 목록이 바뀝니다"
+            >
               <div class="select_box">
                 <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_1">전체장르</button>
+                <button
+                  type="button"
+                  class="select_title"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-controls="genre_1"
+                >
+                  전체장르
+                </button>
                 <ul id="genre_1" class="option_list" role="listbox">
                   <!-- [D] option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title">전체장르</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="true"
+                      class="option_title"
+                      data-genre="all"
+                    >
+                      전체장르
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="10749"
+                    >
+                      로맨틱
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="35"
+                    >
+                      코메디
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="9648"
+                    >
+                      추리
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="80"
+                    >
+                      범죄
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="53"
+                    >
+                      스릴러
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">가족</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="10751"
+                    >
+                      가족
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">무협</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-genre="28"
+                    >
+                      액션
+                    </button>
                   </li>
                 </ul>
               </div>
               <div class="select_box">
-                  <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_1" >추천</button>
-                <ul id="recommend_1" class="option_list" role="listbox" >
+                <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
+                <button
+                  type="button"
+                  class="select_title"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-controls="recommend_1"
+                >
+                  추천순
+                </button>
+                <ul id="recommend_1" class="option_list" role="listbox">
                   <li class="option" role="presentation">
                     <!-- [D] .option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                    <button type="button" role="option" class="option_title" aria-selected="true">추천</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="true"
+                      data-sort="popularity"
+                    >
+                      추천순
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">로맨틱</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-sort="release_date"
+                    >
+                      최신순
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">코메디</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">추리</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">범죄</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" class="option_title" aria-selected="false">스릴러</button>
+                    <button
+                      type="button"
+                      role="option"
+                      class="option_title"
+                      aria-selected="false"
+                      data-sort="vote_average"
+                    >
+                      평점순
+                    </button>
                   </li>
                 </ul>
               </div>
             </div>
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 li들 중에 붙어있던 .is_hidden 이라는 className 이 제거  -->
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 aria-expanded 값이 true 로 변경 -->
-            <ul id="upload_landscape" class="upload_list upload_landscape" >
-              <li class="upload_item">
+            <ul id="upload_landscape" class="upload_list upload_landscape">
+              <!-- <li class="upload_item">
                 <a href="" class="link_item">
                   <strong class="upload_title">괴물</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item1.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item1.png" loading="lazy" width="189" height="106" alt="괴물 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item1.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item1.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="괴물 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -232,10 +480,19 @@
                   <strong class="upload_title">과속 스캔들</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item2.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item2.png" loading="lazy" width="189" height="106" alt="과속 스캔들 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item2.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item2.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="과속 스캔들 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -245,10 +502,19 @@
                   <strong class="upload_title">잠복근무</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item3.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item3.png" loading="lazy" width="189" height="106" alt="잠복근무 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item3.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item3.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="잠복근무 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -258,10 +524,19 @@
                   <strong class="upload_title">금지된 장난</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item4.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item4.png" loading="lazy" width="189" height="106" alt="금지된 장난 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item4.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item4.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="금지된 장난 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -271,10 +546,19 @@
                   <strong class="upload_title">라라랜드</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item5.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item5.png" loading="lazy" width="189" height="106" alt="라라랜드 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item5.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item5.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="라라랜드 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -284,10 +568,19 @@
                   <strong class="upload_title">스트롱거</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item6.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item6.png" loading="lazy" width="189" height="106" alt="스트롱거 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item6.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item6.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="스트롱거 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -297,10 +590,19 @@
                   <strong class="upload_title">씽2</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item7.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item7.png" loading="lazy" width="189" height="106" alt="씽2 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item7.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item7.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="씽2 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -310,10 +612,19 @@
                   <strong class="upload_title">레버넌트</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item8.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item8.png" loading="lazy" width="189" height="106" alt="레버넌트 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item8.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item8.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="레버넌트 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -323,23 +634,45 @@
                   <strong class="upload_title">블레어 윗치</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item9.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item9.png" loading="lazy" width="189" height="106" alt="블레어 윗치 포스터">
+                      <source
+                        srcset="./assets/images/img_update_landscape_item9.webp"
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item9.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="블레어 윗치 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
               </li>
               <li class="upload_item">
                 <a href="" class="link_item">
-                  <strong class="upload_title">난 엄청 창의적인 휴머니트스 뱀파이어가 될거야</strong>
+                  <strong class="upload_title"
+                    >난 엄청 창의적인 휴머니트스 뱀파이어가 될거야</strong
+                  >
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item10.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item10.png" loading="lazy" width="189" height="106" alt="난 엄청 창의적인 휴머니트스 뱀파이어가 될거야 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item10.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item10.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="난 엄청 창의적인 휴머니트스 뱀파이어가 될거야 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -349,10 +682,21 @@
                   <strong class="upload_title">교토에서 온 편지</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item11.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item11.png" loading="lazy" width="189" height="106" alt="교토에서 온 편지 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item11.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item11.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="교토에서 온 편지 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -362,10 +706,21 @@
                   <strong class="upload_title">라스트 썸머</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item12.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item12.png" loading="lazy" width="189" height="106" alt="라스트 썸머 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item12.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item12.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="라스트 썸머 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -375,10 +730,21 @@
                   <strong class="upload_title">퀸 엘리자베스</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item13.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                    <img src="./assets/images/img_update_landscape_item13.png" loading="lazy" width="189" height="106" alt="퀸 엘리자베스 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item13.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item13.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="퀸 엘리자베스 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -388,10 +754,21 @@
                   <strong class="upload_title">내 연애의 기억</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item14.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item14.png" loading="lazy" width="189" height="106" alt="내 연애의 기억 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item14.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item14.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="내 연애의 기억 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -401,10 +778,21 @@
                   <strong class="upload_title">목화솜 피는날</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item15.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item15.png" loading="lazy" width="189" height="106" alt="목화솜 피는날 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item15.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item15.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="목화솜 피는날 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -414,10 +802,21 @@
                   <strong class="upload_title">무서운 이야기2</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item16.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item16.png" loading="lazy" width="189" height="106" alt="무서운 이야기2 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item16.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item16.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="무서운 이야기2 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -427,10 +826,21 @@
                   <strong class="upload_title">시라노 연애조작단</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item17.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item17.png" loading="lazy" width="189" height="106" alt="시라노 연애조작단 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item17.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item17.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="시라노 연애조작단 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -440,10 +850,21 @@
                   <strong class="upload_title">패밀리맨</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item18.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item18.png" loading="lazy" width="189" height="106" alt="패밀리맨 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item18.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item18.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="패밀리맨 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -453,23 +874,47 @@
                   <strong class="upload_title">기괴도</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item19.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item19.png" loading="lazy" width="189" height="106" alt="기괴도 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item19.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item19.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="기괴도 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
                 <a href="" class="link_item">
-                  <strong class="upload_title">모든 감각이 깨어나는 순간</strong>
+                  <strong class="upload_title"
+                    >모든 감각이 깨어나는 순간</strong
+                  >
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item20.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item20.png" loading="lazy" width="189" height="106" alt="모든 감각이 깨어나는 순간 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item20.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item20.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="모든 감각이 깨어나는 순간 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -479,10 +924,21 @@
                   <strong class="upload_title">원티드 맨</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item21.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item21.png" loading="lazy" width="189" height="106" alt="원티드 맨 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item21.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item21.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="원티드 맨 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -492,10 +948,21 @@
                   <strong class="upload_title">코펜하겐</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item22.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item22.png" loading="lazy" width="189" height="106" alt="코펜하겐 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item22.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item22.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="코펜하겐 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -505,10 +972,21 @@
                   <strong class="upload_title">은교</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item23.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item23.png" loading="lazy" width="189" height="106" alt="은교 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item23.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item23.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="은교 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -518,17 +996,36 @@
                   <strong class="upload_title">소원</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_landscape_item24.webp" type="image/webp"
-                      width="189" height="106"
-                      >
-                      <img src="./assets/images/img_update_landscape_item24.png" loading="lazy" width="189" height="106" alt="소원 포스터">
+                      <source
+                        srcset="
+                          ./assets/images/img_update_landscape_item24.webp
+                        "
+                        type="image/webp"
+                        width="189"
+                        height="106"
+                      />
+                      <img
+                        src="./assets/images/img_update_landscape_item24.png"
+                        loading="lazy"
+                        width="189"
+                        height="106"
+                        alt="소원 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
-              </li>
+              </li> -->
             </ul>
             <!-- [D] .more_btn 을 클릭하면 해당 요소 사라짐   -->
-            <button type="button" class="more_btn" aria-expanded="false" aria-controls="upload_landscape">더보기</button>
+            <button
+              type="button"
+              class="more_btn"
+              aria-expanded="false"
+              aria-controls="upload_landscape"
+              data-coach="숨겨진 작품 6개를 더 보여 줍니다"
+            >
+              더보기
+            </button>
           </div>
         </section>
         <section class="section_upload">
@@ -537,66 +1034,147 @@
               <h2 class="title">드라마 TOP 30</h2>
               <a href="" class="all_link">전체보기</a>
             </div>
-            <div class="select_wrap">
+            <div
+              class="select_wrap"
+              data-coach="장르와 정렬을 바꾸면 목록이 바뀝니다"
+            >
               <div class="select_box">
                 <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="genre_2">전체장르</button>
-                <ul id="genre_2" class="option_list" role="listbox" >
+                <button
+                  type="button"
+                  class="select_title"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-controls="genre_2"
+                >
+                  전체장르
+                </button>
+                <ul id="genre_2" class="option_list" role="listbox">
                   <li class="option" role="presentation">
                     <!-- [D] .option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                    <button type="button" role="option" aria-selected="true" class="option_title">전체장르</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="true"
+                      class="option_title"
+                      data-genre="all"
+                    >
+                      전체장르
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">로맨틱</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-genre="35"
+                    >
+                      코메디
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">코메디</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-genre="9648"
+                    >
+                      추리
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">추리</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-genre="80"
+                    >
+                      범죄
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">범죄</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-genre="10765"
+                    >
+                      SF & 판타지
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">스릴러</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-genre="10751"
+                    >
+                      가족
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">가족</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">무협</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-genre="10759"
+                    >
+                      액션
+                    </button>
                   </li>
                 </ul>
               </div>
               <div class="select_box">
                 <!-- [D] .select_title 을 토글하면, aria-expanded의 값이 true 과 false 로 변경 -->
-                <button type="button" class="select_title" aria-haspopup="listbox" aria-expanded="false" aria-controls="recommend_2" >추천</button>
-                <ul id="recommend_2" class="option_list" role="listbox" >
+                <button
+                  type="button"
+                  class="select_title"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-controls="recommend_2"
+                >
+                  추천순
+                </button>
+                <ul id="recommend_2" class="option_list" role="listbox">
                   <li class="option" role="presentation">
                     <!-- [D] .option_title 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
-                    <button type="button" role="option" aria-selected="true" class="option_title">전체장르</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="true"
+                      class="option_title"
+                      data-sort="popularity"
+                    >
+                      추천순
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">로맨틱</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-sort="release_date"
+                    >
+                      최신순
+                    </button>
                   </li>
                   <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">코메디</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">추리</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">범죄</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">스릴러</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">가족</button>
-                  </li>
-                  <li class="option" role="presentation">
-                    <button type="button" role="option" aria-selected="false" class="option_title">무협</button>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected="false"
+                      class="option_title"
+                      data-sort="vote_average"
+                    >
+                      평점순
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -604,15 +1182,24 @@
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 li들 중에 붙어있던 .is_hidden 이라는 className 이 제거  -->
             <!-- [D] .more_btn 을 클릭하면 아래 ul의 aria-expanded 값이 true 로 변경 -->
             <ul id="upload_portrait" class="upload_list upload_portrait">
-              <li class="upload_item">
+              <!-- <li class="upload_item">
                 <a href="" class="link_item">
                   <strong class="upload_title">수지맞은 우리</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item1.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item1.png" loading="lazy" width="189" height="280" alt="수지맞은 우리 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item1.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item1.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="수지맞은 우리 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -622,10 +1209,19 @@
                   <strong class="upload_title">용감무쌍 용수정</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item2.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item2.png" loading="lazy" width="189" height="280" alt="용감무쌍 용수정 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item2.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item2.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="용감무쌍 용수정 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -635,10 +1231,19 @@
                   <strong class="upload_title">굿파트너</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item3.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item3.png" loading="lazy" width="189" height="280" alt="굿파트너 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item3.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item3.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="굿파트너 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -648,10 +1253,19 @@
                   <strong class="upload_title">백설공주에게 죽음을</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item4.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item4.png" loading="lazy" width="189" height="280" alt="백설공주에게 죽음을 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item4.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item4.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="백설공주에게 죽음을 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -661,10 +1275,19 @@
                   <strong class="upload_title">나쁜기억 지우개</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item5.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item5.png" loading="lazy" width="189" height="280" alt="나쁜기억 지우개 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item5.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item5.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="나쁜기억 지우개 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -674,10 +1297,19 @@
                   <strong class="upload_title">미녀와 순정남</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item6.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item6.png" loading="lazy" width="189" height="280" alt="미녀와 순정남 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item6.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item6.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="미녀와 순정남 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -687,10 +1319,19 @@
                   <strong class="upload_title">커넥션</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item7.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item7.png" loading="lazy" width="189" height="280" alt="커넥션 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item7.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item7.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="커넥션 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -700,10 +1341,19 @@
                   <strong class="upload_title">연인</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item8.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item8.png" loading="lazy" width="189" height="280" alt="연인 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item8.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item8.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="연인 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -713,10 +1363,19 @@
                   <strong class="upload_title"></strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item9.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item9.png" loading="lazy" width="189" height="280" alt="DNA러버 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item9.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item9.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="DNA러버 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -726,10 +1385,19 @@
                   <strong class="upload_title">모범택시2</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item10.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item10.png" loading="lazy" width="189" height="280" alt="모범택시2 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item10.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item10.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="모범택시2 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -739,10 +1407,19 @@
                   <strong class="upload_title">모범택시1</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item11.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item11.png" loading="lazy" width="189" height="280" alt="모범택시1 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item11.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item11.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="모범택시1 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -752,10 +1429,19 @@
                   <strong class="upload_title">왔다 장보리</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item12.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item12.png" loading="lazy" width="189" height="280" alt="왔다 장보리 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item12.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item12.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="왔다 장보리 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -765,10 +1451,19 @@
                   <strong class="upload_title">너를 기억해</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item13.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item13.png" loading="lazy" width="189" height="280" alt="너를 기억해 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item13.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item13.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="너를 기억해 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -778,10 +1473,19 @@
                   <strong class="upload_title">내 이름은 김삼순</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item14.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item14.png" loading="lazy" width="189" height="280" alt="내 이름은 김삼순 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item14.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item14.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="내 이름은 김삼순 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -791,10 +1495,19 @@
                   <strong class="upload_title">VIP</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item15.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item15.png" loading="lazy" width="189" height="280" alt="VIP 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item15.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item15.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="VIP 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -804,10 +1517,19 @@
                   <strong class="upload_title">스토브리그</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item16.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item16.png" loading="lazy" width="189" height="280" alt="스토브리그 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item16.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item16.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="스토브리그 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -817,10 +1539,19 @@
                   <strong class="upload_title">투깝스</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item17.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item17.png" loading="lazy" width="189" height="280" alt="투깝스 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item17.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item17.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="투깝스 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -830,10 +1561,19 @@
                   <strong class="upload_title">오월의 청춘</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item18.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item18.png" loading="lazy" width="189" height="280" alt="오월의 청춘 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item18.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item18.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="오월의 청춘 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -843,10 +1583,19 @@
                   <strong class="upload_title">완벽한 가족</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item19.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item19.png" loading="lazy" width="189" height="280" alt="완벽한 가족 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item19.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item19.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="완벽한 가족 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -856,23 +1605,44 @@
                   <strong class="upload_title">악귀</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item20.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item20.png" loading="lazy" width="189" height="280" alt="악귀 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item20.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item20.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="악귀 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
               </li>
               <li class="upload_item is_hidden">
                 <a href="" class="link_item">
-                  <strong class="upload_title">악의 마음을 읽는자들의 완벽한 가족의 너를 기억하기 위한 백설공주에게 죽음을</strong>
+                  <strong class="upload_title"
+                    >악의 마음을 읽는자들의 완벽한 가족의 너를 기억하기 위한
+                    백설공주에게 죽음을</strong
+                  >
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item21.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                        <img src="./assets/images/img_update_portrait_item21.png" loading="lazy" width="189" height="280" alt="악의 마음을 읽는자들 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item21.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item21.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="악의 마음을 읽는자들 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -882,10 +1652,19 @@
                   <strong class="upload_title">오 마이 비너스</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item22.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item22.png" loading="lazy" width="189" height="280" alt="오 마이 비너스 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item22.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item22.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="오 마이 비너스 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -895,10 +1674,19 @@
                   <strong class="upload_title">최고의 사랑</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item23.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item23.png" loading="lazy" width="189" height="280" alt="최고의 사랑 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item23.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item23.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="최고의 사랑 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
@@ -908,18 +1696,34 @@
                   <strong class="upload_title">광개토대왕</strong>
                   <div class="image_box">
                     <picture>
-                      <source srcset="./assets/images/img_update_portrait_item24.webp" type="image/webp"
-                        width="189" height="280"
-                        >
-                      <img src="./assets/images/img_update_portrait_item24.png" loading="lazy" width="189" height="280" alt="광개토대왕 포스터">
+                      <source
+                        srcset="./assets/images/img_update_portrait_item24.webp"
+                        type="image/webp"
+                        width="189"
+                        height="280"
+                      />
+                      <img
+                        src="./assets/images/img_update_portrait_item24.png"
+                        loading="lazy"
+                        width="189"
+                        height="280"
+                        alt="광개토대왕 포스터"
+                      />
                     </picture>
                   </div>
                 </a>
-              </li>
+              </li> -->
             </ul>
             <!-- [D] .more_btn 을 클릭하면 해당 요소 사라짐   -->
-            <button type="button" class="more_btn" 
-            aria-expanded="false" aria-controls="upload_portrait">더보기</button>
+            <button
+              type="button"
+              class="more_btn"
+              aria-expanded="false"
+              aria-controls="upload_portrait"
+              data-coach="숨겨진 작품 6개를 더 보여 줍니다"
+            >
+              더보기
+            </button>
           </div>
         </section>
         <section class="section_event">
@@ -934,73 +1738,130 @@
                   <li class="swiper-slide">
                     <a href="" class="event_link">
                       <div class="text_box">
-                        <strong class="event_title">인사이드 아웃2<br>론칭 프로모션	</strong>
+                        <strong class="event_title"
+                          >인사이드 아웃2<br />론칭 프로모션
+                        </strong>
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item1.png" alt="인사이드 아웃 2 영화 포스터: 주요 캐릭터와 론칭 프로모션 안내" loading="lazy" width="390" height="168">
+                        <img
+                          src="./assets/images/img_event_item1.png"
+                          alt="인사이드 아웃 2 영화 포스터: 주요 캐릭터와 론칭 프로모션 안내"
+                          loading="lazy"
+                          width="390"
+                          height="168"
+                        />
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="" class="event_link">
                       <div class="text_box">
-                        <strong class="event_title">웨이브 이용권 할인 이벤트</strong>
+                        <strong class="event_title"
+                          >웨이브 이용권 할인 이벤트</strong
+                        >
                         <p class="event_desc">상시 진행중</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event.png" alt="웨이브 이용권 할인 이벤트" loading="lazy" width="390" height="168">
+                        <img
+                          src="./assets/images/img_event.png"
+                          alt="웨이브 이용권 할인 이벤트"
+                          loading="lazy"
+                          width="390"
+                          height="168"
+                        />
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide is_ended">
                     <a href="" class="event_link">
                       <div class="text_box">
-                        <strong class="event_title">콰이어트 플레이스:첫째날 론칭 프로모션</strong>
+                        <strong class="event_title"
+                          >콰이어트 플레이스:첫째날 론칭 프로모션</strong
+                        >
                         <p class="event_desc">기간 : 2024.07.01.</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item2.png" alt="콰이어트 플레이스 첫째 날 영화 포스터: '모든 소리가 사라진 첫째 날'이라는 문구가 보임트" loading="lazy" width="390" height="168">
+                        <img
+                          src="./assets/images/img_event_item2.png"
+                          alt="콰이어트 플레이스 첫째 날 영화 포스터: '모든 소리가 사라진 첫째 날'이라는 문구가 보임트"
+                          loading="lazy"
+                          width="390"
+                          height="168"
+                        />
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="" class="event_link">
                       <div class="text_box">
-                        <strong class="event_title">혹성탈출: 새로운시대 <br>론칭 프로모션</strong>
+                        <strong class="event_title"
+                          >혹성탈출: 새로운시대 <br />론칭 프로모션</strong
+                        >
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item3.png" alt="혹성탈출 새로운 시대 영화 포스터: 푸른 자연 속 캐릭터가 말을 타고 있는 모습" loading="lazy" width="390" height="168">
+                        <img
+                          src="./assets/images/img_event_item3.png"
+                          alt="혹성탈출 새로운 시대 영화 포스터: 푸른 자연 속 캐릭터가 말을 타고 있는 모습"
+                          loading="lazy"
+                          width="390"
+                          height="168"
+                        />
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="" class="event_link">
                       <div class="text_box">
-                        <strong class="event_title">데드풀과 울버린<br>개봉 기념 마블 프로모션</strong>
+                        <strong class="event_title"
+                          >데드풀과 울버린<br />개봉 기념 마블 프로모션</strong
+                        >
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item4.png" alt="데드풀과 울버린 영화 포스터: 두 개의 칼을 들고 있는 데드풀 캐릭터" loading="lazy" width="390" height="168">
+                        <img
+                          src="./assets/images/img_event_item4.png"
+                          alt="데드풀과 울버린 영화 포스터: 두 개의 칼을 들고 있는 데드풀 캐릭터"
+                          loading="lazy"
+                          width="390"
+                          height="168"
+                        />
                       </div>
                     </a>
                   </li>
                   <li class="swiper-slide">
                     <a href="" class="event_link">
                       <div class="text_box">
-                        <strong class="event_title">퓨리오사: 매드맥스 사가<br>론칭 프로모션</strong>
+                        <strong class="event_title"
+                          >퓨리오사: 매드맥스 사가<br />론칭 프로모션</strong
+                        >
                         <p class="event_desc">기간: 2024.10.01 ~ 2024.11.02</p>
                       </div>
                       <div class="image_box">
-                        <img src="./assets/images/img_event_item5.png" alt="퓨리오사 매드맥스 사가 영화 포스터: 여전사 퓨리오사 배경의 황야 풍경" loading="lazy" width="390" height="168">
+                        <img
+                          src="./assets/images/img_event_item5.png"
+                          alt="퓨리오사 매드맥스 사가 영화 포스터: 여전사 퓨리오사 배경의 황야 풍경"
+                          loading="lazy"
+                          width="390"
+                          height="168"
+                        />
                       </div>
                     </a>
                   </li>
                 </ul>
               </div>
-              <button type="button" class="slide_btn btn_prev" aria-label="이전슬라이드"></button>
-              <button type="button" class="slide_btn btn_next" aria-label="다음슬라이드"></button>
+              <button
+                type="button"
+                class="slide_btn btn_prev"
+                aria-label="이전슬라이드"
+              ></button>
+              <button
+                type="button"
+                class="slide_btn btn_next"
+                aria-label="다음슬라이드"
+                data-coach="화살표로 슬라이드를 넘길 수 있습니다"
+              ></button>
             </div>
           </div>
         </section>
@@ -1016,7 +1877,13 @@
                     <a href="">
                       <span class="blind">인물기획전 이동욱 스페셜</span>
                       <div class="image_box" aria-hidden="true">
-                        <img src="./assets/images/img_best_artist_item1.png" alt="배우 이동욱 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
+                        <img
+                          src="./assets/images/img_best_artist_item1.png"
+                          alt="배우 이동욱 스페셜 인물 기획전 이미지"
+                          loading="lazy"
+                          width="390"
+                          height="578"
+                        />
                       </div>
                     </a>
                   </li>
@@ -1024,7 +1891,13 @@
                     <a href="">
                       <span class="blind">인물기획전 김남길 스페셜</span>
                       <div class="image_box" aria-hidden="true">
-                        <img src="./assets/images/img_best_artist_item2.png" alt="배우 김남길 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
+                        <img
+                          src="./assets/images/img_best_artist_item2.png"
+                          alt="배우 김남길 스페셜 인물 기획전 이미지"
+                          loading="lazy"
+                          width="390"
+                          height="578"
+                        />
                       </div>
                     </a>
                   </li>
@@ -1032,7 +1905,13 @@
                     <a href="">
                       <span class="blind">인물기획전 신하균 스페셜</span>
                       <div class="image_box" aria-hidden="true">
-                        <img src="./assets/images/img_best_artist_item3.png" alt="배우 신하균 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
+                        <img
+                          src="./assets/images/img_best_artist_item3.png"
+                          alt="배우 신하균 스페셜 인물 기획전 이미지"
+                          loading="lazy"
+                          width="390"
+                          height="578"
+                        />
                       </div>
                     </a>
                   </li>
@@ -1040,14 +1919,29 @@
                     <a href="">
                       <span class="blind">인물기획전 배두나 스페셜</span>
                       <div class="image_box" aria-hidden="true">
-                        <img src="./assets/images/img_best_artist_item4.png" alt="배우 배두나 스페셜 인물 기획전 이미지" loading="lazy" width="390" height="578">
+                        <img
+                          src="./assets/images/img_best_artist_item4.png"
+                          alt="배우 배두나 스페셜 인물 기획전 이미지"
+                          loading="lazy"
+                          width="390"
+                          height="578"
+                        />
                       </div>
                     </a>
                   </li>
                 </ul>
               </div>
-              <button type="button" class="slide_btn btn_prev" aria-label="이전슬라이드"></button>
-              <button type="button" class="slide_btn btn_next" aria-label="다음슬라이드"></button>
+              <button
+                type="button"
+                class="slide_btn btn_prev"
+                aria-label="이전슬라이드"
+              ></button>
+              <button
+                type="button"
+                class="slide_btn btn_next"
+                aria-label="다음슬라이드"
+                data-coach="화살표로 슬라이드를 넘길 수 있습니다"
+              ></button>
             </div>
           </div>
         </section>
@@ -1063,13 +1957,23 @@
                   <li class="swiper-slide">
                     <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item1.png" alt="박명수의 라디오쇼 로고" loading="lazy" width="74" height="74">
+                        <img
+                          src="./assets/images/img_artist_item1.png"
+                          alt="박명수의 라디오쇼 로고"
+                          loading="lazy"
+                          width="74"
+                          height="74"
+                        />
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">박명수의 라디오쇼</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T23:00" class="time">PM 11:00</time>
-                          <time datetime="2024-06-03T23:57" class="time">11:57</time>
+                          <time datetime="2024-06-03T23:00" class="time"
+                            >PM 11:00</time
+                          >
+                          <time datetime="2024-06-03T23:57" class="time"
+                            >11:57</time
+                          >
                         </div>
                       </div>
                     </a>
@@ -1077,13 +1981,25 @@
                   <li class="swiper-slide">
                     <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item2.png" alt="김신영의 정오의 희망곡 로고" loading="lazy" width="74" height="74">
+                        <img
+                          src="./assets/images/img_artist_item2.png"
+                          alt="김신영의 정오의 희망곡 로고"
+                          loading="lazy"
+                          width="74"
+                          height="74"
+                        />
                       </div>
                       <div class="text_box">
-                        <strong class="artist_title">김신영의 정오의 희망곡</strong>
+                        <strong class="artist_title"
+                          >김신영의 정오의 희망곡</strong
+                        >
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T12:00" class="time">PM 12:00</time>
-                          <time datetime="2024-06-03T14:00" class="time">02:00</time>
+                          <time datetime="2024-06-03T12:00" class="time"
+                            >PM 12:00</time
+                          >
+                          <time datetime="2024-06-03T14:00" class="time"
+                            >02:00</time
+                          >
                         </div>
                       </div>
                     </a>
@@ -1091,13 +2007,23 @@
                   <li class="swiper-slide">
                     <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item3.png" alt="두시탈출 컬투쇼 로고" loading="lazy" width="74" height="74">
+                        <img
+                          src="./assets/images/img_artist_item3.png"
+                          alt="두시탈출 컬투쇼 로고"
+                          loading="lazy"
+                          width="74"
+                          height="74"
+                        />
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">두시탈출 컬투쇼</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T14:00" class="time">PM 02:00</time>
-                          <time datetime="2024-06-03T16:00" class="time">04:00</time>
+                          <time datetime="2024-06-03T14:00" class="time"
+                            >PM 02:00</time
+                          >
+                          <time datetime="2024-06-03T16:00" class="time"
+                            >04:00</time
+                          >
                         </div>
                       </div>
                     </a>
@@ -1105,13 +2031,23 @@
                   <li class="swiper-slide">
                     <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item4.png" alt="황제성의 황제파워 로고" loading="lazy" width="74" height="74">
+                        <img
+                          src="./assets/images/img_artist_item4.png"
+                          alt="황제성의 황제파워 로고"
+                          loading="lazy"
+                          width="74"
+                          height="74"
+                        />
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">황제성의 황제파워</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T16:00" class="time">PM 04:00</time>
-                          <time datetime="2024-06-03T18:00" class="time">06:00</time>
+                          <time datetime="2024-06-03T16:00" class="time"
+                            >PM 04:00</time
+                          >
+                          <time datetime="2024-06-03T18:00" class="time"
+                            >06:00</time
+                          >
                         </div>
                       </div>
                     </a>
@@ -1119,21 +2055,40 @@
                   <li class="swiper-slide">
                     <a href="" class="slide_link">
                       <div class="image_box">
-                        <img src="./assets/images/img_artist_item5.png" alt="배성재의 텐 로고" loading="lazy" width="74" height="74">
+                        <img
+                          src="./assets/images/img_artist_item5.png"
+                          alt="배성재의 텐 로고"
+                          loading="lazy"
+                          width="74"
+                          height="74"
+                        />
                       </div>
                       <div class="text_box">
                         <strong class="artist_title">배성재의 텐</strong>
                         <div class="slide_time_box">
-                          <time datetime="2024-06-03T22:00" class="time">PM 10:00</time>
-                          <time datetime="2024-06-03T23:00" class="time">11:00</time>
+                          <time datetime="2024-06-03T22:00" class="time"
+                            >PM 10:00</time
+                          >
+                          <time datetime="2024-06-03T23:00" class="time"
+                            >11:00</time
+                          >
                         </div>
                       </div>
                     </a>
                   </li>
                 </ul>
               </div>
-              <button type="button" class="slide_btn btn_prev" aria-label="이전슬라이드"></button>
-              <button type="button" class="slide_btn btn_next" aria-label="다음슬라이드"></button>
+              <button
+                type="button"
+                class="slide_btn btn_prev"
+                aria-label="이전슬라이드"
+              ></button>
+              <button
+                type="button"
+                class="slide_btn btn_next"
+                aria-label="다음슬라이드"
+                data-coach="화살표로 슬라이드를 넘길 수 있습니다"
+              ></button>
             </div>
           </div>
         </section>
@@ -1143,18 +2098,22 @@
           <nav class="footer_nav">
             <div class="footer_logo">
               <span class="blind">웨이브</span>
-              <img src="./assets/images/ico_footer_logo.png" alt="wavve" loading="lazy" width="84" height="20">
+              <img
+                src="./assets/images/ico_footer_logo.png"
+                alt="wavve"
+                loading="lazy"
+                width="84"
+                height="20"
+              />
             </div>
-            <a href="" class="footer_nav_link">
-              이용약관</a>
-            <a href="" class="footer_nav_link">
-              개인정보 보호정책</a>
-            <a href="" class="footer_nav_link">
-              고객센터</a>
-            <a href="" class="footer_nav_link">
-              공지사항</a>
+            <a href="" class="footer_nav_link"> 이용약관</a>
+            <a href="" class="footer_nav_link"> 개인정보 보호정책</a>
+            <a href="" class="footer_nav_link"> 고객센터</a>
+            <a href="" class="footer_nav_link"> 공지사항</a>
           </nav>
-          <small class="copyright">Copyright © jjub0217 All rights reserved.jjub0217</small>
+          <small class="copyright"
+            >Copyright © jjub0217 All rights reserved.jjub0217</small
+          >
         </div>
       </footer>
     </div>

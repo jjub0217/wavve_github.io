@@ -1,12 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="이 페이지는 Wavve(웨이브)의 홈페이지입니다.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="이 페이지는 Wavve(웨이브)의 홈페이지입니다."
+    />
     <title>Wavve(웨이브)</title>
-    <link rel="icon" href="./assets/images/ico_favicon.png"  type="image/x-icon" sizes="16x16">
-    <link rel="stylesheet" href="./assets/css/coupon_style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/ico_favicon.png"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="./assets/css/coupon_style.min.css" />
     <!-- [D] 개발 제외 영역 -->
     <style>
       .case_view {
@@ -29,33 +43,50 @@
 
   <body class="">
     <div class="wrap">
-      <!-- <div class="popup_box" role="dialog" aria-expanded="true">
+      <div
+        class="popup_box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="popup_title"
+        data-open="false"
+      >
         <div class="popup">
-          <strong class="headline">구현한 페이지 안내</strong>
+          <strong id="popup_title" class="headline">구현한 페이지 안내</strong>
           <ul class="page_list">
-            <li class="page_item">
-              <strong class="title">이용권 페이지</strong> 
-              <p class="title_desc">쿠폰 페이지</p>
-              <p class="desc">* 헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면 이동됩니다.</p> 
-              <p class="title_desc">input 요소</p>
-              <p class="desc">* input에 값이 존재하게되면 "쿠폰등록" 버튼의 컬러가 변경됩니다.</p> 
-            </li>
             <li class="page_item">
               <strong class="title">메인페이지</strong>
               <p class="title_desc">헤더의 로고를 클릭하면 이동됩니다.</p>
             </li>
             <li class="page_item">
               <strong class="title">LIVE 페이지</strong>
-              <p class="title_desc">헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
+              <p class="title_desc">
+                전체 채널들의 생방송 리스트가 보여지는 페이지
+              </p>
+              <p class="desc">헤더의 "LIVE"를 클릭하면 이동됩니다.</p>
             </li>
             <li class="page_item">
-              <strong class="title">LIVE 상세 페이지</strong> 
-              <p class="title_desc">LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.</p>
+              <strong class="title">LIVE 상세 페이지</strong>
+              <p class="title_desc">클릭한 생방송의 상세 페이지</p>
+              <p class="desc">
+                LIVE 페이지에서 첫번째로 보여지는 아이템을 클릭하면 이동됩니다.
+              </p>
+            </li>
+            <li class="page_item">
+              <strong class="title">이용권 페이지</strong>
+              <p class="title_desc">쿠폰 페이지</p>
+              <p class="desc">
+                헤더의 선물박스 아이콘의 오른쪽. 티켓 아이콘을 클릭하면
+                이동됩니다.
+              </p>
             </li>
           </ul>
-          <button type="button" class="btn_close_popup" aria-label="팝업닫기" aria-expanded="true"></button>
+          <button
+            type="button"
+            class="btn_close_popup"
+            aria-label="팝업닫기"
+          ></button>
         </div>
-      </div> -->
+      </div>
       <div class="skip">
         <a href="#main">본문 바로가기</a>
       </div>
@@ -65,7 +96,13 @@
           <h1 class="site_logo">
             <a href="./index.html">
               <span class="blind">메인페이지</span>
-              <img src="./assets/images/ico_header_logo.png" alt="wavve" loading="lazy" width="108" height="22">
+              <img
+                src="./assets/images/ico_header_logo.png"
+                alt="wavve"
+                loading="lazy"
+                width="108"
+                height="22"
+              />
             </a>
           </h1>
           <nav class="nav">
@@ -74,18 +111,33 @@
               <li class="nav_item"><a href="" class="nav_link">예능</a></li>
               <li class="nav_item"><a href="" class="nav_link">영화</a></li>
               <li class="nav_item"><a href="" class="nav_link">애니</a></li>
-              <li class="nav_item"><a href="" class="nav_link">해외시리즈</a></li>
+              <li class="nav_item">
+                <a href="" class="nav_link">해외시리즈</a>
+              </li>
               <li class="nav_item"><a href="" class="nav_link">시사교양</a></li>
               <li class="nav_item"><a href="" class="nav_link">키즈</a></li>
-              <li class="nav_item"><a href="" class="nav_link">영화플러스</a></li>
-              <li class="nav_item"><a href="./index_live.html" class="nav_link">LIVE</a></li>
+              <li class="nav_item">
+                <a href="" class="nav_link">영화플러스</a>
+              </li>
+              <li class="nav_item">
+                <a
+                  href="./index_live.html"
+                  class="nav_link"
+                  data-coach="LIVE 페이지로 이동합니다"
+                  >LIVE</a
+                >
+              </li>
             </ul>
           </nav>
           <div class="utility_area">
             <a href="" class="utility_link utility_promotion">
               <span class="blind">프로모션</span>
             </a>
-            <a href="" class="utility_link utility_coupon">
+            <a
+              href=""
+              class="utility_link utility_coupon"
+              data-coach="이용권(쿠폰) 페이지로 이동합니다"
+            >
               <span class="blind">쿠폰</span>
             </a>
             <a href="" class="utility_link utility_search">
@@ -105,15 +157,35 @@
                 <div class="input_box">
                   <!-- [D] input 에 값을 타이핑하면 .btn_register에 .is_active 를 추가. 값이 없으면 제거  -->
                   <label for="coupon_code" class="blind">쿠폰 번호 입력</label>
-                  <input type="text" id="coupon_code" placeholder="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요"  class="input_coupon_code" title="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요" aria-required="true" autocomplete="number">
-                  <button type="submit" class="btn_register" disabled>쿠폰 등록</button>
+                  <input
+                    type="text"
+                    id="coupon_code"
+                    placeholder="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요"
+                    class="input_coupon_code"
+                    title="&#34;-&#34; 을 넣지않고 쿠폰번호를 입력해주세요"
+                    aria-required="true"
+                    autocomplete="number"
+                  />
+                  <button type="submit" class="btn_register" disabled>
+                    쿠폰 등록
+                  </button>
                 </div>
               </div>
               <p class="input_desc">등록하신 쿠폰은 환불되지 않습니다.</p>
-              <p class="input_desc">쿠폰은 상업적 용도로 사용하거나 매매하실 수 없습니다.</p>
-              <p class="input_desc">유효기간이 지난 쿠폰은 등록하실 수 없습니다.</p>
-              <p class="input_desc">쿠폰으로 지급되는 상품은 기존 보유 상품과 중복되어 적용되므로 가급적 이용중인 상품이 만료 된 뒤에 쿠폰을 사용해 주세요.</p>
-              <p class="input_desc">쿠폰번호에 숫자 0,1은 없습니다. 영문자 O,I와 혼동하지 않도록 유의해 주세요.</p>
+              <p class="input_desc">
+                쿠폰은 상업적 용도로 사용하거나 매매하실 수 없습니다.
+              </p>
+              <p class="input_desc">
+                유효기간이 지난 쿠폰은 등록하실 수 없습니다.
+              </p>
+              <p class="input_desc">
+                쿠폰으로 지급되는 상품은 기존 보유 상품과 중복되어 적용되므로
+                가급적 이용중인 상품이 만료 된 뒤에 쿠폰을 사용해 주세요.
+              </p>
+              <p class="input_desc">
+                쿠폰번호에 숫자 0,1은 없습니다. 영문자 O,I와 혼동하지 않도록
+                유의해 주세요.
+              </p>
             </fieldset>
           </form>
         </section>
@@ -124,13 +196,25 @@
               <ul class="tab_list" role="tablist">
                 <!-- [D] tab_item 을 클릭하면, aria-selected 값이 true 는 false 로, false 는 true로 변경 -->
                 <li class="tab_item" role="presentation">
-                  <button type="button" role="tab" aria-selected="true" class="tab_item_title"
-                  aria-controls="coupon_active">보유 쿠폰</button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    class="tab_item_title"
+                    aria-controls="coupon_active"
+                  >
+                    보유 쿠폰
+                  </button>
                 </li>
                 <li class="tab_item" role="presentation">
-                  <button type="button" role="tab" aria-selected="false" 
-                  class="tab_item_title"
-                  >소진 쿠폰</button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    class="tab_item_title"
+                  >
+                    소진 쿠폰
+                  </button>
                 </li>
               </ul>
             </div>
@@ -138,91 +222,156 @@
               <ul class="coupon_list">
                 <li class="coupon_item">
                   <span class="coupon_badge">SK Telecom</span>
-                  <strong class="coupon_title">T 우주패스 Netflix / 최대 13,500원 할인</strong>
-                  <p class="coupon_desc">사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC</p>
+                  <strong class="coupon_title"
+                    >T 우주패스 Netflix / 최대 13,500원 할인</strong
+                  >
+                  <p class="coupon_desc">
+                    사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC
+                  </p>
                   <p class="coupon_desc">
                     발행일 :
-                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    <time class="coupon_time" datetime="2021-05-01"
+                      >2021-05-01</time
+                    >
                   </p>
                   <p class="coupon_desc">
                     사용기간 :
-                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    <time class="coupon_time" datetime="2021-05-01"
+                      >2021-05-01</time
+                    >
                     ~
-                    <time class="coupon_time" datetime="2028-01-01">2028-01-01</time>
+                    <time class="coupon_time" datetime="2028-01-01"
+                      >2028-01-01</time
+                    >
                   </p>
                   <button type="button" class="use_coupon">사용</button>
                 </li>
                 <li class="coupon_item">
                   <span class="coupon_badge">GS 칼텍스</span>
-                  <strong class="coupon_title">I am your Cinema / 웨이브 베이직 1개월 이용권</strong>
-                  <p class="coupon_desc">사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC</p>
+                  <strong class="coupon_title"
+                    >I am your Cinema / 웨이브 베이직 1개월 이용권</strong
+                  >
+                  <p class="coupon_desc">
+                    사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC
+                  </p>
                   <p class="coupon_desc">
                     발행일 :
-                    <time class="coupon_time" datetime="2020-04-10">2020-04-10</time>
+                    <time class="coupon_time" datetime="2020-04-10"
+                      >2020-04-10</time
+                    >
                   </p>
                   <p class="coupon_desc">
                     사용기간 :
-                    <time class="coupon_time" datetime="2020-04-10">2020-04-10</time>
+                    <time class="coupon_time" datetime="2020-04-10"
+                      >2020-04-10</time
+                    >
                     ~
-                    <time class="coupon_time" datetime="2024-12-31">2024-12-31</time>
+                    <time class="coupon_time" datetime="2024-12-31"
+                      >2024-12-31</time
+                    >
                   </p>
                   <button type="button" class="use_coupon">사용</button>
                 </li>
                 <li class="coupon_item">
                   <span class="coupon_badge">SK Telecom</span>
-                  <strong class="coupon_title">T 우주패스 Life wavve 앤 데이터 / 첫달 1,000원</strong>
-                  <p class="coupon_desc">사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC</p>
+                  <strong class="coupon_title"
+                    >T 우주패스 Life wavve 앤 데이터 / 첫달 1,000원</strong
+                  >
+                  <p class="coupon_desc">
+                    사용가능: 동시 접속 최대 1회선(HD화질) 모바일 + PC
+                  </p>
                   <p class="coupon_desc">
                     발행일 :
-                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    <time class="coupon_time" datetime="2021-05-01"
+                      >2021-05-01</time
+                    >
                   </p>
                   <p class="coupon_desc">
                     사용기간 :
-                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    <time class="coupon_time" datetime="2021-05-01"
+                      >2021-05-01</time
+                    >
                     ~
-                    <time class="coupon_time" datetime="2024-12-31">2024-12-31</time>
+                    <time class="coupon_time" datetime="2024-12-31"
+                      >2024-12-31</time
+                    >
                   </p>
                   <button type="button" class="use_coupon">사용</button>
                 </li>
                 <li class="coupon_item">
                   <span class="coupon_badge">SK Telecom</span>
-                  <strong class="coupon_title">T 우주패스 Life wavve 앤 데이터 플러스/ 첫달 1,000원</strong>
-                  <p class="coupon_desc">사용가능: 동시 접속 최대 2회선(HD화질) 모바일 + PC</p>
+                  <strong class="coupon_title"
+                    >T 우주패스 Life wavve 앤 데이터 플러스/ 첫달
+                    1,000원</strong
+                  >
+                  <p class="coupon_desc">
+                    사용가능: 동시 접속 최대 2회선(HD화질) 모바일 + PC
+                  </p>
                   <p class="coupon_desc">
                     발행일 :
-                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    <time class="coupon_time" datetime="2021-05-01"
+                      >2021-05-01</time
+                    >
                   </p>
                   <p class="coupon_desc">
                     사용기간 :
-                    <time class="coupon_time" datetime="2021-05-01">2021-05-01</time>
+                    <time class="coupon_time" datetime="2021-05-01"
+                      >2021-05-01</time
+                    >
                     ~
-                    <time class="coupon_time" datetime="2024-12-31">2024-12-31</time>
+                    <time class="coupon_time" datetime="2024-12-31"
+                      >2024-12-31</time
+                    >
                   </p>
                   <button type="button" class="use_coupon">사용</button>
                 </li>
               </ul>
               <div class="control_area">
-                <button type="button" class="arrow_btn btn_first" aria-label="첫 페이지로 이동"></button>
-                <button type="button" class="arrow_btn btn_prev" aria-label="이전 페이지로 이동"></button>
+                <button
+                  type="button"
+                  class="arrow_btn btn_first"
+                  aria-label="첫 페이지로 이동"
+                ></button>
+                <button
+                  type="button"
+                  class="arrow_btn btn_prev"
+                  aria-label="이전 페이지로 이동"
+                ></button>
                 <div class="pagination">
                   <!-- [D] .page_number 을 클릭하면, aria-selected 값이 true 에서 false 로, false 에서 true로 변경  -->
-                  <button type="button" class="page_number" aria-current="page">1</button>
-                  <button type="button" class="page_number" >2</button>
-                  <button type="button" class="page_number" >3</button>
-                  <button type="button" class="page_number" >4</button>
-                  <button type="button" class="page_number" >5</button>
-                  <button type="button" class="page_number" >6</button>
-                  <button type="button" class="page_number" >7</button>
-                  <button type="button" class="page_number" >8</button>
-                  <button type="button" class="page_number" >9</button>
-                  <button type="button" class="page_number" >10</button>
+                  <button type="button" class="page_number" aria-current="page">
+                    1
+                  </button>
+                  <button type="button" class="page_number">2</button>
+                  <button type="button" class="page_number">3</button>
+                  <button type="button" class="page_number">4</button>
+                  <button type="button" class="page_number">5</button>
+                  <button type="button" class="page_number">6</button>
+                  <button type="button" class="page_number">7</button>
+                  <button type="button" class="page_number">8</button>
+                  <button type="button" class="page_number">9</button>
+                  <button type="button" class="page_number">10</button>
                 </div>
-                <button type="button" class="arrow_btn btn_next" aria-label="다음 페이지로 이동"></button>
-                <button type="button" class="arrow_btn btn_last" aria-label="마지막 페이지로 이동"></button>
+                <button
+                  type="button"
+                  class="arrow_btn btn_next"
+                  aria-label="다음 페이지로 이동"
+                ></button>
+                <button
+                  type="button"
+                  class="arrow_btn btn_last"
+                  aria-label="마지막 페이지로 이동"
+                ></button>
               </div>
               <div class="no_coupon_area is_hidden">
                 <div class="image_box">
-                  <img src="./assets/images/ico_no_coupon_alert.png" alt="쿠폰 없음 아이콘" loading="lazy" width="64" height="64">
+                  <img
+                    src="./assets/images/ico_no_coupon_alert.png"
+                    alt="쿠폰 없음 아이콘"
+                    loading="lazy"
+                    width="64"
+                    height="64"
+                  />
                 </div>
                 <p class="text_box">보유 쿠폰이 없어요.</p>
               </div>
@@ -235,18 +384,22 @@
           <nav class="footer_nav">
             <div class="footer_logo">
               <span class="blind">웨이브</span>
-              <img src="./assets/images/ico_footer_logo.png" alt="wavve" loading="lazy" width="84" height="20">
+              <img
+                src="./assets/images/ico_footer_logo.png"
+                alt="wavve"
+                loading="lazy"
+                width="84"
+                height="20"
+              />
             </div>
-            <a class="footer_nav_link">
-              이용약관</a>
-            <a class="footer_nav_link">
-              개인정보 보호정책</a>
-            <a class="footer_nav_link">
-              고객센터</a>
-            <a class="footer_nav_link">
-              공지사항</a>
+            <a class="footer_nav_link"> 이용약관</a>
+            <a class="footer_nav_link"> 개인정보 보호정책</a>
+            <a class="footer_nav_link"> 고객센터</a>
+            <a class="footer_nav_link"> 공지사항</a>
           </nav>
-          <small class="copyright">Copyright © jjub0217 All rights reserved.jjub0217</small>
+          <small class="copyright"
+            >Copyright © jjub0217 All rights reserved.jjub0217</small
+          >
         </div>
       </footer>
     </div>
@@ -258,7 +411,7 @@
       const couponList = document.querySelector(".coupon_list");
       const noCoupon = document.querySelector(".no_coupon_area");
       const caseView = document.querySelector(".case_view");
-      
+
       caseView.onclick = (e) => {
         if (couponList.classList.contains("is_hidden")) {
           couponList.classList.remove("is_hidden");

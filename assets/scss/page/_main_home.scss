@@ -1,3 +1,6 @@
+$visual-width: clamp(1240px, 78vw, 1800px);
+$section-width: clamp(1280px, 72vw, 1520px);
+
 .image_box {
   position: relative;
   img {
@@ -8,7 +11,7 @@
 
 .section_visual {
   .swiper-slide {
-    width: auto !important;
+    width: $visual-width !important;
   }
 
   .link_item {
@@ -25,7 +28,8 @@
 
   .image_box,
   .text_box {
-    min-width: 1240px;
+    // min-width: 1240px;
+    width: 100%;
     padding-bottom: calc((508 / 1240) * 100%);
   }
 
@@ -34,6 +38,21 @@
     position: absolute;
     z-index: 1;
     animation: opacityAni 0.7s ease-in-out;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .sub_title {
+      position: absolute;
+      top: 86.8%;
+      left: 3.4%;
+      font-size: clamp(18px, 1.15vw, 26px);
+      font-weight: 400;
+      line-height: 1.4;
+      color: #fff;
+      white-space: nowrap;
+    }
   }
 
   .control_area {
@@ -42,7 +61,10 @@
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
-
+    .inner {
+      width: $visual-width;
+      padding: 0;
+    }
     .slide_btn {
       width: 36px;
       height: 36px;
@@ -51,11 +73,11 @@
     }
 
     .btn_prev {
-      left: calc(76px / -2);
+      left: -58px;
     }
 
     .btn_next {
-      right: -38px;
+      right: -58px;
     }
   }
 
@@ -63,7 +85,7 @@
     position: absolute;
     bottom: 16px;
     left: auto;
-    right: calc(50% - 620px);
+    right: calc(50% - clamp(1240px, 78vw, 1800px) / 2);
     transform: translate(-50%);
     z-index: 1;
     display: flex;
@@ -98,6 +120,15 @@
   }
 }
 
+.section_upload,
+.section_event,
+.section_best_artist,
+.section_artist {
+  .inner {
+    width: $section-width;
+  }
+}
+
 .section_upload {
   .upload {
     &_landscape {
@@ -125,7 +156,7 @@
     }
 
     &_item {
-      width: 189px;
+      width: calc((100% - 12px * 5) / 6);
       padding-bottom: 48px;
       transition: max-height 0.3s ease-out;
       visibility: visible;
@@ -155,6 +186,22 @@
 
   .more_btn {
     margin-top: 0;
+  }
+  .upload_empty {
+    width: 100%;
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  .select_wrap {
+    width: fit-content;
+    .coach_tip {
+      top: auto;
+      bottom: 16px;
+    }
+    &:has(.select_title[aria-expanded="true"]) .coach_tip {
+      visibility: hidden;
+    }
   }
 }
 

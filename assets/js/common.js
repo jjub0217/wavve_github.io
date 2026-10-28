@@ -1,6 +1,6 @@
 const main = document.querySelector(".container");
-const skip = document.querySelector(".skip > a")
-const header = document.querySelector(".header"); 
+const skip = document.querySelector(".skip > a");
+const header = document.querySelector(".header");
 const mainLogo = document.querySelector(".site_logo");
 const btnClosePopup = document.querySelector(".btn_close_popup");
 const popupBox = document.querySelector(".popup_box");
@@ -35,7 +35,7 @@ const commonA11ySettings = {
 //     if (event.key === "Escape" || event.key === "Esc") {
 //       closePopup();
 //     }
-//   }, { once: true }); 
+//   }, { once: true });
 // });
 
 // const closePopup = () => {
@@ -43,11 +43,37 @@ const commonA11ySettings = {
 //   popupBox.setAttribute("aria-expanded", "false");
 // };
 
-
 // btnClosePopup.onclick = (e) => {
 //   e.target.setAttribute("aria-expanded", "false");
 //   closePopup()
 // };
+
+if (popupBox) {
+  const openPopup = () => {
+    popupBox.dataset.open = "true";
+    document.body.classList.add("scroll_hide");
+    btnClosePopup.focus();
+  };
+
+  const closePopup = () => {
+    popupBox.dataset.open = "false";
+    document.body.classList.remove("scroll_hide");
+  };
+
+  btnClosePopup.addEventListener("click", closePopup);
+
+  // Esc 키로 닫기
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && popupBox.dataset.open === "true") closePopup();
+  });
+
+  // 어두운 바깥 영역을 누르면 닫기 (안쪽 흰 상자를 누를 땐 안 닫힘)
+  popupBox.addEventListener("click", (e) => {
+    if (e.target === popupBox) closePopup();
+  });
+
+  openPopup();
+}
 
 selectBoxes.forEach((selectBox) => {
   const selectBtn = selectBox.querySelector(".select_title") ?? "";
@@ -61,16 +87,34 @@ selectBoxes.forEach((selectBox) => {
   optionButtons.forEach((button) => {
     button.onclick = (e) => {
       optionButtons.forEach((btn) =>
-        btn.setAttribute("aria-selected", "false")
+        btn.setAttribute("aria-selected", "false"),
       );
       e.target.setAttribute("aria-selected", "true");
-      selectBtn.textContent =  e.target.textContent;
+      selectBtn.textContent = e.target.textContent;
       selectBtn.setAttribute("aria-expanded", "false");
       selectBtn.style.color = "#fff";
     };
   });
 });
 
+document.addEventListener("click", (e) => {
+  selectBoxes.forEach((selectBox) => {
+    if (!selectBox.contains(e.target)) {
+      selectBox
+        .querySelector(".select_title")
+        ?.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  selectBoxes.forEach((selectBox) => {
+    selectBox
+      .querySelector(".select_title")
+      ?.setAttribute("aria-expanded", "false");
+  });
+});
 
 tabItemTitles.forEach((item) => {
   item.onclick = (e) => {
@@ -84,4 +128,21 @@ tabItemTitles.forEach((item) => {
       }
     });
   };
+});
+
+document.querySelectorAll("[data-coach]").forEach((coachTarget) => {
+  if (getComputedStyle(coachTarget).position === "static") {
+    coachTarget.style.position = "relative";
+  }
+  coachTarget.insertAdjacentHTML(
+    "beforeend",
+    `<span class="coach_mark" aria-hidden="true">
+       <span class="coach_tip">${coachTarget.dataset.coach}</span>
+     </span>`,
+  );
+});
+
+document.addEventListener("click", (e) => {
+  const emptyLink = e.target.closest('a[href=""]');
+  if (emptyLink) e.preventDefault();
 });

@@ -62,7 +62,7 @@ section {
   display: none;
 }
 
-.popup_box[aria-expanded="true"] {
+.popup_box[data-open="true"] {
   display: block;
   position: fixed;
   top: 0;
@@ -163,6 +163,8 @@ section {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
+    padding: 0 100px;
     @include minMobile {
       flex-wrap: nowrap;
     }
@@ -250,6 +252,9 @@ section {
         line-height: 27px;
         content: "이용권";
       }
+    }
+    .coach_tip {
+      top: 87px;
     }
   }
   &_search::before {
@@ -383,7 +388,9 @@ section {
         background-color: #242526;
         opacity: 0;
         visibility: hidden;
-        transition: height 0.3s, opacity 0.2s;
+        transition:
+          height 0.3s,
+          opacity 0.2s;
       }
     }
   }
@@ -532,5 +539,64 @@ section {
     color: #8b8d91;
     font-size: 13px;
     line-height: 20px;
+  }
+}
+
+.coach_mark {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  pointer-events: none;
+  animation: coachPulse 1.5s ease-out infinite;
+}
+
+.coach_tip {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #121212;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+[data-coach]:hover > .coach_mark .coach_tip,
+[data-coach]:focus-visible > .coach_mark .coach_tip,
+[data-coach]:has(:focus-visible) > .coach_mark .coach_tip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_next > .coach_mark {
+  top: auto;
+  right: auto;
+  bottom: -4px;
+  left: -4px;
+  transform: rotate(180deg);
+}
+
+@keyframes coachPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coach_mark {
+    animation: none;
   }
 }
