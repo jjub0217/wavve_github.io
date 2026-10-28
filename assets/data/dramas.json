@@ -2,6 +2,7 @@
   {
     "id": 68814,
     "title": "힘쎈여자 도봉순",
+    "title_ja": "力の強い女 ト・ボンスン",
     "genre_ids": [
       35,
       10759,
@@ -16,6 +17,7 @@
   {
     "id": 81332,
     "title": "러블리 호러블리",
+    "title_ja": "ラブリー・ホラーブリー",
     "genre_ids": [
       35,
       18
@@ -29,6 +31,7 @@
   {
     "id": 70528,
     "title": "시카고 타자기",
+    "title_ja": "シカゴ・タイプライター ～時を越えてきた想い～",
     "genre_ids": [
       10765,
       18
@@ -40,21 +43,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/5qD8pAFPGuioviwaam20YNrjH8q.jpg"
   },
   {
-    "id": 33238,
-    "title": "런닝맨",
-    "genre_ids": [
-      35,
-      10764
-    ],
-    "popularity": 471.3039,
-    "release_date": "2010-07-11",
-    "vote_average": 8.2,
-    "image": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/15SMnscZqd7HZ0bzruatOcKUlOV.jpg"
-  },
-  {
     "id": 62933,
     "title": "너를 기억해",
+    "title_ja": "君を憶えてる",
     "genre_ids": [
       9648,
       18
@@ -66,8 +57,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/6LnvlfevdppZNYg0VptRb7N8fwe.jpg"
   },
   {
+    "id": 33238,
+    "title": "런닝맨",
+    "title_ja": "ランニングマン",
+    "genre_ids": [
+      35,
+      10764
+    ],
+    "popularity": 471.3039,
+    "release_date": "2010-07-11",
+    "vote_average": 8.2,
+    "image": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/15SMnscZqd7HZ0bzruatOcKUlOV.jpg"
+  },
+  {
     "id": 39429,
     "title": "유희열의 스케치북",
+    "title_ja": "ユ・ヒヨルのスケッチブック",
     "genre_ids": [
       10767
     ],
@@ -80,6 +86,7 @@
   {
     "id": 70672,
     "title": "아는 형님",
+    "title_ja": "知ってるお兄さん",
     "genre_ids": [
       10764,
       35
@@ -91,8 +98,22 @@
     "poster": "https://image.tmdb.org/t/p/w500/zak7mqMxJGnnWplSdbjDtV7bg2Y.jpg"
   },
   {
+    "id": 66046,
+    "title": "미스터리 음악쇼 복면가왕",
+    "title_ja": "ミステリー音楽ショー: 覆面歌王",
+    "genre_ids": [
+      10764
+    ],
+    "popularity": 147.4757,
+    "release_date": "2015-04-05",
+    "vote_average": 5.6,
+    "image": "https://image.tmdb.org/t/p/w780/xDXaptzkHFHGyQ2QGZ3aGnEE1dK.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/tEqL1b5NOhGUJgV62tyb6Q2gQtI.jpg"
+  },
+  {
     "id": 5092,
     "title": "무한도전",
+    "title_ja": "無限に挑戦",
     "genre_ids": [
       10764,
       35
@@ -106,6 +127,7 @@
   {
     "id": 65278,
     "title": "SBS 인기가요",
+    "title_ja": "SBS人気歌謡",
     "genre_ids": [
       10764,
       10751
@@ -117,20 +139,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/tiJQs4euOHdIPc7tTnB0eonQvqV.jpg"
   },
   {
-    "id": 65282,
-    "title": "나 혼자 산다",
-    "genre_ids": [
-      10764
-    ],
-    "popularity": 111.5296,
-    "release_date": "2013-03-22",
-    "vote_average": 7.5,
-    "image": "https://image.tmdb.org/t/p/w780/sztoil0XfQ0cSHy4PXmYW6uAdfQ.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/bq3Emv3pJLUyHvwGqiAXRwJvAmL.jpg"
-  },
-  {
     "id": 65270,
     "title": "라디오스타",
+    "title_ja": "ラジオスター",
     "genre_ids": [
       10767
     ],
@@ -141,20 +152,36 @@
     "poster": "https://image.tmdb.org/t/p/w500/ofo50w2DTFcPkOm3iguWGU3Y8cw.jpg"
   },
   {
-    "id": 66046,
-    "title": "미스터리 음악쇼 복면가왕",
+    "id": 65282,
+    "title": "나 혼자 산다",
+    "title_ja": "私は一人で暮らす",
     "genre_ids": [
       10764
     ],
-    "popularity": 147.4757,
-    "release_date": "2015-04-05",
-    "vote_average": 5.6,
-    "image": "https://image.tmdb.org/t/p/w780/xDXaptzkHFHGyQ2QGZ3aGnEE1dK.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/tEqL1b5NOhGUJgV62tyb6Q2gQtI.jpg"
+    "popularity": 111.5296,
+    "release_date": "2013-03-22",
+    "vote_average": 7.5,
+    "image": "https://image.tmdb.org/t/p/w780/sztoil0XfQ0cSHy4PXmYW6uAdfQ.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/bq3Emv3pJLUyHvwGqiAXRwJvAmL.jpg"
+  },
+  {
+    "id": 72896,
+    "title": "미운 우리 새끼",
+    "title_ja": "アラフォー息子の成長日記",
+    "genre_ids": [
+      10764,
+      10767
+    ],
+    "popularity": 108.6954,
+    "release_date": "2016-08-26",
+    "vote_average": 7.3,
+    "image": "https://image.tmdb.org/t/p/w780/vrLDuQ5L45f7vFWpMT17WopdWx0.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/eFxC1aItvr2xGfG2Z7lXQt6CfnB.jpg"
   },
   {
     "id": 78648,
     "title": "놀라운 토요일",
+    "title_ja": "驚きの土曜日",
     "genre_ids": [
       35,
       10764
@@ -168,6 +195,7 @@
   {
     "id": 52910,
     "title": "김병만의 정글의 법칙",
+    "title_ja": "キム・ビョンマンのジャングルの法則",
     "genre_ids": [
       10764
     ],
@@ -178,21 +206,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/qG2JpIDuYhuQOMSLqmMtHBBbfx5.jpg"
   },
   {
-    "id": 72896,
-    "title": "미운 우리 새끼",
+    "id": 64369,
+    "title": "TV 동물농장",
+    "title_ja": "TV動物農場",
     "genre_ids": [
-      10764,
-      10767
+      10751,
+      10764
     ],
-    "popularity": 108.6954,
-    "release_date": "2016-08-26",
-    "vote_average": 7.3,
-    "image": "https://image.tmdb.org/t/p/w780/vrLDuQ5L45f7vFWpMT17WopdWx0.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/eFxC1aItvr2xGfG2Z7lXQt6CfnB.jpg"
+    "popularity": 97.0702,
+    "release_date": "2001-05-06",
+    "vote_average": 7.6,
+    "image": "https://image.tmdb.org/t/p/w780/1eUNe8eP5GnEL6RLgPLSVOiVTvU.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/7FZZHXxlujrtq3EUkP78tm5aVkX.jpg"
   },
   {
     "id": 30801,
     "title": "1박 2일",
+    "title_ja": "1泊2日",
     "genre_ids": [
       35,
       10764
@@ -206,6 +236,7 @@
   {
     "id": 303745,
     "title": "나의 유죄인간",
+    "title_ja": "罪深いあなた",
     "genre_ids": [
       35,
       18,
@@ -219,21 +250,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/skZsbkeVQzZ2Pu2xtgulvP15Y7G.jpg"
   },
   {
-    "id": 64369,
-    "title": "TV 동물농장",
-    "genre_ids": [
-      10751,
-      10764
-    ],
-    "popularity": 97.0702,
-    "release_date": "2001-05-06",
-    "vote_average": 7.6,
-    "image": "https://image.tmdb.org/t/p/w780/1eUNe8eP5GnEL6RLgPLSVOiVTvU.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/7FZZHXxlujrtq3EUkP78tm5aVkX.jpg"
-  },
-  {
     "id": 18495,
     "title": "논스톱",
+    "title_ja": "ノンストップ",
     "genre_ids": [
       18,
       35
@@ -245,21 +264,24 @@
     "poster": "https://image.tmdb.org/t/p/w500/elXJzhz1dM0lO7fK2BfO2pVtC7l.jpg"
   },
   {
-    "id": 81978,
-    "title": "유 퀴즈 온 더 블럭",
+    "id": 93405,
+    "title": "오징어 게임",
+    "title_ja": "イカゲーム",
     "genre_ids": [
-      10767,
-      35
+      10759,
+      9648,
+      18
     ],
-    "popularity": 86.927,
-    "release_date": "2018-08-29",
-    "vote_average": 8.3,
-    "image": "https://image.tmdb.org/t/p/w780/fDSZ9s6QJfgDvqceTBLUFpNB71j.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/tdGJ2swRbtHT2O3fUXauKVSXNp9.jpg"
+    "popularity": 87.6833,
+    "release_date": "2021-09-17",
+    "vote_average": 7.851,
+    "image": "https://image.tmdb.org/t/p/w780/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/yACIAqAkSLkX4coHafpyLWAtQjw.jpg"
   },
   {
     "id": 244984,
     "title": "아이돌 라디오",
+    "title_ja": "アイドルラジオ",
     "genre_ids": [],
     "popularity": 67.4178,
     "release_date": "2018-07-23",
@@ -270,6 +292,7 @@
   {
     "id": 91121,
     "title": "놀면 뭐하니?",
+    "title_ja": "遊ぶなら何する？",
     "genre_ids": [
       10764,
       35
@@ -281,22 +304,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/10dL6iCqPIaAoDq1CTBOrOmbsmo.jpg"
   },
   {
-    "id": 93405,
-    "title": "오징어 게임",
-    "genre_ids": [
-      10759,
-      9648,
-      18
-    ],
-    "popularity": 87.6833,
-    "release_date": "2021-09-17",
-    "vote_average": 7.852,
-    "image": "https://image.tmdb.org/t/p/w780/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/yACIAqAkSLkX4coHafpyLWAtQjw.jpg"
-  },
-  {
     "id": 35024,
     "title": "쇼! 음악중심",
+    "title_ja": "ショー！K-POPの中心",
     "genre_ids": [
       10764
     ],
@@ -309,6 +319,7 @@
   {
     "id": 52823,
     "title": "주간 아이돌",
+    "title_ja": "週刊アイドル",
     "genre_ids": [
       10767
     ],
@@ -321,6 +332,7 @@
   {
     "id": 71026,
     "title": "출동! 슈퍼윙스",
+    "title_ja": "出動！スーパーウィングス",
     "genre_ids": [
       16,
       10762
@@ -334,6 +346,7 @@
   {
     "id": 130013,
     "title": "쇼! 챔피언",
+    "title_ja": "ショー・チャンピオン",
     "genre_ids": [
       10764
     ],
@@ -346,6 +359,7 @@
   {
     "id": 293610,
     "title": "닥터X: 하얀 마피아의 시대",
+    "title_ja": "ドクターX ～白衣のマフィア～",
     "genre_ids": [
       9648,
       18,
@@ -353,13 +367,14 @@
     ],
     "popularity": 57.9404,
     "release_date": "2026-10-09",
-    "vote_average": 9.393,
+    "vote_average": 9.345,
     "image": "https://image.tmdb.org/t/p/w780/mDYIV71RL3mkaW8IfSGNthuVB7l.jpg",
     "poster": "https://image.tmdb.org/t/p/w500/xYFTiwC7Tl0xOUFiVFUPWXHTHnr.jpg"
   },
   {
     "id": 105194,
     "title": "남자 셋 여자 셋",
+    "title_ja": "男3人女3人",
     "genre_ids": [
       35
     ],
@@ -372,6 +387,7 @@
   {
     "id": 134864,
     "title": "MBC 베스트극장",
+    "title_ja": "MBCベスト劇場",
     "genre_ids": [
       18
     ],
@@ -384,6 +400,7 @@
   {
     "id": 83893,
     "title": "KBS 드라마 스페셜",
+    "title_ja": "KBSドラマスペシャル連作シリーズ",
     "genre_ids": [
       18
     ],
@@ -396,6 +413,7 @@
   {
     "id": 276161,
     "title": "참교육",
+    "title_ja": "鉄槌教師",
     "genre_ids": [
       10759,
       18,
@@ -403,13 +421,14 @@
     ],
     "popularity": 52.2593,
     "release_date": "2026-06-05",
-    "vote_average": 9.4,
+    "vote_average": 9.356,
     "image": "https://image.tmdb.org/t/p/w780/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
     "poster": "https://image.tmdb.org/t/p/w500/44iAuz8HkEDCOxjBmF4oogaXjnI.jpg"
   },
   {
     "id": 66130,
     "title": "그것이 알고싶다",
+    "title_ja": "それが知りたい",
     "genre_ids": [
       99,
       10767
@@ -423,6 +442,7 @@
   {
     "id": 80736,
     "title": "전지적 참견 시점",
+    "title_ja": "全知的おせっかい視点",
     "genre_ids": [
       10764
     ],
@@ -435,6 +455,7 @@
   {
     "id": 7677,
     "title": "우리 결혼했어요",
+    "title_ja": "私たち結婚しました",
     "genre_ids": [
       10764
     ],
@@ -447,6 +468,7 @@
   {
     "id": 73048,
     "title": "SNL 코리아",
+    "title_ja": "SNLコリア",
     "genre_ids": [
       10764,
       35
@@ -460,6 +482,7 @@
   {
     "id": 100060,
     "title": "TWICE TV",
+    "title_ja": "TWICE TV",
     "genre_ids": [
       10764
     ],
@@ -472,6 +495,7 @@
   {
     "id": 73036,
     "title": "냉장고를 부탁해",
+    "title_ja": "冷蔵庫をお願い",
     "genre_ids": [
       10764
     ],
@@ -484,6 +508,7 @@
   {
     "id": 96816,
     "title": "After School Club",
+    "title_ja": "After School Club",
     "genre_ids": [
       10767
     ],
@@ -496,6 +521,7 @@
   {
     "id": 68398,
     "title": "낭만닥터 김사부",
+    "title_ja": "浪漫ドクター キム・サブ",
     "genre_ids": [
       18
     ],
@@ -506,8 +532,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg"
   },
   {
+    "id": 81978,
+    "title": "유 퀴즈 온 더 블럭",
+    "title_ja": "ユ・クイズ ON THE BLOCK",
+    "genre_ids": [
+      10767,
+      35
+    ],
+    "popularity": 86.927,
+    "release_date": "2018-08-29",
+    "vote_average": 8.3,
+    "image": "https://image.tmdb.org/t/p/w780/fDSZ9s6QJfgDvqceTBLUFpNB71j.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/tdGJ2swRbtHT2O3fUXauKVSXNp9.jpg"
+  },
+  {
     "id": 70204,
     "title": "순풍산부인과",
+    "title_ja": "順風産婦人科",
     "genre_ids": [
       10751,
       35
@@ -521,6 +562,7 @@
   {
     "id": 5707,
     "title": "X맨",
+    "title_ja": "Xマン",
     "genre_ids": [
       35,
       10767
@@ -534,6 +576,7 @@
   {
     "id": 314939,
     "title": "너 말고 다른 연애",
+    "title_ja": "あなたとは違う恋愛",
     "genre_ids": [
       18,
       35
@@ -547,6 +590,7 @@
   {
     "id": 289423,
     "title": "나를 충전해줘",
+    "title_ja": "ハートにチャージして",
     "genre_ids": [
       10765,
       35,
@@ -561,6 +605,7 @@
   {
     "id": 77290,
     "title": "코미디빅리그",
+    "title_ja": "コメディビッグリーグ",
     "genre_ids": [
       35
     ],
@@ -573,6 +618,7 @@
   {
     "id": 96102,
     "title": "슬기로운 의사생활",
+    "title_ja": "賢い医師生活",
     "genre_ids": [
       18,
       35
@@ -584,34 +630,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/zy0FJYPsKkfOrZG5r5lFtTIx1up.jpg"
   },
   {
-    "id": 96804,
-    "title": "이달의소녀탐구",
-    "genre_ids": [
-      10764,
-      35
-    ],
-    "popularity": 28.9399,
-    "release_date": "2016-10-12",
-    "vote_average": 7,
-    "image": "https://image.tmdb.org/t/p/w780/xpVVR4gfM8P9uW1JUPg1NMAWqLn.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/i4afg3YM6wfdDsNjK95pIO2MAUR.jpg"
-  },
-  {
-    "id": 112888,
-    "title": "여신강림",
-    "genre_ids": [
-      35,
-      18
-    ],
-    "popularity": 29.386,
-    "release_date": "2020-12-09",
-    "vote_average": 8.284,
-    "image": "https://image.tmdb.org/t/p/w780/3E1GroTJCRdIYHa5n62GqjmqxQR.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/gaCOvKGG2qEnsijNHEAigYcQ1U3.jpg"
-  },
-  {
     "id": 76033,
     "title": "집사부일체",
+    "title_ja": "集師父一体",
     "genre_ids": [
       10764,
       10767,
@@ -626,6 +647,7 @@
   {
     "id": 74225,
     "title": "GOING SEVENTEEN",
+    "title_ja": "GOING SEVENTEEN",
     "genre_ids": [
       10764,
       35,
@@ -638,8 +660,50 @@
     "poster": "https://image.tmdb.org/t/p/w500/qQZvkevnkCWlfOg7fn6rHcqu5yC.jpg"
   },
   {
+    "id": 112888,
+    "title": "여신강림",
+    "title_ja": "女神降臨",
+    "genre_ids": [
+      35,
+      18
+    ],
+    "popularity": 29.386,
+    "release_date": "2020-12-09",
+    "vote_average": 8.284,
+    "image": "https://image.tmdb.org/t/p/w780/3E1GroTJCRdIYHa5n62GqjmqxQR.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/gaCOvKGG2qEnsijNHEAigYcQ1U3.jpg"
+  },
+  {
+    "id": 96804,
+    "title": "이달의소녀탐구",
+    "title_ja": "今月の少女探究",
+    "genre_ids": [
+      10764,
+      35
+    ],
+    "popularity": 28.9399,
+    "release_date": "2016-10-12",
+    "vote_average": 7,
+    "image": "https://image.tmdb.org/t/p/w780/xpVVR4gfM8P9uW1JUPg1NMAWqLn.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/i4afg3YM6wfdDsNjK95pIO2MAUR.jpg"
+  },
+  {
+    "id": 132876,
+    "title": "SNL 코리아 리부트",
+    "title_ja": "SNLコリア リブート",
+    "genre_ids": [
+      35
+    ],
+    "popularity": 28.2182,
+    "release_date": "2021-09-04",
+    "vote_average": 7,
+    "image": "https://image.tmdb.org/t/p/w780/zIfssSW8kpQQ8nAo0qyIrRS9Qiu.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/bgFsUd788CupFK1xt2xFVEJRibT.jpg"
+  },
+  {
     "id": 291496,
     "title": "이런 엿같은 사랑",
+    "title_ja": "恋は飴模様",
     "genre_ids": [
       18,
       35
@@ -651,98 +715,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg"
   },
   {
-    "id": 307106,
-    "title": "연애박사",
+    "id": 94796,
+    "title": "사랑의 불시착",
+    "title_ja": "愛の不時着",
     "genre_ids": [
       18,
       35
     ],
-    "popularity": 22.6294,
-    "release_date": "2026-10-05",
-    "vote_average": 9.1,
-    "image": "https://image.tmdb.org/t/p/w780/wwSoLQrLyiXXUbRnZq1eWBbHaRR.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/vyrpZOFIZJkQG8ZWTezmlNGav8R.jpg"
-  },
-  {
-    "id": 132876,
-    "title": "SNL 코리아 리부트",
-    "genre_ids": [
-      35
-    ],
-    "popularity": 28.2182,
-    "release_date": "2021-09-04",
-    "vote_average": 7,
-    "image": "https://image.tmdb.org/t/p/w780/zIfssSW8kpQQ8nAo0qyIrRS9Qiu.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/bgFsUd788CupFK1xt2xFVEJRibT.jpg"
-  },
-  {
-    "id": 208960,
-    "title": "돌박이일",
-    "genre_ids": [
-      10764,
-      35
-    ],
-    "popularity": 24.398,
-    "release_date": "2022-08-29",
-    "vote_average": 0,
-    "image": "https://image.tmdb.org/t/p/w780/deDfgwDIomaQXZLR8iL6pRFXiB4.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/i2qij6ZaV3esGOiEPCTBIJwn456.jpg"
-  },
-  {
-    "id": 34631,
-    "title": "리얼 로망스 연애편지",
-    "genre_ids": [
-      35
-    ],
-    "popularity": 24.2624,
-    "release_date": "2003-10-23",
-    "vote_average": 7.3,
-    "image": "https://image.tmdb.org/t/p/w780/n7S7mAvhNcMnTUipj74DukDoeGT.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/8qDibJykvNuxSDExWUQlNZalJRX.jpg"
-  },
-  {
-    "id": 93097,
-    "title": "동백꽃 필 무렵",
-    "genre_ids": [
-      18,
-      35
-    ],
-    "popularity": 22.7199,
-    "release_date": "2019-09-18",
-    "vote_average": 8.2,
-    "image": "https://image.tmdb.org/t/p/w780/7OCAlRz13R9HZIbXTNUfyEAYyvf.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/HAbVZnRaPu4dm9LkTsIYs6JAnc.jpg"
-  },
-  {
-    "id": 67915,
-    "title": "도깨비",
-    "genre_ids": [
-      18,
-      10765,
-      35
-    ],
-    "popularity": 24.5104,
-    "release_date": "2016-12-02",
-    "vote_average": 8.616,
-    "image": "https://image.tmdb.org/t/p/w780/smSbK5cd8T9XHcxEUcems23BDEF.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/qZMEiTsNlCQV27hHQE27ZtlPWyv.jpg"
-  },
-  {
-    "id": 215720,
-    "title": "눈물의 여왕",
-    "genre_ids": [
-      18,
-      35
-    ],
-    "popularity": 24.3389,
-    "release_date": "2024-03-09",
-    "vote_average": 8.398,
-    "image": "https://image.tmdb.org/t/p/w780/wcP3FsRLog4GNEs9PFrDKKQdcof.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg"
+    "popularity": 26.1601,
+    "release_date": "2019-12-14",
+    "vote_average": 8.539,
+    "image": "https://image.tmdb.org/t/p/w780/3yEHM2HT2vrUtO93YzTJNgEfiZG.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/mvy18bPg93JNLwTQHHP2ZjPYP0A.jpg"
   },
   {
     "id": 117376,
     "title": "빈센조",
+    "title_ja": "ヴィンチェンツォ",
     "genre_ids": [
       10759,
       35,
@@ -756,61 +745,106 @@
     "poster": "https://image.tmdb.org/t/p/w500/mWYW3xNeV2IM06aUl2xMUdLicpa.jpg"
   },
   {
-    "id": 139798,
-    "title": "솔로지옥",
+    "id": 67915,
+    "title": "도깨비",
+    "title_ja": "トッケビ",
+    "genre_ids": [
+      18,
+      10765,
+      35
+    ],
+    "popularity": 24.5104,
+    "release_date": "2016-12-02",
+    "vote_average": 8.616,
+    "image": "https://image.tmdb.org/t/p/w780/smSbK5cd8T9XHcxEUcems23BDEF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/qZMEiTsNlCQV27hHQE27ZtlPWyv.jpg"
+  },
+  {
+    "id": 208960,
+    "title": "돌박이일",
+    "title_ja": "アイドル1泊2日",
     "genre_ids": [
       10764,
-      35,
-      10767
+      35
     ],
-    "popularity": 22.1948,
-    "release_date": "2021-12-18",
-    "vote_average": 7.6,
-    "image": "https://image.tmdb.org/t/p/w780/bkz7rStamWJxC3lp9TUpU9GR18S.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/tF3G9yCgmTzcAWx22c7fZZLRURk.jpg"
+    "popularity": 24.398,
+    "release_date": "2022-08-29",
+    "vote_average": 0,
+    "image": "https://image.tmdb.org/t/p/w780/deDfgwDIomaQXZLR8iL6pRFXiB4.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/i2qij6ZaV3esGOiEPCTBIJwn456.jpg"
   },
   {
-    "id": 94796,
-    "title": "사랑의 불시착",
+    "id": 215720,
+    "title": "눈물의 여왕",
+    "title_ja": "涙の女王",
     "genre_ids": [
       18,
       35
     ],
-    "popularity": 26.1601,
-    "release_date": "2019-12-14",
-    "vote_average": 8.539,
-    "image": "https://image.tmdb.org/t/p/w780/3yEHM2HT2vrUtO93YzTJNgEfiZG.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/mvy18bPg93JNLwTQHHP2ZjPYP0A.jpg"
+    "popularity": 24.3389,
+    "release_date": "2024-03-09",
+    "vote_average": 8.398,
+    "image": "https://image.tmdb.org/t/p/w780/wcP3FsRLog4GNEs9PFrDKKQdcof.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg"
   },
   {
-    "id": 311648,
-    "title": "내가 떨릴 수 있게",
+    "id": 34631,
+    "title": "리얼 로망스 연애편지",
+    "title_ja": "リアルロマンス ラブレター",
+    "genre_ids": [
+      35
+    ],
+    "popularity": 24.2624,
+    "release_date": "2003-10-23",
+    "vote_average": 7.3,
+    "image": "https://image.tmdb.org/t/p/w780/n7S7mAvhNcMnTUipj74DukDoeGT.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/8qDibJykvNuxSDExWUQlNZalJRX.jpg"
+  },
+  {
+    "id": 3729,
+    "title": "거침없이 하이킥!",
+    "title_ja": "思いっきりハイキック！",
+    "genre_ids": [
+      35
+    ],
+    "popularity": 22.807,
+    "release_date": "2006-11-06",
+    "vote_average": 8.6,
+    "image": "https://image.tmdb.org/t/p/w780/buLTIMHGzUOIgskUzqg7WML4vcV.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/iwyoNDYeVgQK8zxQCh7vrOlv8jt.jpg"
+  },
+  {
+    "id": 93097,
+    "title": "동백꽃 필 무렵",
+    "title_ja": "椿の花咲く頃",
     "genre_ids": [
       18,
       35
     ],
-    "popularity": 21.7421,
-    "release_date": "2026-10-15",
-    "vote_average": 9,
-    "image": "https://image.tmdb.org/t/p/w780/voAufY8Jv3AVfG15sxY5H6XWFKr.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/aGX71DFozG55achSbKd225LHGMj.jpg"
+    "popularity": 22.7199,
+    "release_date": "2019-09-18",
+    "vote_average": 8.2,
+    "image": "https://image.tmdb.org/t/p/w780/7OCAlRz13R9HZIbXTNUfyEAYyvf.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/HAbVZnRaPu4dm9LkTsIYs6JAnc.jpg"
   },
   {
-    "id": 278573,
-    "title": "21세기 대군부인",
+    "id": 307106,
+    "title": "연애박사",
+    "title_ja": "恋愛の博士課程",
     "genre_ids": [
-      35,
-      18
+      18,
+      35
     ],
-    "popularity": 20.7519,
-    "release_date": "2026-04-10",
-    "vote_average": 9,
-    "image": "https://image.tmdb.org/t/p/w780/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/4EDKW5nyVYmTvqU3AV6aRMrIkFU.jpg"
+    "popularity": 22.6294,
+    "release_date": "2026-10-05",
+    "vote_average": 9.1,
+    "image": "https://image.tmdb.org/t/p/w780/wwSoLQrLyiXXUbRnZq1eWBbHaRR.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/vyrpZOFIZJkQG8ZWTezmlNGav8R.jpg"
   },
   {
     "id": 72237,
     "title": "최강전사 미니특공대",
+    "title_ja": "ミニフォース",
     "genre_ids": [
       16,
       10762,
@@ -825,34 +859,66 @@
     "poster": "https://image.tmdb.org/t/p/w500/4TzCyUOUWEMRU5Aq3JBSv0zNJJj.jpg"
   },
   {
-    "id": 3729,
-    "title": "거침없이 하이킥!",
+    "id": 139798,
+    "title": "솔로지옥",
+    "title_ja": "脱出おひとり島",
     "genre_ids": [
-      35
+      10764,
+      35,
+      10767
     ],
-    "popularity": 22.807,
-    "release_date": "2006-11-06",
-    "vote_average": 8.6,
-    "image": "https://image.tmdb.org/t/p/w780/buLTIMHGzUOIgskUzqg7WML4vcV.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/iwyoNDYeVgQK8zxQCh7vrOlv8jt.jpg"
+    "popularity": 22.1948,
+    "release_date": "2021-12-18",
+    "vote_average": 7.6,
+    "image": "https://image.tmdb.org/t/p/w780/bkz7rStamWJxC3lp9TUpU9GR18S.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/tF3G9yCgmTzcAWx22c7fZZLRURk.jpg"
   },
   {
-    "id": 303143,
-    "title": "멋진 신세계",
+    "id": 311648,
+    "title": "내가 떨릴 수 있게",
+    "title_ja": "私を震えさせて",
     "genre_ids": [
       18,
-      35,
-      10765
+      35
     ],
-    "popularity": 20.6359,
-    "release_date": "2026-05-08",
-    "vote_average": 8.748,
-    "image": "https://image.tmdb.org/t/p/w780/p1ntnKJwn1URGv1xpU6NN33Y11O.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg"
+    "popularity": 21.7421,
+    "release_date": "2026-10-15",
+    "vote_average": 9,
+    "image": "https://image.tmdb.org/t/p/w780/voAufY8Jv3AVfG15sxY5H6XWFKr.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/aGX71DFozG55achSbKd225LHGMj.jpg"
+  },
+  {
+    "id": 218539,
+    "title": "마이데몬",
+    "title_ja": null,
+    "genre_ids": [
+      18,
+      35
+    ],
+    "popularity": 21.6704,
+    "release_date": "2023-11-24",
+    "vote_average": 8.465,
+    "image": "https://image.tmdb.org/t/p/w780/eSB0fD6CbNW3LT8Z55V07fmYFpo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/hHCFsQaVW7oeh0MfZTL2A4c5dRS.jpg"
+  },
+  {
+    "id": 154825,
+    "title": "사내맞선",
+    "title_ja": null,
+    "genre_ids": [
+      35,
+      18
+    ],
+    "popularity": 20.821,
+    "release_date": "2022-02-28",
+    "vote_average": 8.468,
+    "image": "https://image.tmdb.org/t/p/w780/lq0YqJuffMuZhoKTiC5xDqvtCSn.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg"
   },
   {
     "id": 126485,
     "title": "무빙",
+    "title_ja": "ムービング",
     "genre_ids": [
       9648,
       18,
@@ -867,6 +933,7 @@
   {
     "id": 113268,
     "title": "경이로운 소문",
+    "title_ja": "悪霊狩猟団: カウンターズ",
     "genre_ids": [
       18,
       9648,
@@ -881,6 +948,7 @@
   {
     "id": 135157,
     "title": "환혼",
+    "title_ja": "還魂",
     "genre_ids": [
       18,
       10765,
@@ -889,13 +957,72 @@
     ],
     "popularity": 30.4816,
     "release_date": "2022-06-18",
-    "vote_average": 8.6,
+    "vote_average": 8.593,
     "image": "https://image.tmdb.org/t/p/w780/nBZyWSGAUEzCH7Mna0zUNTpBQlQ.jpg",
     "poster": "https://image.tmdb.org/t/p/w500/pGs6UA4rPUZEokDyTwAGdRvwrAD.jpg"
   },
   {
+    "id": 215072,
+    "title": "킬러들의 쇼핑몰",
+    "title_ja": "殺し屋たちの店",
+    "genre_ids": [
+      18,
+      10759,
+      9648
+    ],
+    "popularity": 24.5398,
+    "release_date": "2024-01-17",
+    "vote_average": 8.5,
+    "image": "https://image.tmdb.org/t/p/w780/lg134VJrvY3ZdOlP4lTu1onOhcf.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/gfw41bHY2boxVse5l8M6m0sft5n.jpg"
+  },
+  {
+    "id": 99489,
+    "title": "펜트하우스",
+    "title_ja": "ペントハウス",
+    "genre_ids": [
+      18,
+      9648
+    ],
+    "popularity": 22.9811,
+    "release_date": "2020-10-26",
+    "vote_average": 8.3,
+    "image": "https://image.tmdb.org/t/p/w780/lUseDQFZoge6GR1F6dGtaARiF7M.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/58uuFtGtocrSQYaW2IgYrE1WfoH.jpg"
+  },
+  {
+    "id": 155226,
+    "title": "빅마우스",
+    "title_ja": "ビッグマウス",
+    "genre_ids": [
+      9648,
+      18,
+      80
+    ],
+    "popularity": 22.2587,
+    "release_date": "2022-07-29",
+    "vote_average": 8.368,
+    "image": "https://image.tmdb.org/t/p/w780/ztLZyHlC892o7lp5jIf4Y1hRnRO.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/8HTCtxyJWyjVMnxF14tSWJ0GYj4.jpg"
+  },
+  {
+    "id": 78798,
+    "title": "범인은 바로 너!",
+    "title_ja": "犯人はお前だ!",
+    "genre_ids": [
+      35,
+      9648
+    ],
+    "popularity": 19.6951,
+    "release_date": "2018-05-04",
+    "vote_average": 7.8,
+    "image": "https://image.tmdb.org/t/p/w780/56YHtJezhk6y7SczrYz6pmmf9oU.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/h0qCyNZ6vzyvAag7m6L6tA1dzLo.jpg"
+  },
+  {
     "id": 135238,
     "title": "경성크리처",
+    "title_ja": "京城クリーチャー",
     "genre_ids": [
       10765,
       9648,
@@ -909,49 +1036,52 @@
     "poster": "https://image.tmdb.org/t/p/w500/wrTkOQ0mLAgsNnlCS1Buo18ZeG5.jpg"
   },
   {
-    "id": 215072,
-    "title": "킬러들의 쇼핑몰",
-    "genre_ids": [
-      18,
-      10759,
-      9648
-    ],
-    "popularity": 24.5398,
-    "release_date": "2024-01-17",
-    "vote_average": 8.5,
-    "image": "https://image.tmdb.org/t/p/w780/lg134VJrvY3ZdOlP4lTu1onOhcf.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/gfw41bHY2boxVse5l8M6m0sft5n.jpg"
-  },
-  {
-    "id": 155226,
-    "title": "빅마우스",
-    "genre_ids": [
-      9648,
-      18,
-      80
-    ],
-    "popularity": 22.2587,
-    "release_date": "2022-07-29",
-    "vote_average": 8.368,
-    "image": "https://image.tmdb.org/t/p/w780/ztLZyHlC892o7lp5jIf4Y1hRnRO.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/8HTCtxyJWyjVMnxF14tSWJ0GYj4.jpg"
-  },
-  {
-    "id": 99489,
-    "title": "펜트하우스",
+    "id": 70593,
+    "title": "킹덤",
+    "title_ja": "キングダム",
     "genre_ids": [
       18,
       9648
     ],
-    "popularity": 22.9811,
-    "release_date": "2020-10-26",
+    "popularity": 19.2852,
+    "release_date": "2019-01-25",
+    "vote_average": 8.2,
+    "image": "https://image.tmdb.org/t/p/w780/jRhJlV4inm8wAAqTeHUX5HpjZcc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/zXfQcdTx0jxbH5Atpwjvb5z5VjE.jpg"
+  },
+  {
+    "id": 70626,
+    "title": "비밀의 숲",
+    "title_ja": "秘密の森",
+    "genre_ids": [
+      80,
+      18,
+      9648
+    ],
+    "popularity": 19.222,
+    "release_date": "2017-06-10",
+    "vote_average": 8.225,
+    "image": "https://image.tmdb.org/t/p/w780/xuf7G4srLSFcC7Q8YbX7HHEmXG2.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/4NCHVr4BiuZzbqoRaLMTbmKIfyR.jpg"
+  },
+  {
+    "id": 117378,
+    "title": "마우스",
+    "title_ja": "マウス  ～ある殺人者の系譜～",
+    "genre_ids": [
+      80,
+      9648
+    ],
+    "popularity": 19.1602,
+    "release_date": "2021-03-03",
     "vote_average": 8.3,
-    "image": "https://image.tmdb.org/t/p/w780/lUseDQFZoge6GR1F6dGtaARiF7M.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/58uuFtGtocrSQYaW2IgYrE1WfoH.jpg"
+    "image": "https://image.tmdb.org/t/p/w780/ikU9een11dr6UFy0XzQMJv3YJQq.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg"
   },
   {
     "id": 111998,
     "title": "꼬리에 꼬리를 무는 그날 이야기",
+    "title_ja": "次々とつながる、あの日の話",
     "genre_ids": [
       10767,
       9648,
@@ -964,47 +1094,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/ty9wVEbzvJre9ClM7ETgBFreJZG.jpg"
   },
   {
-    "id": 78798,
-    "title": "범인은 바로 너!",
-    "genre_ids": [
-      35,
-      9648
-    ],
-    "popularity": 19.6951,
-    "release_date": "2018-05-04",
-    "vote_average": 7.8,
-    "image": "https://image.tmdb.org/t/p/w780/56YHtJezhk6y7SczrYz6pmmf9oU.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/h0qCyNZ6vzyvAag7m6L6tA1dzLo.jpg"
-  },
-  {
-    "id": 70593,
-    "title": "킹덤",
-    "genre_ids": [
-      18,
-      9648
-    ],
-    "popularity": 19.2852,
-    "release_date": "2019-01-25",
-    "vote_average": 8.198,
-    "image": "https://image.tmdb.org/t/p/w780/jRhJlV4inm8wAAqTeHUX5HpjZcc.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/zXfQcdTx0jxbH5Atpwjvb5z5VjE.jpg"
-  },
-  {
-    "id": 117378,
-    "title": "마우스",
-    "genre_ids": [
-      80,
-      9648
-    ],
-    "popularity": 19.1602,
-    "release_date": "2021-03-03",
-    "vote_average": 8.3,
-    "image": "https://image.tmdb.org/t/p/w780/ikU9een11dr6UFy0XzQMJv3YJQq.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg"
-  },
-  {
     "id": 92983,
     "title": "배가본드",
+    "title_ja": "Vagabond/バガボンド",
     "genre_ids": [
       18,
       9648,
@@ -1019,6 +1111,7 @@
   {
     "id": 99480,
     "title": "모범형사",
+    "title_ja": "模範刑事",
     "genre_ids": [
       80,
       18,
@@ -1032,80 +1125,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/51iYzWkefsyFv6aEirPuzUScXxY.jpg"
   },
   {
-    "id": 70626,
-    "title": "비밀의 숲",
-    "genre_ids": [
-      80,
-      18,
-      9648
-    ],
-    "popularity": 19.222,
-    "release_date": "2017-06-10",
-    "vote_average": 8.225,
-    "image": "https://image.tmdb.org/t/p/w780/xuf7G4srLSFcC7Q8YbX7HHEmXG2.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/4NCHVr4BiuZzbqoRaLMTbmKIfyR.jpg"
-  },
-  {
-    "id": 220074,
-    "title": "재벌X형사",
-    "genre_ids": [
-      18,
-      80,
-      9648,
-      10759
-    ],
-    "popularity": 15.5983,
-    "release_date": "2024-01-26",
-    "vote_average": 7.6,
-    "image": "https://image.tmdb.org/t/p/w780/nOGPxfYqd0f3oeFGGinpDOP68MQ.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/aLrGyfe2nbfM9PvtSYoKy5jEOJu.jpg"
-  },
-  {
-    "id": 227191,
-    "title": "나인 퍼즐",
-    "genre_ids": [
-      80,
-      9648
-    ],
-    "popularity": 15.7158,
-    "release_date": "2025-05-21",
-    "vote_average": 7.9,
-    "image": "https://image.tmdb.org/t/p/w780/6OfitF3ifOJmlglcixB3ixnNydW.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/h4qWsx2ATNeOCvTJgsIgEIGwjoN.jpg"
-  },
-  {
-    "id": 64840,
-    "title": "시그널",
-    "genre_ids": [
-      80,
-      9648,
-      10765,
-      18
-    ],
-    "popularity": 16.532,
-    "release_date": "2016-01-22",
-    "vote_average": 8.2,
-    "image": "https://image.tmdb.org/t/p/w780/i8DVzXlPYZnJANEoLja1ysXtJ3K.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg"
-  },
-  {
-    "id": 108284,
-    "title": "구미호뎐",
-    "genre_ids": [
-      10765,
-      18,
-      35,
-      9648
-    ],
-    "popularity": 15.5222,
-    "release_date": "2020-10-07",
-    "vote_average": 8.378,
-    "image": "https://image.tmdb.org/t/p/w780/oPJQvS8Xyg7chAX0jQoC2smqMxv.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/toZBZ9XS9U3Xle13ZobiUf5vpGB.jpg"
-  },
-  {
     "id": 235577,
     "title": "지옥에서 온 판사",
+    "title_ja": "悪魔なカノジョは裁判官",
     "genre_ids": [
       18,
       10765,
@@ -1119,22 +1141,101 @@
     "poster": "https://image.tmdb.org/t/p/w500/4rZfFtluuNbBnj2ziadDVaiDZMl.jpg"
   },
   {
-    "id": 79070,
-    "title": "검법남녀",
+    "id": 64840,
+    "title": "시그널",
+    "title_ja": "シグナル",
+    "genre_ids": [
+      80,
+      9648,
+      10765,
+      18
+    ],
+    "popularity": 16.532,
+    "release_date": "2016-01-22",
+    "vote_average": 8.2,
+    "image": "https://image.tmdb.org/t/p/w780/i8DVzXlPYZnJANEoLja1ysXtJ3K.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg"
+  },
+  {
+    "id": 227191,
+    "title": "나인 퍼즐",
+    "title_ja": "ナインパズル",
+    "genre_ids": [
+      80,
+      9648
+    ],
+    "popularity": 15.7158,
+    "release_date": "2025-05-21",
+    "vote_average": 7.9,
+    "image": "https://image.tmdb.org/t/p/w780/6OfitF3ifOJmlglcixB3ixnNydW.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/h4qWsx2ATNeOCvTJgsIgEIGwjoN.jpg"
+  },
+  {
+    "id": 220074,
+    "title": "재벌X형사",
+    "title_ja": "財閥×刑事",
+    "genre_ids": [
+      18,
+      80,
+      9648,
+      10759
+    ],
+    "popularity": 15.5983,
+    "release_date": "2024-01-26",
+    "vote_average": 7.6,
+    "image": "https://image.tmdb.org/t/p/w780/nOGPxfYqd0f3oeFGGinpDOP68MQ.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/aLrGyfe2nbfM9PvtSYoKy5jEOJu.jpg"
+  },
+  {
+    "id": 108284,
+    "title": "구미호뎐",
+    "title_ja": "九尾狐伝～不滅の愛～",
+    "genre_ids": [
+      10765,
+      18,
+      35,
+      9648
+    ],
+    "popularity": 15.5222,
+    "release_date": "2020-10-07",
+    "vote_average": 8.378,
+    "image": "https://image.tmdb.org/t/p/w780/oPJQvS8Xyg7chAX0jQoC2smqMxv.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/toZBZ9XS9U3Xle13ZobiUf5vpGB.jpg"
+  },
+  {
+    "id": 106651,
+    "title": "지옥",
+    "title_ja": "地獄が呼んでいる",
     "genre_ids": [
       18,
       9648,
-      80
+      10765
     ],
-    "popularity": 13.9275,
-    "release_date": "2018-05-14",
-    "vote_average": 7.2,
-    "image": "https://image.tmdb.org/t/p/w780/znjlxs8K9OAOChA2K4I0qluhith.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/w3vY4iqn1Go7zsoRCKqRfGXTPDq.jpg"
+    "popularity": 15.3274,
+    "release_date": "2021-11-19",
+    "vote_average": 7.3,
+    "image": "https://image.tmdb.org/t/p/w780/ikN8ABD9pXHuW4JFqTEHr3ae8rd.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/sgTu75c5PJsRHDMSna0ha8bhYWn.jpg"
+  },
+  {
+    "id": 290193,
+    "title": "들쥐",
+    "title_ja": "なりすましの鼠",
+    "genre_ids": [
+      80,
+      18,
+      9648
+    ],
+    "popularity": 15.3146,
+    "release_date": "2026-08-28",
+    "vote_average": 8.12,
+    "image": "https://image.tmdb.org/t/p/w780/3bHz9dYSZ5XDxY0zDaBpYgUOhE2.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/z1xv9CKt7HmXgS6azNB563mU2FB.jpg"
   },
   {
     "id": 239006,
     "title": "트리거",
+    "title_ja": "トリガー ニュースの裏側",
     "genre_ids": [
       35,
       80,
@@ -1148,37 +1249,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/c2aD2y9qsygMJEmMTgwHqjKDAQy.jpg"
   },
   {
-    "id": 281010,
-    "title": "신이랑 법률사무소",
-    "genre_ids": [
-      18,
-      10765,
-      9648,
-      35
-    ],
-    "popularity": 13.9151,
-    "release_date": "2026-03-13",
-    "vote_average": 7.7,
-    "image": "https://image.tmdb.org/t/p/w780/p98XiePTvNrXegxyKc6n46UJD85.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/vT83P15zYZ9ugoWh70b4NoPf6kt.jpg"
-  },
-  {
-    "id": 106651,
-    "title": "지옥",
-    "genre_ids": [
-      18,
-      9648,
-      10765
-    ],
-    "popularity": 15.3274,
-    "release_date": "2021-11-19",
-    "vote_average": 7.3,
-    "image": "https://image.tmdb.org/t/p/w780/ikN8ABD9pXHuW4JFqTEHr3ae8rd.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/sgTu75c5PJsRHDMSna0ha8bhYWn.jpg"
-  },
-  {
     "id": 112836,
     "title": "종이의 집: 공동경제구역",
+    "title_ja": "ペーパー・ハウス・コリア: 統一通貨を奪え",
     "genre_ids": [
       10759,
       80,
@@ -1192,48 +1265,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/7zLHH6LV6rI6emO0z1U8VZDUkjd.jpg"
   },
   {
-    "id": 285838,
-    "title": "기리고",
-    "genre_ids": [
-      9648,
-      18
-    ],
-    "popularity": 14.5967,
-    "release_date": "2026-04-24",
-    "vote_average": 7.991,
-    "image": "https://image.tmdb.org/t/p/w780/5BzfcAW5ZI2m7QypeJBbYNjBuR0.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/oKSt05GBc2ZZ5G2BxTqLikNml1V.jpg"
-  },
-  {
-    "id": 226529,
-    "title": "조명가게",
-    "genre_ids": [
-      9648,
-      18
-    ],
-    "popularity": 14.3564,
-    "release_date": "2024-12-04",
-    "vote_average": 8.43,
-    "image": "https://image.tmdb.org/t/p/w780/bGcMuFVzW0LitMJWSzp4EjmzQ0b.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/rTfS6UsdHNGdpSBL8RmEgaBoJrz.jpg"
-  },
-  {
-    "id": 253905,
-    "title": "지금 거신 전화는",
-    "genre_ids": [
-      18,
-      9648,
-      80
-    ],
-    "popularity": 14.4692,
-    "release_date": "2024-11-22",
-    "vote_average": 8.274,
-    "image": "https://image.tmdb.org/t/p/w780/2vtI9xzD6qpDzY9m8kV67QY0qfM.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/bF7gq73IpLMQLCcLTom6fqiKDhv.jpg"
-  },
-  {
     "id": 230923,
     "title": "선재 업고 튀어",
+    "title_ja": "ソンジェ背負って走れ",
     "genre_ids": [
       18,
       10765,
@@ -1247,119 +1281,52 @@
     "poster": "https://image.tmdb.org/t/p/w500/9gEp7Rs43Fi3eEEBsIMc8xGewNp.jpg"
   },
   {
-    "id": 294095,
-    "title": "유부녀 킬러",
+    "id": 285838,
+    "title": "기리고",
+    "title_ja": "キリゴ",
+    "genre_ids": [
+      9648,
+      18
+    ],
+    "popularity": 14.5967,
+    "release_date": "2026-04-24",
+    "vote_average": 7.991,
+    "image": "https://image.tmdb.org/t/p/w780/5BzfcAW5ZI2m7QypeJBbYNjBuR0.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/oKSt05GBc2ZZ5G2BxTqLikNml1V.jpg"
+  },
+  {
+    "id": 253905,
+    "title": "지금 거신 전화는",
+    "title_ja": "その電話が鳴るとき",
     "genre_ids": [
       18,
-      10759,
       9648,
       80
     ],
-    "popularity": 14.3032,
-    "release_date": "2026-07-31",
-    "vote_average": 8.391,
-    "image": "https://image.tmdb.org/t/p/w780/j9AqsMJxuq7NEYJX4Q1vSfKb5CG.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/snVma1wanEn9p4hWgQxZ211vQdG.jpg"
+    "popularity": 14.4692,
+    "release_date": "2024-11-22",
+    "vote_average": 8.274,
+    "image": "https://image.tmdb.org/t/p/w780/2vtI9xzD6qpDzY9m8kV67QY0qfM.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/bF7gq73IpLMQLCcLTom6fqiKDhv.jpg"
   },
   {
-    "id": 290193,
-    "title": "들쥐",
-    "genre_ids": [
-      80,
-      18,
-      9648
-    ],
-    "popularity": 15.3146,
-    "release_date": "2026-08-28",
-    "vote_average": 8.12,
-    "image": "https://image.tmdb.org/t/p/w780/3bHz9dYSZ5XDxY0zDaBpYgUOhE2.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/z1xv9CKt7HmXgS6azNB563mU2FB.jpg"
-  },
-  {
-    "id": 206693,
-    "title": "연인",
-    "genre_ids": [
-      18,
-      10768,
-      9648
-    ],
-    "popularity": 12.942,
-    "release_date": "2023-08-04",
-    "vote_average": 8.4,
-    "image": "https://image.tmdb.org/t/p/w780/3MkrzqX1jog9ItFux72MvYyYfuT.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/rrPCrCRyjdQ8igXIVNcIuL5KcIA.jpg"
-  },
-  {
-    "id": 279323,
-    "title": "동궁",
+    "id": 226529,
+    "title": "조명가게",
+    "title_ja": "照明店の客人たち",
     "genre_ids": [
       9648,
-      10759,
-      10765,
       18
     ],
-    "popularity": 14.2323,
-    "release_date": "2026-07-17",
-    "vote_average": 8.1,
-    "image": "https://image.tmdb.org/t/p/w780/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/7b8YEvnwJGFC35B8VPRPdp8O5Ri.jpg"
-  },
-  {
-    "id": 229915,
-    "title": "밤이 되었습니다",
-    "genre_ids": [
-      18,
-      9648
-    ],
-    "popularity": 13.2175,
-    "release_date": "2023-12-04",
-    "vote_average": 7.9,
-    "image": "https://image.tmdb.org/t/p/w780/w5ICY18bp2i8vvXeHYL2jkuSvoD.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/j9w6P6G7pgPjARnVJNbUjTC5NSQ.jpg"
-  },
-  {
-    "id": 241384,
-    "title": "피도 눈물도 없이",
-    "genre_ids": [
-      18,
-      9648
-    ],
-    "popularity": 12.6847,
-    "release_date": "2024-01-22",
-    "vote_average": 5.3,
-    "image": "https://image.tmdb.org/t/p/w780/cf7oJph5G9TP2RsZdb2YIZczq0a.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/1StP2NmPGjzhIvMIQyTvZfweUu2.jpg"
-  },
-  {
-    "id": 99494,
-    "title": "악의 꽃",
-    "genre_ids": [
-      18,
-      80,
-      9648
-    ],
-    "popularity": 13.1669,
-    "release_date": "2020-07-29",
-    "vote_average": 8.3,
-    "image": "https://image.tmdb.org/t/p/w780/3rP5OCR8nCUlC960GGkYxV0RPp5.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/pHzLvZEL2278Or9xCuKalIaz4N1.jpg"
-  },
-  {
-    "id": 200707,
-    "title": "7인의 탈출",
-    "genre_ids": [
-      18,
-      9648
-    ],
-    "popularity": 12.2464,
-    "release_date": "2023-09-15",
-    "vote_average": 7,
-    "image": "https://image.tmdb.org/t/p/w780/6ohqTb4r9AdW5hRD6r5Aa7W3Ddq.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/zfO0GgcdSqHKgz3nIxe7xAPrFLn.jpg"
+    "popularity": 14.3564,
+    "release_date": "2024-12-04",
+    "vote_average": 8.43,
+    "image": "https://image.tmdb.org/t/p/w780/bGcMuFVzW0LitMJWSzp4EjmzQ0b.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/rTfS6UsdHNGdpSBL8RmEgaBoJrz.jpg"
   },
   {
     "id": 61670,
     "title": "힐러",
+    "title_ja": "ヒーラー ～最高の恋人～",
     "genre_ids": [
       35,
       10759,
@@ -1373,8 +1340,145 @@
     "poster": "https://image.tmdb.org/t/p/w500/a24Tm3vJoWb3X3DSdTSwIp6xx8w.jpg"
   },
   {
+    "id": 294095,
+    "title": "유부녀 킬러",
+    "title_ja": "人妻キラー",
+    "genre_ids": [
+      18,
+      10759,
+      9648,
+      80
+    ],
+    "popularity": 14.3032,
+    "release_date": "2026-07-31",
+    "vote_average": 8.391,
+    "image": "https://image.tmdb.org/t/p/w780/j9AqsMJxuq7NEYJX4Q1vSfKb5CG.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/snVma1wanEn9p4hWgQxZ211vQdG.jpg"
+  },
+  {
+    "id": 279323,
+    "title": "동궁",
+    "title_ja": "トングン －呪いの宮－",
+    "genre_ids": [
+      9648,
+      10759,
+      10765,
+      18
+    ],
+    "popularity": 14.2323,
+    "release_date": "2026-07-17",
+    "vote_average": 8.1,
+    "image": "https://image.tmdb.org/t/p/w780/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/7b8YEvnwJGFC35B8VPRPdp8O5Ri.jpg"
+  },
+  {
+    "id": 79070,
+    "title": "검법남녀",
+    "title_ja": "ジャスティス －検法男女－",
+    "genre_ids": [
+      18,
+      9648,
+      80
+    ],
+    "popularity": 13.9275,
+    "release_date": "2018-05-14",
+    "vote_average": 7.2,
+    "image": "https://image.tmdb.org/t/p/w780/znjlxs8K9OAOChA2K4I0qluhith.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/w3vY4iqn1Go7zsoRCKqRfGXTPDq.jpg"
+  },
+  {
+    "id": 281010,
+    "title": "신이랑 법률사무소",
+    "title_ja": "シン・イラン法律事務所 〜真実は、あの世からやってくる！？～",
+    "genre_ids": [
+      18,
+      10765,
+      9648,
+      35
+    ],
+    "popularity": 13.9151,
+    "release_date": "2026-03-13",
+    "vote_average": 7.7,
+    "image": "https://image.tmdb.org/t/p/w780/p98XiePTvNrXegxyKc6n46UJD85.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/vT83P15zYZ9ugoWh70b4NoPf6kt.jpg"
+  },
+  {
+    "id": 205040,
+    "title": "아다마스",
+    "title_ja": null,
+    "genre_ids": [
+      9648,
+      18
+    ],
+    "popularity": 13.5086,
+    "release_date": "2022-07-27",
+    "vote_average": 6.7,
+    "image": "https://image.tmdb.org/t/p/w780/dJJ9dH80HwWGERo5U59tw9JzYBQ.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/qaodZmdbTorhGISrlDQKSjaHcHy.jpg"
+  },
+  {
+    "id": 72548,
+    "title": "너도 인간이니?",
+    "title_ja": null,
+    "genre_ids": [
+      10765,
+      18,
+      9648
+    ],
+    "popularity": 13.4114,
+    "release_date": "2018-06-04",
+    "vote_average": 8.1,
+    "image": "https://image.tmdb.org/t/p/w780/oFF9NaK63iTGtsCm65hnyKYhTgc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/5gRKiZMN49TICCRP0pjaLKYJNWK.jpg"
+  },
+  {
+    "id": 335951,
+    "title": "여름방학",
+    "title_ja": null,
+    "genre_ids": [
+      18,
+      10765,
+      9648
+    ],
+    "popularity": 13.2468,
+    "release_date": "2026-10-26",
+    "vote_average": 0,
+    "image": "https://image.tmdb.org/t/p/w780/tXSbEP4vGLOBpJtFg2Vsmm6aStx.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/n6di6hbhC2vQZmFOrfieQLHU8MI.jpg"
+  },
+  {
+    "id": 229915,
+    "title": "밤이 되었습니다",
+    "title_ja": "夜になりました～人狼ヲ探セ～",
+    "genre_ids": [
+      18,
+      9648
+    ],
+    "popularity": 13.2175,
+    "release_date": "2023-12-04",
+    "vote_average": 7.9,
+    "image": "https://image.tmdb.org/t/p/w780/w5ICY18bp2i8vvXeHYL2jkuSvoD.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/j9w6P6G7pgPjARnVJNbUjTC5NSQ.jpg"
+  },
+  {
+    "id": 99494,
+    "title": "악의 꽃",
+    "title_ja": "悪の花",
+    "genre_ids": [
+      18,
+      80,
+      9648
+    ],
+    "popularity": 13.1669,
+    "release_date": "2020-07-29",
+    "vote_average": 8.3,
+    "image": "https://image.tmdb.org/t/p/w780/3rP5OCR8nCUlC960GGkYxV0RPp5.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/pHzLvZEL2278Or9xCuKalIaz4N1.jpg"
+  },
+  {
     "id": 127529,
     "title": "사냥개들",
+    "title_ja": "ブラッドハウンド",
     "genre_ids": [
       18,
       10759,
@@ -1389,6 +1493,7 @@
   {
     "id": 119769,
     "title": "모범택시",
+    "title_ja": "模範タクシー",
     "genre_ids": [
       10759,
       80,
@@ -1403,6 +1508,7 @@
   {
     "id": 296206,
     "title": "김부장",
+    "title_ja": "エージェント・キム：リアクティベーティッド",
     "genre_ids": [
       10759,
       80,
@@ -1417,6 +1523,7 @@
   {
     "id": 136283,
     "title": "더 글로리",
+    "title_ja": "ザ・グローリー ～輝かしき復讐～",
     "genre_ids": [
       18,
       80
@@ -1430,6 +1537,7 @@
   {
     "id": 69087,
     "title": "보이스",
+    "title_ja": "ボイス～112の奇跡～",
     "genre_ids": [
       80,
       18
@@ -1443,6 +1551,7 @@
   {
     "id": 86830,
     "title": "열혈사제",
+    "title_ja": "熱血司祭",
     "genre_ids": [
       80,
       35,
@@ -1457,6 +1566,7 @@
   {
     "id": 110534,
     "title": "D.P.",
+    "title_ja": "D.P. -脱走兵追跡官-",
     "genre_ids": [
       18,
       10759,
@@ -1469,21 +1579,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/ufovksqVTNogMdU5LlCVbJSiMVa.jpg"
   },
   {
-    "id": 253960,
-    "title": "가스인간",
-    "genre_ids": [
-      10765,
-      80
-    ],
-    "popularity": 14.0899,
-    "release_date": "2026-07-02",
-    "vote_average": 7.267,
-    "image": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/snCkDl33fAu8qQul14MubmJlna6.jpg"
-  },
-  {
     "id": 231280,
     "title": "굿보이",
+    "title_ja": "グッドボーイ",
     "genre_ids": [
       80,
       35,
@@ -1497,49 +1595,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/cARQJDG8E2wY854UjVQPtFsjuvE.jpg"
   },
   {
-    "id": 238084,
-    "title": "트리거",
-    "genre_ids": [
-      10759,
-      18,
-      80
-    ],
-    "popularity": 14.4566,
-    "release_date": "2025-07-25",
-    "vote_average": 8.1,
-    "image": "https://image.tmdb.org/t/p/w780/2jiEkTXR7oiQNDfdday8AM9J5qF.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/tTKjMnwnOSXaiAbuvXLvCvY6Xp0.jpg"
-  },
-  {
-    "id": 320513,
-    "title": "키드냅 게임",
-    "genre_ids": [
-      80,
-      18
-    ],
-    "popularity": 13.4531,
-    "release_date": "2026-10-06",
-    "vote_average": 5,
-    "image": "https://image.tmdb.org/t/p/w780/f2XoQ4503j04kyPFIA6qqweZaRE.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/uTr0dWaVwCVagjLNpZSBkZNTD2m.jpg"
-  },
-  {
-    "id": 71349,
-    "title": "수상한 파트너",
-    "genre_ids": [
-      35,
-      80,
-      18
-    ],
-    "popularity": 14.99,
-    "release_date": "2017-05-10",
-    "vote_average": 7.8,
-    "image": "https://image.tmdb.org/t/p/w780/yTJdBwr7ksO6LeXB801wXmfHWwF.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg"
-  },
-  {
     "id": 259710,
     "title": "컨피던스 맨 KR",
+    "title_ja": "コンフィデンスマンKR",
     "genre_ids": [
       80,
       35,
@@ -1552,34 +1610,53 @@
     "poster": "https://image.tmdb.org/t/p/w500/9gL520FwnQa2yHbFq24AtEM2OyW.jpg"
   },
   {
-    "id": 60956,
-    "title": "닥터 이방인",
+    "id": 71349,
+    "title": "수상한 파트너",
+    "title_ja": "あやしいパートナー〜Destiny Lovers〜",
     "genre_ids": [
-      18,
-      80
+      35,
+      80,
+      18
     ],
-    "popularity": 12.386,
-    "release_date": "2014-05-05",
-    "vote_average": 8,
-    "image": "https://image.tmdb.org/t/p/w780/vvvwefAwrJ9xaVrFOuk8BKQfvIK.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/bmTdYYgDWdtEYWlaDfaVjZIt301.jpg"
+    "popularity": 14.99,
+    "release_date": "2017-05-10",
+    "vote_average": 7.8,
+    "image": "https://image.tmdb.org/t/p/w780/yTJdBwr7ksO6LeXB801wXmfHWwF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg"
   },
   {
-    "id": 74821,
-    "title": "슬기로운 감빵생활",
+    "id": 238084,
+    "title": "트리거",
+    "title_ja": "トリガー",
     "genre_ids": [
+      10759,
       18,
       80
     ],
-    "popularity": 12.7134,
-    "release_date": "2017-11-22",
-    "vote_average": 8.248,
-    "image": "https://image.tmdb.org/t/p/w780/kdsvRpXal5Xa1Ldq7m2qzQmYsBa.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/2kK5H4k8qJDS0SSqQ25xKV3DZvB.jpg"
+    "popularity": 14.4566,
+    "release_date": "2025-07-25",
+    "vote_average": 8.1,
+    "image": "https://image.tmdb.org/t/p/w780/2jiEkTXR7oiQNDfdday8AM9J5qF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/tTKjMnwnOSXaiAbuvXLvCvY6Xp0.jpg"
+  },
+  {
+    "id": 253960,
+    "title": "가스인간",
+    "title_ja": "ガス人間",
+    "genre_ids": [
+      10765,
+      80
+    ],
+    "popularity": 14.0899,
+    "release_date": "2026-07-02",
+    "vote_average": 7.267,
+    "image": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/snCkDl33fAu8qQul14MubmJlna6.jpg"
   },
   {
     "id": 256226,
     "title": "친애하는 X",
+    "title_ja": "親愛なるX",
     "genre_ids": [
       80,
       18
@@ -1593,6 +1670,7 @@
   {
     "id": 67391,
     "title": "THE K2",
+    "title_ja": "THE K2～キミだけを守りたい～",
     "genre_ids": [
       10759,
       18,
@@ -1605,35 +1683,39 @@
     "poster": "https://image.tmdb.org/t/p/w500/qz0hRqKlNNOS15tqdqB1qUyMQMl.jpg"
   },
   {
-    "id": 239385,
-    "title": "조각도시",
+    "id": 320513,
+    "title": "키드냅 게임",
+    "title_ja": "kiDnap GAME",
     "genre_ids": [
       80,
       18
     ],
-    "popularity": 13.0606,
-    "release_date": "2025-11-05",
-    "vote_average": 8.4,
-    "image": "https://image.tmdb.org/t/p/w780/ngP3rIU1KY7ek0r6hSJFnVsrh9g.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/pwin3qnVXs9tD3nU5hkl70wO1dx.jpg"
+    "popularity": 13.4531,
+    "release_date": "2026-10-06",
+    "vote_average": 5,
+    "image": "https://image.tmdb.org/t/p/w780/f2XoQ4503j04kyPFIA6qqweZaRE.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/uTr0dWaVwCVagjLNpZSBkZNTD2m.jpg"
   },
   {
-    "id": 282810,
-    "title": "판사 이한영",
+    "id": 203164,
+    "title": "힘쎈여자 강남순",
+    "title_ja": null,
     "genre_ids": [
-      80,
+      35,
+      18,
       10765,
-      18
+      80
     ],
-    "popularity": 12.1991,
-    "release_date": "2026-01-02",
-    "vote_average": 8.1,
-    "image": "https://image.tmdb.org/t/p/w780/l3qDk8o59jgLfO5HBAJKpCwMAld.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/AnfCTqCrcrKqRO1HNJEFpt6oiIx.jpg"
+    "popularity": 13.4377,
+    "release_date": "2023-10-07",
+    "vote_average": 7.7,
+    "image": "https://image.tmdb.org/t/p/w780/6gyJwBbgFD0MYap1AFWQKOkve6D.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/ktB3epuAUGjVE6te7udTUAHBuv2.jpg"
   },
   {
     "id": 245079,
     "title": "하이퍼나이프",
+    "title_ja": "ハイパーナイフ 闇の天才外科医",
     "genre_ids": [
       18,
       80
@@ -1645,21 +1727,67 @@
     "poster": "https://image.tmdb.org/t/p/w500/qNERLrpaSdaa37rk1pojgQ21bTC.jpg"
   },
   {
-    "id": 246473,
-    "title": "메이드 인 코리아",
+    "id": 110356,
+    "title": "마이 네임",
+    "title_ja": null,
+    "genre_ids": [
+      80,
+      18,
+      9648
+    ],
+    "popularity": 13.0951,
+    "release_date": "2021-10-15",
+    "vote_average": 8.2,
+    "image": "https://image.tmdb.org/t/p/w780/fCEKeONLr0tuWV5hT0iHeiRjYM4.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/ncAKKmr1sfFhQvn6LeGTY2QBge.jpg"
+  },
+  {
+    "id": 239385,
+    "title": "조각도시",
+    "title_ja": "捏造された都市",
     "genre_ids": [
       80,
       18
     ],
-    "popularity": 12.4576,
-    "release_date": "2025-12-24",
-    "vote_average": 8.2,
-    "image": "https://image.tmdb.org/t/p/w780/fRR6jHutlHuYxMeZp4cZfjgafzd.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/lhZCpYVMKZanGTMabOYHTZLD1WY.jpg"
+    "popularity": 13.0606,
+    "release_date": "2025-11-05",
+    "vote_average": 8.4,
+    "image": "https://image.tmdb.org/t/p/w780/ngP3rIU1KY7ek0r6hSJFnVsrh9g.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/pwin3qnVXs9tD3nU5hkl70wO1dx.jpg"
+  },
+  {
+    "id": 157161,
+    "title": "형사록",
+    "title_ja": null,
+    "genre_ids": [
+      18,
+      80,
+      9648
+    ],
+    "popularity": 13.0552,
+    "release_date": "2022-10-26",
+    "vote_average": 6.3,
+    "image": "https://image.tmdb.org/t/p/w780/gDyrrcqa4Gt8fYq4Cw7IBwBplcQ.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/zh0SUmhPLWCUHpY2N5gq8lspfKH.jpg"
+  },
+  {
+    "id": 74821,
+    "title": "슬기로운 감빵생활",
+    "title_ja": "刑務所のルールブック",
+    "genre_ids": [
+      18,
+      80
+    ],
+    "popularity": 12.7134,
+    "release_date": "2017-11-22",
+    "vote_average": 8.248,
+    "image": "https://image.tmdb.org/t/p/w780/kdsvRpXal5Xa1Ldq7m2qzQmYsBa.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/2kK5H4k8qJDS0SSqQ25xKV3DZvB.jpg"
   },
   {
     "id": 24633,
     "title": "인어 아가씨",
+    "title_ja": "人魚姫",
     "genre_ids": [
       18,
       10751
@@ -1673,6 +1801,7 @@
   {
     "id": 80281,
     "title": "라바",
+    "title_ja": "ラーバ",
     "genre_ids": [
       16,
       35,
@@ -1688,6 +1817,7 @@
   {
     "id": 114798,
     "title": "아기상어 올리와 윌리엄",
+    "title_ja": "ベイビーシャーク オリーとウィリアム",
     "genre_ids": [
       16,
       10751,
@@ -1703,6 +1833,7 @@
   {
     "id": 88131,
     "title": "하이킥! 짧은 다리의 역습",
+    "title_ja": "ハイキック3～短足の逆襲",
     "genre_ids": [
       35,
       18,
@@ -1715,8 +1846,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/236GtJHZEijVPVe692bueIUPE8.jpg"
   },
   {
+    "id": 98325,
+    "title": "무엇이든 물어보살",
+    "title_ja": "何でも聞いて菩薩",
+    "genre_ids": [
+      10751,
+      10767
+    ],
+    "popularity": 17.6052,
+    "release_date": "2019-03-25",
+    "vote_average": 10,
+    "image": "https://image.tmdb.org/t/p/w780/x5ryxpWrnb2JCqZPYsVPAbF55R.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/k4pYDpozGhrb9aPs2kJkkuDKe7c.jpg"
+  },
+  {
     "id": 64300,
     "title": "못난이 주의보",
+    "title_ja": "ぶさいく注意報",
     "genre_ids": [
       18,
       10751,
@@ -1731,6 +1877,7 @@
   {
     "id": 129121,
     "title": "Opposites Attract",
+    "title_ja": "Opposites Attract",
     "genre_ids": [
       10751
     ],
@@ -1741,21 +1888,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/akzWuAsfF1XeH4XXkxt3MMNqYBa.jpg"
   },
   {
-    "id": 230525,
-    "title": "우당탕탕 패밀리",
-    "genre_ids": [
-      10751,
-      35
-    ],
-    "popularity": 14.5832,
-    "release_date": "2023-09-18",
-    "vote_average": 6.7,
-    "image": "https://image.tmdb.org/t/p/w780/4W2sH4CXzJ98ScuLGRij1KakzSv.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/6JZWDB8iPtznPSqFIQesNg3OYQp.jpg"
-  },
-  {
     "id": 129473,
     "title": "신사와 아가씨",
+    "title_ja": "紳士とお嬢さん",
     "genre_ids": [
       35,
       18,
@@ -1768,8 +1903,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/o9TYEFMhdU8CkOeMySRc3HIw5gY.jpg"
   },
   {
+    "id": 230525,
+    "title": "우당탕탕 패밀리",
+    "title_ja": "ドタバタファミリー",
+    "genre_ids": [
+      10751,
+      35
+    ],
+    "popularity": 14.5832,
+    "release_date": "2023-09-18",
+    "vote_average": 6.7,
+    "image": "https://image.tmdb.org/t/p/w780/4W2sH4CXzJ98ScuLGRij1KakzSv.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/6JZWDB8iPtznPSqFIQesNg3OYQp.jpg"
+  },
+  {
     "id": 70983,
     "title": "레인보우 루비",
+    "title_ja": "レインボー・ルビー",
     "genre_ids": [
       10751,
       16,
@@ -1784,6 +1934,7 @@
   {
     "id": 19845,
     "title": "뽀롱뽀롱 뽀로로",
+    "title_ja": "ポンポン ポロロ",
     "genre_ids": [
       16,
       10759,
@@ -1799,21 +1950,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/nJG4ieTjuZZWHBeh4wqsKv5JGJM.jpg"
   },
   {
-    "id": 70974,
-    "title": "목욕탕집 남자들",
+    "id": 78295,
+    "title": "부잣집 아들",
+    "title_ja": "金持ちの息子",
     "genre_ids": [
-      35,
-      10751
+      10751,
+      18
     ],
-    "popularity": 12.297,
-    "release_date": "1995-11-18",
-    "vote_average": 9,
-    "image": "https://image.tmdb.org/t/p/w780/pH9nwSutWpXHTqX6DpWSrEF4Ixm.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/gW8VFfwM57aQm5Yc9KxoxtB2Q3G.jpg"
+    "popularity": 13.3359,
+    "release_date": "2018-03-25",
+    "vote_average": 8,
+    "image": "https://image.tmdb.org/t/p/w780/riYsrkmzYy7Ki3hXpnVczz1mypo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/bCLdxexEuASy5mKjTRRi0MeKERh.jpg"
   },
   {
     "id": 64770,
     "title": "감자별 2013QR3",
+    "title_ja": "ジャガイモ星2013QR3",
     "genre_ids": [
       35,
       18,
@@ -1828,21 +1981,51 @@
     "poster": "https://image.tmdb.org/t/p/w500/8HLs1vyor0iHcKKHosrtxWfG8LL.jpg"
   },
   {
-    "id": 98325,
-    "title": "무엇이든 물어보살",
+    "id": 237565,
+    "title": "조립식 가족",
+    "title_ja": "組み立て式家族～僕らの恋の在処～",
     "genre_ids": [
-      10751,
-      10767
+      18,
+      10751
     ],
-    "popularity": 17.6052,
-    "release_date": "2019-03-25",
-    "vote_average": 10,
-    "image": "https://image.tmdb.org/t/p/w780/x5ryxpWrnb2JCqZPYsVPAbF55R.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/k4pYDpozGhrb9aPs2kJkkuDKe7c.jpg"
+    "popularity": 12.827,
+    "release_date": "2024-10-09",
+    "vote_average": 8.063,
+    "image": "https://image.tmdb.org/t/p/w780/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/fQmC6mDWI00yaLhNxyKJEhFbDUB.jpg"
+  },
+  {
+    "id": 63573,
+    "title": "고양이는 있다",
+    "title_ja": "猫は見た",
+    "genre_ids": [
+      35,
+      10751,
+      10749
+    ],
+    "popularity": 12.7966,
+    "release_date": "2014-06-09",
+    "vote_average": 5.8,
+    "image": null,
+    "poster": "https://image.tmdb.org/t/p/w500/a8wHHvIVFyK55M2O3O67vC82g3u.jpg"
+  },
+  {
+    "id": 97010,
+    "title": "청담동 살아요",
+    "title_ja": "清潭洞に住んでいます",
+    "genre_ids": [
+      10751
+    ],
+    "popularity": 12.6671,
+    "release_date": "2011-12-05",
+    "vote_average": 9,
+    "image": "https://image.tmdb.org/t/p/w780/nEXXXzCAcploF1Xe1aoQkxKuROw.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/7d4HhXb0B9UGnEKWqF8aTHBYZ3Y.jpg"
   },
   {
     "id": 94585,
     "title": "다시 시작해",
+    "title_ja": "もう一度始めよう",
     "genre_ids": [
       18,
       10751
@@ -1854,21 +2037,110 @@
     "poster": "https://image.tmdb.org/t/p/w500/pfEcB89e4nxL2VdJ1QnAOSnxhUu.jpg"
   },
   {
-    "id": 78295,
-    "title": "부잣집 아들",
+    "id": 262831,
+    "title": "결혼하자 맹꽁아!",
+    "title_ja": null,
+    "genre_ids": [
+      10751,
+      35,
+      18
+    ],
+    "popularity": 12.5305,
+    "release_date": "2024-10-07",
+    "vote_average": 6.4,
+    "image": "https://image.tmdb.org/t/p/w780/vHLdw5M6JiRrb2niEV3phKbRLJL.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/lp7uJ6tZ9k8m7kW75hIAOUafXr4.jpg"
+  },
+  {
+    "id": 70974,
+    "title": "목욕탕집 남자들",
+    "title_ja": "銭湯の家の男たち",
+    "genre_ids": [
+      35,
+      10751
+    ],
+    "popularity": 12.297,
+    "release_date": "1995-11-18",
+    "vote_average": 9,
+    "image": "https://image.tmdb.org/t/p/w780/pH9nwSutWpXHTqX6DpWSrEF4Ixm.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/gW8VFfwM57aQm5Yc9KxoxtB2Q3G.jpg"
+  },
+  {
+    "id": 87615,
+    "title": "세상에서 제일 예쁜 내 딸",
+    "title_ja": "世界で一番可愛い私の娘",
     "genre_ids": [
       10751,
       18
     ],
-    "popularity": 13.3359,
-    "release_date": "2018-03-25",
-    "vote_average": 8,
-    "image": "https://image.tmdb.org/t/p/w780/riYsrkmzYy7Ki3hXpnVczz1mypo.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/bCLdxexEuASy5mKjTRRi0MeKERh.jpg"
+    "popularity": 12.2554,
+    "release_date": "2019-03-23",
+    "vote_average": 6.9,
+    "image": "https://image.tmdb.org/t/p/w780/cBySpypwZUtDMOyf29wyO9N5Uli.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/oTYSS6m3LXw4jgGTlaADd26nJFA.jpg"
+  },
+  {
+    "id": 303076,
+    "title": "첫 번째 남자",
+    "title_ja": "一番目の男",
+    "genre_ids": [
+      80,
+      10751,
+      18
+    ],
+    "popularity": 12.2421,
+    "release_date": "2025-12-15",
+    "vote_average": 3.8,
+    "image": "https://image.tmdb.org/t/p/w780/mHp8UKRPwZNjBmt9rncemEzIa6O.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/gWDDN4CurXWepCfrO6YvxBFESec.jpg"
+  },
+  {
+    "id": 57433,
+    "title": "힘내요, 미스터 김!",
+    "title_ja": "頑張れ、ミスター・キム！",
+    "genre_ids": [
+      35,
+      10751,
+      18
+    ],
+    "popularity": 12.1647,
+    "release_date": "2012-11-05",
+    "vote_average": 0,
+    "image": "https://image.tmdb.org/t/p/w780/cjGYMpMEAxBj2XlbX7BnFCDc6fd.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/cGh4xyixgKOeSl9Pu08WPUyOlHj.jpg"
+  },
+  {
+    "id": 258932,
+    "title": "언니네 산지직송",
+    "title_ja": "お姉さんの産地直送",
+    "genre_ids": [
+      10764,
+      10751
+    ],
+    "popularity": 12.1238,
+    "release_date": "2024-07-18",
+    "vote_average": 7.5,
+    "image": "https://image.tmdb.org/t/p/w780/iwq0vYkmB8j7WgnfKZQE1na0zTF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/kWQCQdx0ADS9FjnUo8STcR4pBH0.jpg"
+  },
+  {
+    "id": 82063,
+    "title": "하나뿐인 내편",
+    "title_ja": "たった一人の私の味方",
+    "genre_ids": [
+      18,
+      10751
+    ],
+    "popularity": 12.1036,
+    "release_date": "2018-09-15",
+    "vote_average": 7.2,
+    "image": "https://image.tmdb.org/t/p/w780/5icoA1Tnw1VQ6tYaN8HRsHjb5Jc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/ftKBwFREgQ6SxfmjaSsFsnZol3g.jpg"
   },
   {
     "id": 39068,
     "title": "너는 내 운명",
+    "title_ja": "あなたは私の運命",
     "genre_ids": [
       18,
       10751,
@@ -1882,62 +2154,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/2T517OGQXPoe8l3dLuw79ymYQ6F.jpg"
   },
   {
-    "id": 82063,
-    "title": "하나뿐인 내편",
+    "id": 14097,
+    "title": "하늘만큼 땅만큼",
+    "title_ja": "天ほど地ほど",
     "genre_ids": [
       18,
       10751
     ],
-    "popularity": 12.1036,
-    "release_date": "2018-09-15",
-    "vote_average": 7.2,
-    "image": "https://image.tmdb.org/t/p/w780/5icoA1Tnw1VQ6tYaN8HRsHjb5Jc.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/ftKBwFREgQ6SxfmjaSsFsnZol3g.jpg"
-  },
-  {
-    "id": 303076,
-    "title": "첫 번째 남자",
-    "genre_ids": [
-      80,
-      10751,
-      18
-    ],
-    "popularity": 12.2421,
-    "release_date": "2025-12-15",
-    "vote_average": 3.8,
-    "image": "https://image.tmdb.org/t/p/w780/mHp8UKRPwZNjBmt9rncemEzIa6O.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/gWDDN4CurXWepCfrO6YvxBFESec.jpg"
-  },
-  {
-    "id": 310326,
-    "title": "사랑이 온다",
-    "genre_ids": [
-      10751,
-      18
-    ],
-    "popularity": 10.7592,
-    "release_date": "2026-07-25",
-    "vote_average": 7.3,
-    "image": "https://image.tmdb.org/t/p/w780/1tuHcp4IAwBZWK82UtmsdQk98Uw.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/eCOFjneZNF6QPQ7IYdTdr8fAyKX.jpg"
-  },
-  {
-    "id": 57433,
-    "title": "힘내요, 미스터 김!",
-    "genre_ids": [
-      35,
-      10751,
-      18
-    ],
-    "popularity": 12.1647,
-    "release_date": "2012-11-05",
+    "popularity": 11.944,
+    "release_date": "2007-01-15",
     "vote_average": 0,
-    "image": "https://image.tmdb.org/t/p/w780/cjGYMpMEAxBj2XlbX7BnFCDc6fd.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/cGh4xyixgKOeSl9Pu08WPUyOlHj.jpg"
+    "image": "https://image.tmdb.org/t/p/w780/snGsSlquBC9NgC7VULovLm4pDNJ.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/3lyBdzKanpYxi5FAPBAZtlZjssv.jpg"
   },
   {
     "id": 55777,
     "title": "오자룡이 간다",
+    "title_ja": "オ・ジャリョンが行く",
     "genre_ids": [
       10751,
       18,
@@ -1950,74 +2183,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/kq7Coc5bonGtp9E1BSfMcoQ3ZXK.jpg"
   },
   {
-    "id": 97010,
-    "title": "청담동 살아요",
-    "genre_ids": [
-      10751
-    ],
-    "popularity": 12.6671,
-    "release_date": "2011-12-05",
-    "vote_average": 9,
-    "image": "https://image.tmdb.org/t/p/w780/nEXXXzCAcploF1Xe1aoQkxKuROw.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/7d4HhXb0B9UGnEKWqF8aTHBYZ3Y.jpg"
-  },
-  {
-    "id": 14097,
-    "title": "하늘만큼 땅만큼",
-    "genre_ids": [
-      18,
-      10751
-    ],
-    "popularity": 11.944,
-    "release_date": "2007-01-15",
-    "vote_average": 0,
-    "image": "https://image.tmdb.org/t/p/w780/snGsSlquBC9NgC7VULovLm4pDNJ.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/3lyBdzKanpYxi5FAPBAZtlZjssv.jpg"
-  },
-  {
-    "id": 237565,
-    "title": "조립식 가족",
-    "genre_ids": [
-      18,
-      10751
-    ],
-    "popularity": 12.827,
-    "release_date": "2024-10-09",
-    "vote_average": 8.063,
-    "image": "https://image.tmdb.org/t/p/w780/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/fQmC6mDWI00yaLhNxyKJEhFbDUB.jpg"
-  },
-  {
-    "id": 329190,
-    "title": "엄마가 미쳤어요",
-    "genre_ids": [
-      18,
-      10751
-    ],
-    "popularity": 10.6506,
-    "release_date": "2026-09-28",
-    "vote_average": 0,
-    "image": "https://image.tmdb.org/t/p/w780/1zjYoBml8sDVydnwc6DInscwa4p.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/ompsSXBylrYpkUFGN8aNegQGyzJ.jpg"
-  },
-  {
-    "id": 70194,
-    "title": "아버지가 이상해",
-    "genre_ids": [
-      35,
-      18,
-      10751,
-      10766
-    ],
-    "popularity": 11.3649,
-    "release_date": "2017-03-04",
-    "vote_average": 7.5,
-    "image": "https://image.tmdb.org/t/p/w780/1IHECJ4gRYWRAvZImLfxza1Bm9V.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/sT6DCFaMVxqtAO1XjJxnvtFkcBe.jpg"
-  },
-  {
     "id": 94940,
     "title": "두 번은 없다",
+    "title_ja": "魔女たちの楽園 　～二度なき人生～",
     "genre_ids": [
       10766,
       10751,
@@ -2031,74 +2199,25 @@
     "poster": "https://image.tmdb.org/t/p/w500/d9BaEcwt11PxKAVo8gePtOQYaPi.jpg"
   },
   {
-    "id": 320406,
-    "title": "가족관계증명서",
-    "genre_ids": [
-      18,
-      10751
-    ],
-    "popularity": 9.836,
-    "release_date": "2026-07-06",
-    "vote_average": 10,
-    "image": "https://image.tmdb.org/t/p/w780/xBFkSHJAco6XCwYZ3YRZc81pn22.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/qVK5lrPrRswoe542XEnufx8BH2j.jpg"
-  },
-  {
-    "id": 65612,
-    "title": "그래, 그런거야",
-    "genre_ids": [
-      18,
-      10751
-    ],
-    "popularity": 10.7275,
-    "release_date": "2016-02-13",
-    "vote_average": 5,
-    "image": "https://image.tmdb.org/t/p/w780/osIcg8YvGjrlLPpm4OVg5ew03fC.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/6TyS0ZwWbk7rArli9bigXFU7kCh.jpg"
-  },
-  {
-    "id": 63573,
-    "title": "고양이는 있다",
+    "id": 70194,
+    "title": "아버지가 이상해",
+    "title_ja": "適齢期惑々ロマンス～お父さんが変!?～",
     "genre_ids": [
       35,
+      18,
       10751,
-      10749
+      10766
     ],
-    "popularity": 12.7966,
-    "release_date": "2014-06-09",
-    "vote_average": 5.8,
-    "image": null,
-    "poster": "https://image.tmdb.org/t/p/w500/a8wHHvIVFyK55M2O3O67vC82g3u.jpg"
-  },
-  {
-    "id": 95657,
-    "title": "돌아온 황금복",
-    "genre_ids": [
-      10751,
-      18
-    ],
-    "popularity": 11.1818,
-    "release_date": "2015-06-08",
-    "vote_average": 5,
-    "image": "https://image.tmdb.org/t/p/w780/lYsNrN1BIZ2lns5KdyIlnUJc3XF.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/nLkiFVptCQHrktzoRa41fDOYE9C.jpg"
-  },
-  {
-    "id": 87615,
-    "title": "세상에서 제일 예쁜 내 딸",
-    "genre_ids": [
-      10751,
-      18
-    ],
-    "popularity": 12.2554,
-    "release_date": "2019-03-23",
-    "vote_average": 6.9,
-    "image": "https://image.tmdb.org/t/p/w780/cBySpypwZUtDMOyf29wyO9N5Uli.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/oTYSS6m3LXw4jgGTlaADd26nJFA.jpg"
+    "popularity": 11.3649,
+    "release_date": "2017-03-04",
+    "vote_average": 7.5,
+    "image": "https://image.tmdb.org/t/p/w780/1IHECJ4gRYWRAvZImLfxza1Bm9V.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/sT6DCFaMVxqtAO1XjJxnvtFkcBe.jpg"
   },
   {
     "id": 61130,
     "title": "사랑만 할래",
+    "title_ja": "愛だけしたい",
     "genre_ids": [
       10751,
       10749
@@ -2110,62 +2229,109 @@
     "poster": "https://image.tmdb.org/t/p/w500/iauYBDkz2gxvuAiuPtReQHNbDXR.jpg"
   },
   {
-    "id": 258932,
-    "title": "언니네 산지직송",
+    "id": 95657,
+    "title": "돌아온 황금복",
+    "title_ja": "帰ってきたファン・グムボク",
     "genre_ids": [
-      10764,
+      10751,
+      18
+    ],
+    "popularity": 11.1818,
+    "release_date": "2015-06-08",
+    "vote_average": 5,
+    "image": "https://image.tmdb.org/t/p/w780/lYsNrN1BIZ2lns5KdyIlnUJc3XF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/nLkiFVptCQHrktzoRa41fDOYE9C.jpg"
+  },
+  {
+    "id": 67485,
+    "title": "월계수 양복점 신사들",
+    "title_ja": null,
+    "genre_ids": [
+      18,
+      10751,
+      35
+    ],
+    "popularity": 11.1679,
+    "release_date": "2016-08-27",
+    "vote_average": 6.8,
+    "image": "https://image.tmdb.org/t/p/w780/oY29uQpVGZr4NSE1VBvfltHKDXT.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/5PfODJ26FJbaxUgan5JilCXLFqe.jpg"
+  },
+  {
+    "id": 197352,
+    "title": "으라차차 내 인생",
+    "title_ja": null,
+    "genre_ids": [
+      35,
+      18,
       10751
     ],
-    "popularity": 12.1238,
-    "release_date": "2024-07-18",
-    "vote_average": 7.5,
-    "image": "https://image.tmdb.org/t/p/w780/iwq0vYkmB8j7WgnfKZQE1na0zTF.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/kWQCQdx0ADS9FjnUo8STcR4pBH0.jpg"
-  },
-  {
-    "id": 135753,
-    "title": "사랑의 꽈배기",
-    "genre_ids": [
-      10751,
-      35,
-      18
-    ],
-    "popularity": 9.9565,
-    "release_date": "2021-12-13",
-    "vote_average": 4.1,
-    "image": "https://image.tmdb.org/t/p/w780/l6zdjUDOaklBWfxqa7AtbLr2EnA.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/s4OROPpuFsTIknckdXY0wX7Dw37.jpg"
-  },
-  {
-    "id": 61613,
-    "title": "모던파머",
-    "genre_ids": [
-      35,
-      10751,
-      18
-    ],
-    "popularity": 9.4184,
-    "release_date": "2014-10-18",
+    "popularity": 11.0638,
+    "release_date": "2022-04-11",
     "vote_average": 7.2,
-    "image": "https://image.tmdb.org/t/p/w780/uH4HaYhGoZ3pBZxwTeGwGJ6Lc8M.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/qr2T42sbaPyi809QuvMSmAfbmSC.jpg"
+    "image": "https://image.tmdb.org/t/p/w780/FbUIi5WeDU5j1EtipQ274tts1E.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/qWOnZ9BzqINyYIvZslnfd4yGRIZ.jpg"
   },
   {
-    "id": 285678,
-    "title": "대운을 잡아라",
+    "id": 310326,
+    "title": "사랑이 온다",
+    "title_ja": "愛がやってくる",
     "genre_ids": [
       10751,
       18
     ],
-    "popularity": 10.2178,
-    "release_date": "2025-04-14",
-    "vote_average": 6,
-    "image": "https://image.tmdb.org/t/p/w780/zqQZdyXxeDCXE2sqaWa29W4vQP8.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/aEqfkiRe2N2aUCcsNZfmPeTtz4P.jpg"
+    "popularity": 10.7592,
+    "release_date": "2026-07-25",
+    "vote_average": 7.3,
+    "image": "https://image.tmdb.org/t/p/w780/1tuHcp4IAwBZWK82UtmsdQk98Uw.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/eCOFjneZNF6QPQ7IYdTdr8fAyKX.jpg"
+  },
+  {
+    "id": 65612,
+    "title": "그래, 그런거야",
+    "title_ja": "これが人生! ケ・セラ・セラ",
+    "genre_ids": [
+      18,
+      10751
+    ],
+    "popularity": 10.7275,
+    "release_date": "2016-02-13",
+    "vote_average": 5,
+    "image": "https://image.tmdb.org/t/p/w780/osIcg8YvGjrlLPpm4OVg5ew03fC.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/6TyS0ZwWbk7rArli9bigXFU7kCh.jpg"
+  },
+  {
+    "id": 329190,
+    "title": "엄마가 미쳤어요",
+    "title_ja": "ママがおかしくなった",
+    "genre_ids": [
+      18,
+      10751
+    ],
+    "popularity": 10.6506,
+    "release_date": "2026-09-28",
+    "vote_average": 0,
+    "image": "https://image.tmdb.org/t/p/w780/1zjYoBml8sDVydnwc6DInscwa4p.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/ompsSXBylrYpkUFGN8aNegQGyzJ.jpg"
+  },
+  {
+    "id": 88519,
+    "title": "여름아 부탁해",
+    "title_ja": null,
+    "genre_ids": [
+      18,
+      10751
+    ],
+    "popularity": 10.5005,
+    "release_date": "2019-04-29",
+    "vote_average": 4,
+    "image": "https://image.tmdb.org/t/p/w780/1DWRPnExiugzmaZ3G1wnDWFUExb.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/jtBanFbzMBVHzb0JPdq3UKthWum.jpg"
   },
   {
     "id": 200709,
     "title": "약한영웅",
+    "title_ja": "弱いヒーロー",
     "genre_ids": [
       10759,
       18
@@ -2179,6 +2345,7 @@
   {
     "id": 99966,
     "title": "지금 우리 학교는",
+    "title_ja": "今、私たちの学校は...",
     "genre_ids": [
       10759,
       18,
@@ -2193,6 +2360,7 @@
   {
     "id": 293607,
     "title": "100일의 거짓말",
+    "title_ja": "100日の嘘",
     "genre_ids": [
       10759,
       18
@@ -2206,6 +2374,7 @@
   {
     "id": 96648,
     "title": "스위트홈",
+    "title_ja": "Sweet Home －俺と世界の絶望－",
     "genre_ids": [
       10765,
       10759
@@ -2217,22 +2386,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg"
   },
   {
-    "id": 297826,
-    "title": "도굴왕",
-    "genre_ids": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 18.3173,
-    "release_date": "2026-07-09",
-    "vote_average": 8.1,
-    "image": "https://image.tmdb.org/t/p/w780/irM3WhxOorkklhx5To9cfG2ktM6.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg"
-  },
-  {
     "id": 259837,
     "title": "원더풀스",
+    "title_ja": "ワンダフルズ",
     "genre_ids": [
       10759,
       35,
@@ -2246,8 +2402,24 @@
     "poster": "https://image.tmdb.org/t/p/w500/uARtDxJDtISHnM2BxaSKvlQpWrc.jpg"
   },
   {
+    "id": 297826,
+    "title": "도굴왕",
+    "title_ja": "盗掘王",
+    "genre_ids": [
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 18.3173,
+    "release_date": "2026-07-09",
+    "vote_average": 8.1,
+    "image": "https://image.tmdb.org/t/p/w780/irM3WhxOorkklhx5To9cfG2ktM6.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg"
+  },
+  {
     "id": 65143,
     "title": "태양의 후예",
+    "title_ja": "太陽の末裔",
     "genre_ids": [
       18,
       10759
@@ -2259,8 +2431,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/uzsPygxgGvVFMUCsK562leiBbpO.jpg"
   },
   {
+    "id": 31505,
+    "title": "아이리스",
+    "title_ja": "IRIS -アイリス-",
+    "genre_ids": [
+      18,
+      10759
+    ],
+    "popularity": 16.4393,
+    "release_date": "2009-10-14",
+    "vote_average": 7.4,
+    "image": "https://image.tmdb.org/t/p/w780/xrXqpJqjGTNrLAtYUomcHwCvlHg.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/qYogQkaGz7ejphzCf8EeylUuAKP.jpg"
+  },
+  {
     "id": 233347,
     "title": "스터디그룹",
+    "title_ja": "スタディグループ",
     "genre_ids": [
       10759,
       35,
@@ -2273,63 +2460,9 @@
     "poster": "https://image.tmdb.org/t/p/w500/rLrEtysTwvVZESavwufnoGIaq8j.jpg"
   },
   {
-    "id": 88463,
-    "title": "아스달 연대기",
-    "genre_ids": [
-      18,
-      10759
-    ],
-    "popularity": 13.3548,
-    "release_date": "2019-06-01",
-    "vote_average": 7.6,
-    "image": "https://image.tmdb.org/t/p/w780/uDSnb7xvPziZedUzlrz3Za0YOz7.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/raa566oA0cquXcS1b83TrWePJtT.jpg"
-  },
-  {
-    "id": 233742,
-    "title": "뉴토피아",
-    "genre_ids": [
-      10765,
-      10759,
-      35,
-      18
-    ],
-    "popularity": 12.4323,
-    "release_date": "2025-02-07",
-    "vote_average": 8,
-    "image": "https://image.tmdb.org/t/p/w780/olRPEYjyjzoMAODjOMjF2K1VlzO.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg"
-  },
-  {
-    "id": 31505,
-    "title": "아이리스",
-    "genre_ids": [
-      18,
-      10759
-    ],
-    "popularity": 16.4393,
-    "release_date": "2009-10-14",
-    "vote_average": 7.4,
-    "image": "https://image.tmdb.org/t/p/w780/xrXqpJqjGTNrLAtYUomcHwCvlHg.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/qYogQkaGz7ejphzCf8EeylUuAKP.jpg"
-  },
-  {
-    "id": 208825,
-    "title": "기생수: 더 그레이",
-    "genre_ids": [
-      10765,
-      10759,
-      18
-    ],
-    "popularity": 14.0208,
-    "release_date": "2024-04-05",
-    "vote_average": 7.439,
-    "image": "https://image.tmdb.org/t/p/w780/p4rJTY1rvQrffoh2P09sty5cz8B.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/zHl8zv1TymcAYEFmsKID8sHsRAd.jpg"
-  },
-  {
     "id": 70123,
     "title": "신서유기",
+    "title_ja": "新西遊記",
     "genre_ids": [
       18,
       35,
@@ -2343,8 +2476,24 @@
     "poster": "https://image.tmdb.org/t/p/w500/gUTettmcgOOO4TtidGa0oydNl38.jpg"
   },
   {
+    "id": 208825,
+    "title": "기생수: 더 그레이",
+    "title_ja": "寄生獣 ーザ・グレイー",
+    "genre_ids": [
+      10765,
+      10759,
+      18
+    ],
+    "popularity": 14.0208,
+    "release_date": "2024-04-05",
+    "vote_average": 7.439,
+    "image": "https://image.tmdb.org/t/p/w780/p4rJTY1rvQrffoh2P09sty5cz8B.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/zHl8zv1TymcAYEFmsKID8sHsRAd.jpg"
+  },
+  {
     "id": 136369,
     "title": "내일",
+    "title_ja": "明日",
     "genre_ids": [
       18,
       10765,
@@ -2359,6 +2508,7 @@
   {
     "id": 66496,
     "title": "화랑",
+    "title_ja": "花郎＜ファラン＞",
     "genre_ids": [
       18,
       35,
@@ -2371,8 +2521,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/iJBaJVqKcqTej52UKbRvsqCgAVe.jpg"
   },
   {
+    "id": 88463,
+    "title": "아스달 연대기",
+    "title_ja": "アスダル年代記",
+    "genre_ids": [
+      18,
+      10759
+    ],
+    "popularity": 13.3548,
+    "release_date": "2019-06-01",
+    "vote_average": 7.6,
+    "image": "https://image.tmdb.org/t/p/w780/uDSnb7xvPziZedUzlrz3Za0YOz7.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/raa566oA0cquXcS1b83TrWePJtT.jpg"
+  },
+  {
     "id": 70649,
     "title": "당신이 잠든 사이에",
+    "title_ja": "あなたが眠っている間に",
     "genre_ids": [
       10765,
       18
@@ -2384,8 +2549,24 @@
     "poster": "https://image.tmdb.org/t/p/w500/vtyzRkxPl3Y6bC5DgUDZ1sLb8Fs.jpg"
   },
   {
+    "id": 303143,
+    "title": "멋진 신세계",
+    "title_ja": "すばらしい新世界",
+    "genre_ids": [
+      18,
+      35,
+      10765
+    ],
+    "popularity": 20.6359,
+    "release_date": "2026-05-08",
+    "vote_average": 8.748,
+    "image": "https://image.tmdb.org/t/p/w780/p1ntnKJwn1URGv1xpU6NN33Y11O.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg"
+  },
+  {
     "id": 61330,
     "title": "보안관 칼리의 서부 모험",
+    "title_ja": "Sheriff Callie's Wild West",
     "genre_ids": [
       16,
       37,
@@ -2401,6 +2582,7 @@
   {
     "id": 221851,
     "title": "내 남편과 결혼해줘",
+    "title_ja": "私の夫と結婚して",
     "genre_ids": [
       18,
       10765,
@@ -2415,6 +2597,7 @@
   {
     "id": 298610,
     "title": "오싹한 연애",
+    "title_ja": "恋は命がけ",
     "genre_ids": [
       35,
       10765,
@@ -2429,6 +2612,7 @@
   {
     "id": 90447,
     "title": "호텔 델루나",
+    "title_ja": "ホテルデルーナ",
     "genre_ids": [
       10765,
       18,
@@ -2443,6 +2627,7 @@
   {
     "id": 212204,
     "title": "반짝이는 워터멜론",
+    "title_ja": "輝くウォーターメロン～僕らをつなぐ恋うた～",
     "genre_ids": [
       10765,
       18
@@ -2454,8 +2639,39 @@
     "poster": "https://image.tmdb.org/t/p/w500/fD1WFaH8Bo4g6SqAOwCQg3Ry6zv.jpg"
   },
   {
+    "id": 67018,
+    "title": "푸른 바다의 전설",
+    "title_ja": "青い海の伝説",
+    "genre_ids": [
+      35,
+      18,
+      10765
+    ],
+    "popularity": 14.946,
+    "release_date": "2016-11-16",
+    "vote_average": 7.5,
+    "image": "https://image.tmdb.org/t/p/w780/AndNIZzaDAcLlk11KjZy2TZS07Y.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/lI5ngBpdH2hOiXNpJTn96lgdnGB.jpg"
+  },
+  {
+    "id": 316197,
+    "title": "너에게 다이브",
+    "title_ja": "君へダイブ",
+    "genre_ids": [
+      35,
+      18,
+      10765
+    ],
+    "popularity": 14.8034,
+    "release_date": "2026-09-26",
+    "vote_average": 9,
+    "image": "https://image.tmdb.org/t/p/w780/jseW3HucgNjN2CwJa3MiOlF4xMO.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/21pLXbvuyfgUaAhhxkuvoX1pAN1.jpg"
+  },
+  {
     "id": 228689,
     "title": "다 이루어질지니",
+    "title_ja": "魔法のランプにお願い",
     "genre_ids": [
       10765,
       35,
@@ -2470,6 +2686,7 @@
   {
     "id": 218230,
     "title": "이재, 곧 죽습니다",
+    "title_ja": "もうすぐ死にます",
     "genre_ids": [
       18,
       10765
@@ -2483,6 +2700,7 @@
   {
     "id": 108261,
     "title": "철인왕후",
+    "title_ja": "哲仁王后（チョルインワンフ）〜俺がクイーン!?〜",
     "genre_ids": [
       18,
       35,
@@ -2490,13 +2708,14 @@
     ],
     "popularity": 14.1045,
     "release_date": "2020-12-12",
-    "vote_average": 8.509,
+    "vote_average": 8.5,
     "image": "https://image.tmdb.org/t/p/w780/zs803kZR1rT5niAakQokxtp3Uqv.jpg",
     "poster": "https://image.tmdb.org/t/p/w500/nzMUCTgifscseMV62JjZE3ilOSx.jpg"
   },
   {
     "id": 280945,
     "title": "폭군의 셰프",
+    "title_ja": "暴君のシェフ",
     "genre_ids": [
       18,
       10765
@@ -2508,22 +2727,23 @@
     "poster": "https://image.tmdb.org/t/p/w500/kqFofZ0hOQ7Y3VUQQ59lpHaCJpM.jpg"
   },
   {
-    "id": 316197,
-    "title": "너에게 다이브",
+    "id": 153496,
+    "title": "재벌집 막내아들",
+    "title_ja": null,
     "genre_ids": [
-      35,
       18,
       10765
     ],
-    "popularity": 14.8034,
-    "release_date": "2026-09-26",
-    "vote_average": 9,
-    "image": "https://image.tmdb.org/t/p/w780/jseW3HucgNjN2CwJa3MiOlF4xMO.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/21pLXbvuyfgUaAhhxkuvoX1pAN1.jpg"
+    "popularity": 13.5491,
+    "release_date": "2022-11-18",
+    "vote_average": 8.004,
+    "image": "https://image.tmdb.org/t/p/w780/clGOzO82lN4gPI4Fon7wNVXS90i.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg"
   },
   {
     "id": 89641,
     "title": "좋아하면 울리는",
+    "title_ja": "恋するアプリ Love Alarm",
     "genre_ids": [
       18,
       10765
@@ -2533,47 +2753,5 @@
     "vote_average": 8.2,
     "image": "https://image.tmdb.org/t/p/w780/mXouvrZbn8YpZMURGvw30QK8qfo.jpg",
     "poster": "https://image.tmdb.org/t/p/w500/ncJ7naaHoGabVHB4FriUXP9IW3t.jpg"
-  },
-  {
-    "id": 66433,
-    "title": "달의 연인 - 보보경심 려",
-    "genre_ids": [
-      18,
-      10765,
-      10768
-    ],
-    "popularity": 15.6994,
-    "release_date": "2016-08-29",
-    "vote_average": 8.5,
-    "image": "https://image.tmdb.org/t/p/w780/yBmqsAFjJJtdHkptwlCy0WMsfKA.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/7Ji4MvbqOnAnwGJV5Z953AkuE0X.jpg"
-  },
-  {
-    "id": 67018,
-    "title": "푸른 바다의 전설",
-    "genre_ids": [
-      35,
-      18,
-      10765
-    ],
-    "popularity": 14.946,
-    "release_date": "2016-11-16",
-    "vote_average": 7.5,
-    "image": "https://image.tmdb.org/t/p/w780/AndNIZzaDAcLlk11KjZy2TZS07Y.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/lI5ngBpdH2hOiXNpJTn96lgdnGB.jpg"
-  },
-  {
-    "id": 295509,
-    "title": "취사병 전설이 되다",
-    "genre_ids": [
-      10765,
-      35,
-      18
-    ],
-    "popularity": 12.5594,
-    "release_date": "2026-05-11",
-    "vote_average": 8.5,
-    "image": "https://image.tmdb.org/t/p/w780/9lQZ18CYk5n3YNbOfmSjkiBrfrk.jpg",
-    "poster": "https://image.tmdb.org/t/p/w500/leTFMJR21vNnKe080wKLld6cMOP.jpg"
   }
 ]
