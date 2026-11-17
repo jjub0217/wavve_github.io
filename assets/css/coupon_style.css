@@ -1109,3 +1109,18 @@ section[class^=section_]:not(.section_visual, .section_content) {
   margin-top: 16px;
   color: #626466;
 }
+/* 헤더 폭 맞추기 (2026-11-17): scss/layout/_header_fit.scss */
+@media screen and (min-width: 641px) and (max-width: 1600px) {
+  .header .inner {
+    padding: 0 40px;
+  }
+  .nav_list {
+    gap: 20px;
+  }
+  html[lang="ja"] .nav_list {
+    gap: 16px;
+  }
+  html[lang="ja"] .nav_item {
+    font-size: 16px;
+  }
+}
